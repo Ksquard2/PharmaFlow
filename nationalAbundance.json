@@ -1,0 +1,178 @@
+{
+    "oseltamivir": {
+      "drug": "oseltamivir",
+      "window_days": 7,
+      "date_from": "20260314",
+      "date_to": "20260321",
+      "recent_nationwide_recalls": 0,
+      "active_recalls_in_window": 0,
+      "all_time_nationwide_recalls": 3,
+      "risk_signal": "LOW",
+      "recent_records": []
+    },
+    "zanamivir": {
+      "drug": "zanamivir",
+      "window_days": 7,
+      "date_from": "20260314",
+      "date_to": "20260321",
+      "recent_nationwide_recalls": 0,
+      "active_recalls_in_window": 0,
+      "all_time_nationwide_recalls": 0,
+      "risk_signal": "LOW",
+      "recent_records": []
+    },
+    "peramivir": {
+      "drug": "peramivir",
+      "window_days": 7,
+      "date_from": "20260314",
+      "date_to": "20260321",
+      "recent_nationwide_recalls": 0,
+      "active_recalls_in_window": 0,
+      "all_time_nationwide_recalls": 0,
+      "risk_signal": "LOW",
+      "recent_records": []
+    },
+    "baloxavir": {
+      "drug": "baloxavir",
+      "window_days": 7,
+      "date_from": "20260314",
+      "date_to": "20260321",
+      "recent_nationwide_recalls": 0,
+      "active_recalls_in_window": 0,
+      "all_time_nationwide_recalls": 0,
+      "risk_signal": "LOW",
+      "recent_records": []
+    },
+    "ceftriaxone": {
+      "drug": "ceftriaxone",
+      "window_days": 7,
+      "date_from": "20260314",
+      "date_to": "20260321",
+      "recent_nationwide_recalls": 0,
+      "active_recalls_in_window": 0,
+      "all_time_nationwide_recalls": 23,
+      "risk_signal": "LOW",
+      "recent_records": []
+    },
+    "azithromycin": {
+      "drug": "azithromycin",
+      "window_days": 7,
+      "date_from": "20260314",
+      "date_to": "20260321",
+      "recent_nationwide_recalls": 0,
+      "active_recalls_in_window": 0,
+      "all_time_nationwide_recalls": 11,
+      "risk_signal": "LOW",
+      "recent_records": []
+    },
+    "levofloxacin": {
+      "drug": "levofloxacin",
+      "window_days": 7,
+      "date_from": "20260314",
+      "date_to": "20260321",
+      "recent_nationwide_recalls": 0,
+      "active_recalls_in_window": 0,
+      "all_time_nationwide_recalls": 20,
+      "risk_signal": "LOW",
+      "recent_records": []
+    },
+    "vancomycin": {
+      "drug": "vancomycin",
+      "window_days": 7,
+      "date_from": "20260314",
+      "date_to": "20260321",
+      "recent_nationwide_recalls": 0,
+      "active_recalls_in_window": 0,
+      "all_time_nationwide_recalls": 87,
+      "risk_signal": "LOW",
+      "recent_records": []
+    },
+    "acetaminophen": {
+      "drug": "acetaminophen",
+      "window_days": 7,
+      "date_from": "20260314",
+      "date_to": "20260321",
+      "recent_nationwide_recalls": 0,
+      "active_recalls_in_window": 0,
+      "all_time_nationwide_recalls": 199,
+      "risk_signal": "LOW",
+      "recent_records": []
+    },
+    "ibuprofen": {
+      "drug": "ibuprofen",
+      "window_days": 7,
+      "date_from": "20260314",
+      "date_to": "20260321",
+      "recent_nationwide_recalls": 0,
+      "active_recalls_in_window": 0,
+      "all_time_nationwide_recalls": 58,
+      "risk_signal": "LOW",
+      "recent_records": []
+    },
+    "naproxen": {
+      "drug": "naproxen",
+      "window_days": 7,
+      "date_from": "20260314",
+      "date_to": "20260321",
+      "recent_nationwide_recalls": 0,
+      "active_recalls_in_window": 0,
+      "all_time_nationwide_recalls": 13,
+      "risk_signal": "LOW",
+      "recent_records": []
+    },
+    "aspirin": {
+      "drug": "aspirin",
+      "window_days": 7,
+      "date_from": "20260314",
+      "date_to": "20260321",
+      "recent_nationwide_recalls": 0,
+      "active_recalls_in_window": 0,
+      "all_time_nationwide_recalls": 42,
+      "risk_signal": "LOW",
+      "recent_records": []
+    },
+    "epinephrine": {
+      "drug": "epinephrine",
+      "window_days": 7,
+      "date_from": "20260314",
+      "date_to": "20260321",
+      "recent_nationwide_recalls": 0,
+      "active_recalls_in_window": 0,
+      "all_time_nationwide_recalls": 109,
+      "risk_signal": "LOW",
+      "recent_records": []
+    },
+    "diphenhydramine": {
+      "drug": "diphenhydramine",
+      "window_days": 7,
+      "date_from": "20260314",
+      "date_to": "20260321",
+      "recent_nationwide_recalls": 0,
+      "active_recalls_in_window": 0,
+      "all_time_nationwide_recalls": 41,
+      "risk_signal": "LOW",
+      "recent_records": []
+    },
+    "cetirizine": {
+      "drug": "cetirizine",
+      "window_days": 7,
+      "date_from": "20260314",
+      "date_to": "20260321",
+      "recent_nationwide_recalls": 0,
+      "active_recalls_in_window": 0,
+      "all_time_nationwide_recalls": 18,
+      "risk_signal": "LOW",
+      "recent_records": []
+    },
+    "methylprednisolone": {
+      "drug": "methylprednisolone",
+      "window_days": 7,
+      "date_from": "20260314",
+      "date_to": "20260321",
+      "recent_nationwide_recalls": 0,
+      "active_recalls_in_window": 0,
+      "all_time_nationwide_recalls": 364,
+      "risk_signal": "LOW",
+      "recent_records": []
+    }
+  }

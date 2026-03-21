@@ -1,0 +1,625 @@
+{
+    "1_respiratory_antivirals": {
+      "epidata": [
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202501,
+          "lag": 59,
+          "num_ili": 164458,
+          "num_patients": 2666881,
+          "num_providers": 4247,
+          "num_age_0": 33451,
+          "num_age_1": 37513,
+          "num_age_2": null,
+          "num_age_3": 48596,
+          "num_age_4": 21824,
+          "num_age_5": 23074,
+          "wili": 6.25398,
+          "ili": 6.16668
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202502,
+          "lag": 58,
+          "num_ili": 139494,
+          "num_patients": 2634939,
+          "num_providers": 4243,
+          "num_age_0": 23592,
+          "num_age_1": 35821,
+          "num_age_2": null,
+          "num_age_3": 42897,
+          "num_age_4": 19312,
+          "num_age_5": 17872,
+          "wili": 5.30512,
+          "ili": 5.29401
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202503,
+          "lag": 57,
+          "num_ili": 156729,
+          "num_patients": 2753898,
+          "num_providers": 4258,
+          "num_age_0": 26014,
+          "num_age_1": 50231,
+          "num_age_2": null,
+          "num_age_3": 44103,
+          "num_age_4": 19130,
+          "num_age_5": 17251,
+          "wili": 5.74558,
+          "ili": 5.69117
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202504,
+          "lag": 56,
+          "num_ili": 179704,
+          "num_patients": 2620898,
+          "num_providers": 4263,
+          "num_age_0": 30197,
+          "num_age_1": 59340,
+          "num_age_2": null,
+          "num_age_3": 51025,
+          "num_age_4": 21132,
+          "num_age_5": 18010,
+          "wili": 6.98693,
+          "ili": 6.85658
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202505,
+          "lag": 55,
+          "num_ili": 214625,
+          "num_patients": 2890504,
+          "num_providers": 4261,
+          "num_age_0": 32918,
+          "num_age_1": 72398,
+          "num_age_2": null,
+          "num_age_3": 59976,
+          "num_age_4": 26107,
+          "num_age_5": 23226,
+          "wili": 7.79898,
+          "ili": 7.42518
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202506,
+          "lag": 54,
+          "num_ili": 222652,
+          "num_patients": 2889494,
+          "num_providers": 4250,
+          "num_age_0": 35164,
+          "num_age_1": 76137,
+          "num_age_2": null,
+          "num_age_3": 59740,
+          "num_age_4": 26664,
+          "num_age_5": 24947,
+          "wili": 7.84378,
+          "ili": 7.70557
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202507,
+          "lag": 53,
+          "num_ili": 192807,
+          "num_patients": 2731160,
+          "num_providers": 4258,
+          "num_age_0": 29512,
+          "num_age_1": 62336,
+          "num_age_2": null,
+          "num_age_3": 52696,
+          "num_age_4": 24317,
+          "num_age_5": 23946,
+          "wili": 6.93692,
+          "ili": 7.05953
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202508,
+          "lag": 52,
+          "num_ili": 156808,
+          "num_patients": 2605653,
+          "num_providers": 4245,
+          "num_age_0": 24727,
+          "num_age_1": 46519,
+          "num_age_2": null,
+          "num_age_3": 44764,
+          "num_age_4": 20323,
+          "num_age_5": 20475,
+          "wili": 5.90072,
+          "ili": 6.01799
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202509,
+          "lag": 51,
+          "num_ili": 133099,
+          "num_patients": 2750746,
+          "num_providers": 4242,
+          "num_age_0": 20599,
+          "num_age_1": 39077,
+          "num_age_2": null,
+          "num_age_3": 37605,
+          "num_age_4": 17523,
+          "num_age_5": 18295,
+          "wili": 4.87406,
+          "ili": 4.83865
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202510,
+          "lag": 50,
+          "num_ili": 114116,
+          "num_patients": 2675535,
+          "num_providers": 4237,
+          "num_age_0": 18328,
+          "num_age_1": 35647,
+          "num_age_2": null,
+          "num_age_3": 31463,
+          "num_age_4": 14139,
+          "num_age_5": 14539,
+          "wili": 4.26679,
+          "ili": 4.26517
+        }
+      ],
+      "result": 1,
+      "message": "success"
+    },
+    "2_broad_spectrum_antibiotic_proxy": [
+      {
+        "date": "2026-02-07T00:00:00.000",
+        "pathogen": "ARI",
+        "geography": "Georgia",
+        "percent_visits": "12.33"
+      },
+      {
+        "date": "2026-02-07T00:00:00.000",
+        "pathogen": "COVID",
+        "geography": "Georgia",
+        "percent_visits": "0.36"
+      },
+      {
+        "date": "2026-02-07T00:00:00.000",
+        "pathogen": "Influenza",
+        "geography": "Georgia",
+        "percent_visits": "2.53"
+      },
+      {
+        "date": "2026-02-07T00:00:00.000",
+        "pathogen": "RSV",
+        "geography": "Georgia",
+        "percent_visits": "0.45"
+      },
+      {
+        "date": "2026-02-06T00:00:00.000",
+        "pathogen": "ARI",
+        "geography": "Georgia",
+        "percent_visits": "11.46"
+      },
+      {
+        "date": "2026-02-06T00:00:00.000",
+        "pathogen": "COVID",
+        "geography": "Georgia",
+        "percent_visits": "0.28"
+      },
+      {
+        "date": "2026-02-06T00:00:00.000",
+        "pathogen": "Influenza",
+        "geography": "Georgia",
+        "percent_visits": "2.06"
+      },
+      {
+        "date": "2026-02-06T00:00:00.000",
+        "pathogen": "RSV",
+        "geography": "Georgia",
+        "percent_visits": "0.35"
+      },
+      {
+        "date": "2026-02-05T00:00:00.000",
+        "pathogen": "ARI",
+        "geography": "Georgia",
+        "percent_visits": "11.37"
+      },
+      {
+        "date": "2026-02-05T00:00:00.000",
+        "pathogen": "COVID",
+        "geography": "Georgia",
+        "percent_visits": "0.5"
+      },
+      {
+        "date": "2026-02-05T00:00:00.000",
+        "pathogen": "Influenza",
+        "geography": "Georgia",
+        "percent_visits": "2.25"
+      },
+      {
+        "date": "2026-02-05T00:00:00.000",
+        "pathogen": "RSV",
+        "geography": "Georgia",
+        "percent_visits": "0.33"
+      },
+      {
+        "date": "2026-02-04T00:00:00.000",
+        "pathogen": "ARI",
+        "geography": "Georgia",
+        "percent_visits": "12.3"
+      },
+      {
+        "date": "2026-02-04T00:00:00.000",
+        "pathogen": "COVID",
+        "geography": "Georgia",
+        "percent_visits": "0.38"
+      },
+      {
+        "date": "2026-02-04T00:00:00.000",
+        "pathogen": "Influenza",
+        "geography": "Georgia",
+        "percent_visits": "2.39"
+      },
+      {
+        "date": "2026-02-04T00:00:00.000",
+        "pathogen": "RSV",
+        "geography": "Georgia",
+        "percent_visits": "0.47"
+      },
+      {
+        "date": "2026-02-03T00:00:00.000",
+        "pathogen": "ARI",
+        "geography": "Georgia",
+        "percent_visits": "12.85"
+      },
+      {
+        "date": "2026-02-03T00:00:00.000",
+        "pathogen": "COVID",
+        "geography": "Georgia",
+        "percent_visits": "0.46"
+      },
+      {
+        "date": "2026-02-03T00:00:00.000",
+        "pathogen": "Influenza",
+        "geography": "Georgia",
+        "percent_visits": "2.62"
+      },
+      {
+        "date": "2026-02-03T00:00:00.000",
+        "pathogen": "RSV",
+        "geography": "Georgia",
+        "percent_visits": "0.39"
+      }
+    ],
+    "3_analgesics_antipyretics": {
+      "epidata": [
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202501,
+          "lag": 59,
+          "num_ili": 164458,
+          "num_patients": 2666881,
+          "num_providers": 4247,
+          "num_age_0": 33451,
+          "num_age_1": 37513,
+          "num_age_2": null,
+          "num_age_3": 48596,
+          "num_age_4": 21824,
+          "num_age_5": 23074,
+          "wili": 6.25398,
+          "ili": 6.16668
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202502,
+          "lag": 58,
+          "num_ili": 139494,
+          "num_patients": 2634939,
+          "num_providers": 4243,
+          "num_age_0": 23592,
+          "num_age_1": 35821,
+          "num_age_2": null,
+          "num_age_3": 42897,
+          "num_age_4": 19312,
+          "num_age_5": 17872,
+          "wili": 5.30512,
+          "ili": 5.29401
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202503,
+          "lag": 57,
+          "num_ili": 156729,
+          "num_patients": 2753898,
+          "num_providers": 4258,
+          "num_age_0": 26014,
+          "num_age_1": 50231,
+          "num_age_2": null,
+          "num_age_3": 44103,
+          "num_age_4": 19130,
+          "num_age_5": 17251,
+          "wili": 5.74558,
+          "ili": 5.69117
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202504,
+          "lag": 56,
+          "num_ili": 179704,
+          "num_patients": 2620898,
+          "num_providers": 4263,
+          "num_age_0": 30197,
+          "num_age_1": 59340,
+          "num_age_2": null,
+          "num_age_3": 51025,
+          "num_age_4": 21132,
+          "num_age_5": 18010,
+          "wili": 6.98693,
+          "ili": 6.85658
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202505,
+          "lag": 55,
+          "num_ili": 214625,
+          "num_patients": 2890504,
+          "num_providers": 4261,
+          "num_age_0": 32918,
+          "num_age_1": 72398,
+          "num_age_2": null,
+          "num_age_3": 59976,
+          "num_age_4": 26107,
+          "num_age_5": 23226,
+          "wili": 7.79898,
+          "ili": 7.42518
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202506,
+          "lag": 54,
+          "num_ili": 222652,
+          "num_patients": 2889494,
+          "num_providers": 4250,
+          "num_age_0": 35164,
+          "num_age_1": 76137,
+          "num_age_2": null,
+          "num_age_3": 59740,
+          "num_age_4": 26664,
+          "num_age_5": 24947,
+          "wili": 7.84378,
+          "ili": 7.70557
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202507,
+          "lag": 53,
+          "num_ili": 192807,
+          "num_patients": 2731160,
+          "num_providers": 4258,
+          "num_age_0": 29512,
+          "num_age_1": 62336,
+          "num_age_2": null,
+          "num_age_3": 52696,
+          "num_age_4": 24317,
+          "num_age_5": 23946,
+          "wili": 6.93692,
+          "ili": 7.05953
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202508,
+          "lag": 52,
+          "num_ili": 156808,
+          "num_patients": 2605653,
+          "num_providers": 4245,
+          "num_age_0": 24727,
+          "num_age_1": 46519,
+          "num_age_2": null,
+          "num_age_3": 44764,
+          "num_age_4": 20323,
+          "num_age_5": 20475,
+          "wili": 5.90072,
+          "ili": 6.01799
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202509,
+          "lag": 51,
+          "num_ili": 133099,
+          "num_patients": 2750746,
+          "num_providers": 4242,
+          "num_age_0": 20599,
+          "num_age_1": 39077,
+          "num_age_2": null,
+          "num_age_3": 37605,
+          "num_age_4": 17523,
+          "num_age_5": 18295,
+          "wili": 4.87406,
+          "ili": 4.83865
+        },
+        {
+          "release_date": "2026-02-27",
+          "region": "nat",
+          "issue": 202607,
+          "epiweek": 202510,
+          "lag": 50,
+          "num_ili": 114116,
+          "num_patients": 2675535,
+          "num_providers": 4237,
+          "num_age_0": 18328,
+          "num_age_1": 35647,
+          "num_age_2": null,
+          "num_age_3": 31463,
+          "num_age_4": 14139,
+          "num_age_5": 14539,
+          "wili": 4.26679,
+          "ili": 4.26517
+        }
+      ],
+      "result": 1,
+      "message": "success"
+    },
+    "4_iv_fluids_proxy": [
+      {
+        "week_end": "2026-02-21T00:00:00.000",
+        "geography": "Georgia",
+        "label": "Low"
+      }
+    ],
+    "5_allergy_anaphylaxis_proxy_rsv": [
+      {
+        "mmwrweek_end": "2026-02-28T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "9.1",
+        "percent_pos_2_week": "4"
+      },
+      {
+        "mmwrweek_end": "2026-02-21T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "8.6",
+        "percent_pos_2_week": "3.8"
+      },
+      {
+        "mmwrweek_end": "2026-02-21T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "8.6",
+        "percent_pos_2_week": "3.8"
+      },
+      {
+        "mmwrweek_end": "2026-02-14T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "8.1",
+        "percent_pos_2_week": "3.5"
+      },
+      {
+        "mmwrweek_end": "2026-02-14T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "8.1",
+        "percent_pos_2_week": "3.5"
+      },
+      {
+        "mmwrweek_end": "2026-02-14T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "8.3",
+        "percent_pos_2_week": "3.5"
+      },
+      {
+        "mmwrweek_end": "2026-02-07T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "7.6",
+        "percent_pos_2_week": "3.4"
+      },
+      {
+        "mmwrweek_end": "2026-02-07T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "7.6",
+        "percent_pos_2_week": "3.4"
+      },
+      {
+        "mmwrweek_end": "2026-02-07T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "7.6",
+        "percent_pos_2_week": "3.4"
+      },
+      {
+        "mmwrweek_end": "2026-02-07T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "7.6",
+        "percent_pos_2_week": "3.4"
+      },
+      {
+        "mmwrweek_end": "2026-01-31T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "7.2",
+        "percent_pos_2_week": "2.8"
+      },
+      {
+        "mmwrweek_end": "2026-01-31T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "7.2",
+        "percent_pos_2_week": "2.8"
+      },
+      {
+        "mmwrweek_end": "2026-01-31T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "7.2",
+        "percent_pos_2_week": "2.8"
+      },
+      {
+        "mmwrweek_end": "2026-01-31T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "7.2",
+        "percent_pos_2_week": "2.8"
+      },
+      {
+        "mmwrweek_end": "2026-01-31T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "7",
+        "percent_pos_2_week": "2.7"
+      },
+      {
+        "mmwrweek_end": "2026-01-24T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "6.7",
+        "percent_pos_2_week": "2.6"
+      },
+      {
+        "mmwrweek_end": "2026-01-24T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "6.7",
+        "percent_pos_2_week": "2.6"
+      },
+      {
+        "mmwrweek_end": "2026-01-24T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "6.6",
+        "percent_pos_2_week": "2.5"
+      },
+      {
+        "mmwrweek_end": "2026-01-24T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "6.6",
+        "percent_pos_2_week": "2.5"
+      },
+      {
+        "mmwrweek_end": "2026-01-24T00:00:00.000",
+        "level": "National",
+        "pcr_percent_positive": "6.4",
+        "percent_pos_2_week": "2.6"
+      }
+    ]
+  }

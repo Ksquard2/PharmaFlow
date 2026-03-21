@@ -1,0 +1,42 @@
+[
+  {
+    "catagoryid": 1,
+    "catagoryName": "Respiratory Antivirals",
+    "endpoint": "https://api.delphi.cmu.edu/epidata/fluview/",
+    "parameters": {
+      "regions": "nat",
+      "epiweeks": "202501-202510"
+    }
+  },
+  {
+    "catagoryid": 2,
+    "catagoryName": "Broad Spectrum Antibiotics",
+    "endpoint": "https://data.cdc.gov/resource/vjzj-u7u8.json",
+    "parameters": {
+      "$select": "date, pathogen, geography, percent_visits",
+      "$where": "geography='Georgia' AND pathogen='ARI'",
+      "$order": "date DESC",
+      "$limit": 30
+    }
+  },
+  {
+    "catagoryid": 3,
+    "catagoryName": "Analgesics and Antipyretics",
+    "endpoint": "https://api.delphi.cmu.edu/epidata/fluview/",
+    "parameters": {
+      "regions": "nat",
+      "epiweeks": "202501-202510"
+    }
+  },
+  {
+    "catagoryid": 4,
+    "catagoryName": "Allergy and Anaphylaxis Treatments",
+    "endpoint": "https://data.cdc.gov/resource/3cxc-4k8q.json",
+    "parameters": {
+      "$select": "mmwrweek_end, level, pcr_percent_positive, percent_pos_2_week",
+      "$where": "level='National'",
+      "$order": "mmwrweek_end DESC",
+      "$limit": 20
+    }
+  }
+]

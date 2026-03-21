@@ -1,0 +1,146 @@
+[
+  {
+    "itemid": 1,
+    "itemName": "oseltamivir",
+    "unitType": "capsules",
+    "catagoryID": 1,
+    "availabilityStatus": "high",
+    "availabilityScore": 0.1,
+    "lastUpdate": "2026-03-21 06:00:00"
+  },
+  {
+    "itemid": 2,
+    "itemName": "zanamivir",
+    "unitType": "inhalation_powder",
+    "catagoryID": 1,
+    "availabilityStatus": "high",
+    "availabilityScore": 0.08,
+    "lastUpdate": "2026-03-21 06:00:00"
+  },
+  {
+    "itemid": 3,
+    "itemName": "peramivir",
+    "unitType": "vials",
+    "catagoryID": 1,
+    "availabilityStatus": "high",
+    "availabilityScore": 0.09,
+    "lastUpdate": "2026-03-21 06:00:00"
+  },
+  {
+    "itemid": 4,
+    "itemName": "baloxavir",
+    "unitType": "tablets",
+    "catagoryID": 1,
+    "availabilityStatus": "high",
+    "availabilityScore": 0.11,
+    "lastUpdate": "2026-03-21 06:00:00"
+  },
+  {
+    "itemid": 5,
+    "itemName": "ceftriaxone",
+    "unitType": "vials",
+    "catagoryID": 2,
+    "availabilityStatus": "high",
+    "availabilityScore": 0.18,
+    "lastUpdate": "2026-03-21 06:00:00"
+  },
+  {
+    "itemid": 6,
+    "itemName": "azithromycin",
+    "unitType": "tablets",
+    "catagoryID": 2,
+    "availabilityStatus": "high",
+    "availabilityScore": 0.15,
+    "lastUpdate": "2026-03-21 06:00:00"
+  },
+  {
+    "itemid": 7,
+    "itemName": "levofloxacin",
+    "unitType": "tablets",
+    "catagoryID": 2,
+    "availabilityStatus": "high",
+    "availabilityScore": 0.17,
+    "lastUpdate": "2026-03-21 06:00:00"
+  },
+  {
+    "itemid": 8,
+    "itemName": "vancomycin",
+    "unitType": "vials",
+    "catagoryID": 2,
+    "availabilityStatus": "moderate",
+    "availabilityScore": 0.38,
+    "lastUpdate": "2026-03-21 06:00:00"
+  },
+  {
+    "itemid": 9,
+    "itemName": "acetaminophen",
+    "unitType": "tablets",
+    "catagoryID": 3,
+    "availabilityStatus": "moderate",
+    "availabilityScore": 0.42,
+    "lastUpdate": "2026-03-21 06:00:00"
+  },
+  {
+    "itemid": 10,
+    "itemName": "ibuprofen",
+    "unitType": "tablets",
+    "catagoryID": 3,
+    "availabilityStatus": "moderate",
+    "availabilityScore": 0.35,
+    "lastUpdate": "2026-03-21 06:00:00"
+  },
+  {
+    "itemid": 11,
+    "itemName": "naproxen",
+    "unitType": "tablets",
+    "catagoryID": 3,
+    "availabilityStatus": "high",
+    "availabilityScore": 0.16,
+    "lastUpdate": "2026-03-21 06:00:00"
+  },
+  {
+    "itemid": 12,
+    "itemName": "aspirin",
+    "unitType": "tablets",
+    "catagoryID": 3,
+    "availabilityStatus": "high",
+    "availabilityScore": 0.2,
+    "lastUpdate": "2026-03-21 06:00:00"
+  },
+  {
+    "itemid": 13,
+    "itemName": "epinephrine",
+    "unitType": "vials",
+    "catagoryID": 4,
+    "availabilityStatus": "moderate",
+    "availabilityScore": 0.4,
+    "lastUpdate": "2026-03-21 06:00:00"
+  },
+  {
+    "itemid": 14,
+    "itemName": "diphenhydramine",
+    "unitType": "vials",
+    "catagoryID": 4,
+    "availabilityStatus": "high",
+    "availabilityScore": 0.22,
+    "lastUpdate": "2026-03-21 06:00:00"
+  },
+  {
+    "itemid": 15,
+    "itemName": "cetirizine",
+    "unitType": "tablets",
+    "catagoryID": 4,
+    "availabilityStatus": "high",
+    "availabilityScore": 0.19,
+    "lastUpdate": "2026-03-21 06:00:00"
+  },
+  {
+    "itemid": 16,
+    "itemName": "methylprednisolone",
+    "unitType": "vials",
+    "catagoryID": 4,
+    "availabilityStatus": "constrained",
+    "availabilityScore": 0.62,
+    "lastUpdate": "2026-03-21 06:00:00"
+  }
+]

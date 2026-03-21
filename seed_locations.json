@@ -1,0 +1,37 @@
+[
+  {
+    "locationid": 1,
+    "locationType": "hospital",
+    "locationName": "Emergency Department"
+  },
+  {
+    "locationid": 2,
+    "locationType": "hospital",
+    "locationName": "Intensive Care Unit"
+  },
+  {
+    "locationid": 3,
+    "locationType": "hospital",
+    "locationName": "General Medical Ward"
+  },
+  {
+    "locationid": 4,
+    "locationType": "hospital",
+    "locationName": "Surgical Ward"
+  },
+  {
+    "locationid": 5,
+    "locationType": "pharmacy",
+    "locationName": "Cardinal Health - Atlanta Distribution Center"
+  },
+  {
+    "locationid": 6,
+    "locationType": "pharmacy",
+    "locationName": "McKesson Southeast Regional Warehouse"
+  },
+  {
+    "locationid": 7,
+    "locationType": "pharmacy",
+    "locationName": "AmerisourceBergen Fulfillment Center"
+  }
+]
