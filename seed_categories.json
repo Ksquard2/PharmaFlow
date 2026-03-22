@@ -2,6 +2,7 @@
   {
     "catagoryid": 1,
     "catagoryName": "Respiratory Antivirals",
+    "trendStrength": -0.52,
     "endpoint": "https://api.delphi.cmu.edu/epidata/fluview/",
     "parameters": {
       "regions": "nat",
@@ -11,6 +12,7 @@
   {
     "catagoryid": 2,
     "catagoryName": "Broad Spectrum Antibiotics",
+    "trendStrength": -0.18,
     "endpoint": "https://data.cdc.gov/resource/vjzj-u7u8.json",
     "parameters": {
       "$select": "date, pathogen, geography, percent_visits",
@@ -22,6 +24,7 @@
   {
     "catagoryid": 3,
     "catagoryName": "Analgesics and Antipyretics",
+    "trendStrength": -0.46,
     "endpoint": "https://api.delphi.cmu.edu/epidata/fluview/",
     "parameters": {
       "regions": "nat",
@@ -31,6 +34,7 @@
   {
     "catagoryid": 4,
     "catagoryName": "Allergy and Anaphylaxis Treatments",
+    "trendStrength": 0.31,
     "endpoint": "https://data.cdc.gov/resource/3cxc-4k8q.json",
     "parameters": {
       "$select": "mmwrweek_end, level, pcr_percent_positive, percent_pos_2_week",

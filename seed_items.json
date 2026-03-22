@@ -4,8 +4,7 @@
     "itemName": "oseltamivir",
     "unitType": "capsules",
     "catagoryID": 1,
-    "availabilityStatus": "high",
-    "availabilityScore": 0.1,
+    "availabilityStatus": "high_availability",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -13,8 +12,7 @@
     "itemName": "zanamivir",
     "unitType": "inhalation_powder",
     "catagoryID": 1,
-    "availabilityStatus": "high",
-    "availabilityScore": 0.08,
+    "availabilityStatus": "high_availability",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -22,8 +20,7 @@
     "itemName": "peramivir",
     "unitType": "vials",
     "catagoryID": 1,
-    "availabilityStatus": "high",
-    "availabilityScore": 0.09,
+    "availabilityStatus": "high_availability",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -31,8 +28,7 @@
     "itemName": "baloxavir",
     "unitType": "tablets",
     "catagoryID": 1,
-    "availabilityStatus": "high",
-    "availabilityScore": 0.11,
+    "availabilityStatus": "high_availability",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -40,8 +36,7 @@
     "itemName": "ceftriaxone",
     "unitType": "vials",
     "catagoryID": 2,
-    "availabilityStatus": "high",
-    "availabilityScore": 0.18,
+    "availabilityStatus": "high_availability",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -49,8 +44,7 @@
     "itemName": "azithromycin",
     "unitType": "tablets",
     "catagoryID": 2,
-    "availabilityStatus": "high",
-    "availabilityScore": 0.15,
+    "availabilityStatus": "high_availability",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -58,8 +52,7 @@
     "itemName": "levofloxacin",
     "unitType": "tablets",
     "catagoryID": 2,
-    "availabilityStatus": "high",
-    "availabilityScore": 0.17,
+    "availabilityStatus": "high_availability",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -67,8 +60,7 @@
     "itemName": "vancomycin",
     "unitType": "vials",
     "catagoryID": 2,
-    "availabilityStatus": "moderate",
-    "availabilityScore": 0.38,
+    "availabilityStatus": "moderate_availability",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -76,8 +68,7 @@
     "itemName": "acetaminophen",
     "unitType": "tablets",
     "catagoryID": 3,
-    "availabilityStatus": "moderate",
-    "availabilityScore": 0.42,
+    "availabilityStatus": "moderate_availability",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -85,8 +76,7 @@
     "itemName": "ibuprofen",
     "unitType": "tablets",
     "catagoryID": 3,
-    "availabilityStatus": "moderate",
-    "availabilityScore": 0.35,
+    "availabilityStatus": "moderate_availability",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -94,8 +84,7 @@
     "itemName": "naproxen",
     "unitType": "tablets",
     "catagoryID": 3,
-    "availabilityStatus": "high",
-    "availabilityScore": 0.16,
+    "availabilityStatus": "high_availability",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -103,8 +92,7 @@
     "itemName": "aspirin",
     "unitType": "tablets",
     "catagoryID": 3,
-    "availabilityStatus": "high",
-    "availabilityScore": 0.2,
+    "availabilityStatus": "high_availability",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -112,8 +100,7 @@
     "itemName": "epinephrine",
     "unitType": "vials",
     "catagoryID": 4,
-    "availabilityStatus": "moderate",
-    "availabilityScore": 0.4,
+    "availabilityStatus": "moderate_availability",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -121,8 +108,7 @@
     "itemName": "diphenhydramine",
     "unitType": "vials",
     "catagoryID": 4,
-    "availabilityStatus": "high",
-    "availabilityScore": 0.22,
+    "availabilityStatus": "high_availability",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -130,8 +116,7 @@
     "itemName": "cetirizine",
     "unitType": "tablets",
     "catagoryID": 4,
-    "availabilityStatus": "high",
-    "availabilityScore": 0.19,
+    "availabilityStatus": "high_availability",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -140,7 +125,6 @@
     "unitType": "vials",
     "catagoryID": 4,
     "availabilityStatus": "constrained",
-    "availabilityScore": 0.62,
     "lastUpdate": "2026-03-21 06:00:00"
   }
 ]

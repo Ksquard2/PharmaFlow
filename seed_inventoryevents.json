@@ -2,6 +2,7 @@
   {
     "eventid": 1,
     "itemid": 1,
+    "eventType": "restock",
     "batchNumber": 1001,
     "quantityDelta": 300,
     "expirationDate": "2026-03-28",
@@ -11,6 +12,7 @@
   {
     "eventid": 2,
     "itemid": 2,
+    "eventType": "restock",
     "batchNumber": 1003,
     "quantityDelta": 120,
     "expirationDate": "2026-12-01",
@@ -20,6 +22,7 @@
   {
     "eventid": 3,
     "itemid": 3,
+    "eventType": "restock",
     "batchNumber": 1005,
     "quantityDelta": 50,
     "expirationDate": "2026-10-20",
@@ -29,6 +32,7 @@
   {
     "eventid": 4,
     "itemid": 4,
+    "eventType": "restock",
     "batchNumber": 1006,
     "quantityDelta": 200,
     "expirationDate": "2026-09-15",
@@ -38,6 +42,7 @@
   {
     "eventid": 5,
     "itemid": 5,
+    "eventType": "restock",
     "batchNumber": 1008,
     "quantityDelta": 20,
     "expirationDate": "2026-03-15",
@@ -47,6 +52,7 @@
   {
     "eventid": 6,
     "itemid": 5,
+    "eventType": "restock",
     "batchNumber": 1009,
     "quantityDelta": 250,
     "expirationDate": "2026-10-30",
@@ -56,6 +62,7 @@
   {
     "eventid": 7,
     "itemid": 6,
+    "eventType": "restock",
     "batchNumber": 1010,
     "quantityDelta": 600,
     "expirationDate": "2026-08-20",
@@ -65,6 +72,7 @@
   {
     "eventid": 8,
     "itemid": 7,
+    "eventType": "restock",
     "batchNumber": 1012,
     "quantityDelta": 500,
     "expirationDate": "2026-07-15",
@@ -74,6 +82,7 @@
   {
     "eventid": 9,
     "itemid": 8,
+    "eventType": "restock",
     "batchNumber": 1013,
     "quantityDelta": 15,
     "expirationDate": "2026-03-10",
@@ -83,6 +92,7 @@
   {
     "eventid": 10,
     "itemid": 8,
+    "eventType": "restock",
     "batchNumber": 1014,
     "quantityDelta": 200,
     "expirationDate": "2026-12-20",
@@ -92,6 +102,7 @@
   {
     "eventid": 11,
     "itemid": 9,
+    "eventType": "restock",
     "batchNumber": 1015,
     "quantityDelta": 300,
     "expirationDate": "2026-04-01",
@@ -101,6 +112,7 @@
   {
     "eventid": 12,
     "itemid": 9,
+    "eventType": "restock",
     "batchNumber": 1016,
     "quantityDelta": 1200,
     "expirationDate": "2027-01-15",
@@ -110,6 +122,7 @@
   {
     "eventid": 13,
     "itemid": 10,
+    "eventType": "restock",
     "batchNumber": 1017,
     "quantityDelta": 1000,
     "expirationDate": "2026-11-20",
@@ -119,6 +132,7 @@
   {
     "eventid": 14,
     "itemid": 11,
+    "eventType": "restock",
     "batchNumber": 1019,
     "quantityDelta": 600,
     "expirationDate": "2026-09-10",
@@ -128,6 +142,7 @@
   {
     "eventid": 15,
     "itemid": 12,
+    "eventType": "restock",
     "batchNumber": 1020,
     "quantityDelta": 800,
     "expirationDate": "2026-06-30",
@@ -137,6 +152,7 @@
   {
     "eventid": 16,
     "itemid": 13,
+    "eventType": "restock",
     "batchNumber": 1021,
     "quantityDelta": 30,
     "expirationDate": "2026-04-03",
@@ -146,6 +162,7 @@
   {
     "eventid": 17,
     "itemid": 13,
+    "eventType": "restock",
     "batchNumber": 1022,
     "quantityDelta": 60,
     "expirationDate": "2026-10-15",
@@ -155,6 +172,7 @@
   {
     "eventid": 18,
     "itemid": 14,
+    "eventType": "restock",
     "batchNumber": 1023,
     "quantityDelta": 300,
     "expirationDate": "2026-08-12",
@@ -164,6 +182,7 @@
   {
     "eventid": 19,
     "itemid": 15,
+    "eventType": "restock",
     "batchNumber": 1024,
     "quantityDelta": 600,
     "expirationDate": "2026-11-30",
@@ -173,6 +192,7 @@
   {
     "eventid": 20,
     "itemid": 16,
+    "eventType": "restock",
     "batchNumber": 1025,
     "quantityDelta": 40,
     "expirationDate": "2026-03-25",
@@ -182,6 +202,7 @@
   {
     "eventid": 21,
     "itemid": 16,
+    "eventType": "restock",
     "batchNumber": 1026,
     "quantityDelta": 80,
     "expirationDate": "2026-09-01",
@@ -191,6 +212,7 @@
   {
     "eventid": 22,
     "itemid": 6,
+    "eventType": "restock",
     "batchNumber": 1011,
     "quantityDelta": 400,
     "expirationDate": "2026-12-05",
@@ -200,6 +222,7 @@
   {
     "eventid": 23,
     "itemid": 4,
+    "eventType": "restock",
     "batchNumber": 1007,
     "quantityDelta": 150,
     "expirationDate": "2027-01-10",
@@ -209,6 +232,7 @@
   {
     "eventid": 24,
     "itemid": 1,
+    "eventType": "restock",
     "batchNumber": 1002,
     "quantityDelta": 250,
     "expirationDate": "2026-11-15",
@@ -218,6 +242,7 @@
   {
     "eventid": 25,
     "itemid": 10,
+    "eventType": "restock",
     "batchNumber": 1018,
     "quantityDelta": 800,
     "expirationDate": "2027-02-28",
@@ -227,6 +252,7 @@
   {
     "eventid": 26,
     "itemid": 2,
+    "eventType": "restock",
     "batchNumber": 1004,
     "quantityDelta": 80,
     "expirationDate": "2027-03-15",
@@ -236,6 +262,7 @@
   {
     "eventid": 27,
     "itemid": 1,
+    "eventType": "usage",
     "batchNumber": 1001,
     "quantityDelta": -11,
     "expirationDate": "2026-03-28",
@@ -245,6 +272,7 @@
   {
     "eventid": 28,
     "itemid": 2,
+    "eventType": "usage",
     "batchNumber": 1003,
     "quantityDelta": -4,
     "expirationDate": "2026-12-01",
@@ -254,6 +282,7 @@
   {
     "eventid": 29,
     "itemid": 3,
+    "eventType": "usage",
     "batchNumber": 1005,
     "quantityDelta": -2,
     "expirationDate": "2026-10-20",
@@ -263,6 +292,7 @@
   {
     "eventid": 30,
     "itemid": 4,
+    "eventType": "usage",
     "batchNumber": 1006,
     "quantityDelta": -8,
     "expirationDate": "2026-09-15",
@@ -272,6 +302,7 @@
   {
     "eventid": 31,
     "itemid": 5,
+    "eventType": "usage",
     "batchNumber": 1009,
     "quantityDelta": -14,
     "expirationDate": "2026-10-30",
@@ -281,6 +312,7 @@
   {
     "eventid": 32,
     "itemid": 6,
+    "eventType": "usage",
     "batchNumber": 1010,
     "quantityDelta": -22,
     "expirationDate": "2026-08-20",
@@ -290,6 +322,7 @@
   {
     "eventid": 33,
     "itemid": 7,
+    "eventType": "usage",
     "batchNumber": 1012,
     "quantityDelta": -18,
     "expirationDate": "2026-07-15",
@@ -299,6 +332,7 @@
   {
     "eventid": 34,
     "itemid": 8,
+    "eventType": "usage",
     "batchNumber": 1014,
     "quantityDelta": -8,
     "expirationDate": "2026-12-20",
@@ -308,6 +342,7 @@
   {
     "eventid": 35,
     "itemid": 9,
+    "eventType": "usage",
     "batchNumber": 1015,
     "quantityDelta": -50,
     "expirationDate": "2026-04-01",
@@ -317,6 +352,7 @@
   {
     "eventid": 36,
     "itemid": 10,
+    "eventType": "usage",
     "batchNumber": 1017,
     "quantityDelta": -40,
     "expirationDate": "2026-11-20",
@@ -326,6 +362,7 @@
   {
     "eventid": 37,
     "itemid": 11,
+    "eventType": "usage",
     "batchNumber": 1019,
     "quantityDelta": -20,
     "expirationDate": "2026-09-10",
@@ -335,6 +372,7 @@
   {
     "eventid": 38,
     "itemid": 12,
+    "eventType": "usage",
     "batchNumber": 1020,
     "quantityDelta": -25,
     "expirationDate": "2026-06-30",
@@ -344,6 +382,7 @@
   {
     "eventid": 39,
     "itemid": 13,
+    "eventType": "usage",
     "batchNumber": 1021,
     "quantityDelta": -4,
     "expirationDate": "2026-04-03",
@@ -353,6 +392,7 @@
   {
     "eventid": 40,
     "itemid": 14,
+    "eventType": "usage",
     "batchNumber": 1023,
     "quantityDelta": -12,
     "expirationDate": "2026-08-12",
@@ -362,6 +402,7 @@
   {
     "eventid": 41,
     "itemid": 15,
+    "eventType": "usage",
     "batchNumber": 1024,
     "quantityDelta": -16,
     "expirationDate": "2026-11-30",
@@ -371,6 +412,7 @@
   {
     "eventid": 42,
     "itemid": 16,
+    "eventType": "usage",
     "batchNumber": 1025,
     "quantityDelta": -5,
     "expirationDate": "2026-03-25",
@@ -380,6 +422,7 @@
   {
     "eventid": 43,
     "itemid": 1,
+    "eventType": "usage",
     "batchNumber": 1001,
     "quantityDelta": -10,
     "expirationDate": "2026-03-28",
@@ -389,6 +432,7 @@
   {
     "eventid": 44,
     "itemid": 2,
+    "eventType": "usage",
     "batchNumber": 1003,
     "quantityDelta": -3,
     "expirationDate": "2026-12-01",
@@ -398,6 +442,7 @@
   {
     "eventid": 45,
     "itemid": 3,
+    "eventType": "usage",
     "batchNumber": 1005,
     "quantityDelta": -3,
     "expirationDate": "2026-10-20",
@@ -407,6 +452,7 @@
   {
     "eventid": 46,
     "itemid": 4,
+    "eventType": "usage",
     "batchNumber": 1006,
     "quantityDelta": -7,
     "expirationDate": "2026-09-15",
@@ -416,6 +462,7 @@
   {
     "eventid": 47,
     "itemid": 5,
+    "eventType": "usage",
     "batchNumber": 1009,
     "quantityDelta": -16,
     "expirationDate": "2026-10-30",
@@ -425,6 +472,7 @@
   {
     "eventid": 48,
     "itemid": 6,
+    "eventType": "usage",
     "batchNumber": 1010,
     "quantityDelta": -25,
     "expirationDate": "2026-08-20",
@@ -434,6 +482,7 @@
   {
     "eventid": 49,
     "itemid": 7,
+    "eventType": "usage",
     "batchNumber": 1012,
     "quantityDelta": -20,
     "expirationDate": "2026-07-15",
@@ -443,6 +492,7 @@
   {
     "eventid": 50,
     "itemid": 8,
+    "eventType": "usage",
     "batchNumber": 1014,
     "quantityDelta": -9,
     "expirationDate": "2026-12-20",
@@ -452,6 +502,7 @@
   {
     "eventid": 51,
     "itemid": 9,
+    "eventType": "usage",
     "batchNumber": 1015,
     "quantityDelta": -48,
     "expirationDate": "2026-04-01",
@@ -461,6 +512,7 @@
   {
     "eventid": 52,
     "itemid": 10,
+    "eventType": "usage",
     "batchNumber": 1017,
     "quantityDelta": -38,
     "expirationDate": "2026-11-20",
@@ -470,6 +522,7 @@
   {
     "eventid": 53,
     "itemid": 11,
+    "eventType": "usage",
     "batchNumber": 1019,
     "quantityDelta": -18,
     "expirationDate": "2026-09-10",
@@ -479,6 +532,7 @@
   {
     "eventid": 54,
     "itemid": 12,
+    "eventType": "usage",
     "batchNumber": 1020,
     "quantityDelta": -23,
     "expirationDate": "2026-06-30",
@@ -488,6 +542,7 @@
   {
     "eventid": 55,
     "itemid": 13,
+    "eventType": "usage",
     "batchNumber": 1021,
     "quantityDelta": -3,
     "expirationDate": "2026-04-03",
@@ -497,6 +552,7 @@
   {
     "eventid": 56,
     "itemid": 14,
+    "eventType": "usage",
     "batchNumber": 1023,
     "quantityDelta": -13,
     "expirationDate": "2026-08-12",
@@ -506,6 +562,7 @@
   {
     "eventid": 57,
     "itemid": 15,
+    "eventType": "usage",
     "batchNumber": 1024,
     "quantityDelta": -15,
     "expirationDate": "2026-11-30",
@@ -515,6 +572,7 @@
   {
     "eventid": 58,
     "itemid": 16,
+    "eventType": "usage",
     "batchNumber": 1025,
     "quantityDelta": -4,
     "expirationDate": "2026-03-25",
@@ -524,6 +582,7 @@
   {
     "eventid": 59,
     "itemid": 1,
+    "eventType": "usage",
     "batchNumber": 1001,
     "quantityDelta": -12,
     "expirationDate": "2026-03-28",
@@ -533,6 +592,7 @@
   {
     "eventid": 60,
     "itemid": 2,
+    "eventType": "usage",
     "batchNumber": 1003,
     "quantityDelta": -4,
     "expirationDate": "2026-12-01",
@@ -542,6 +602,7 @@
   {
     "eventid": 61,
     "itemid": 3,
+    "eventType": "usage",
     "batchNumber": 1005,
     "quantityDelta": -2,
     "expirationDate": "2026-10-20",
@@ -551,6 +612,7 @@
   {
     "eventid": 62,
     "itemid": 4,
+    "eventType": "usage",
     "batchNumber": 1006,
     "quantityDelta": -9,
     "expirationDate": "2026-09-15",
@@ -560,6 +622,7 @@
   {
     "eventid": 63,
     "itemid": 5,
+    "eventType": "usage",
     "batchNumber": 1009,
     "quantityDelta": -15,
     "expirationDate": "2026-10-30",
@@ -569,6 +632,7 @@
   {
     "eventid": 64,
     "itemid": 6,
+    "eventType": "usage",
     "batchNumber": 1010,
     "quantityDelta": -23,
     "expirationDate": "2026-08-20",
@@ -578,6 +642,7 @@
   {
     "eventid": 65,
     "itemid": 7,
+    "eventType": "usage",
     "batchNumber": 1012,
     "quantityDelta": -17,
     "expirationDate": "2026-07-15",
@@ -587,6 +652,7 @@
   {
     "eventid": 66,
     "itemid": 8,
+    "eventType": "usage",
     "batchNumber": 1014,
     "quantityDelta": -7,
     "expirationDate": "2026-12-20",
@@ -596,6 +662,7 @@
   {
     "eventid": 67,
     "itemid": 9,
+    "eventType": "usage",
     "batchNumber": 1015,
     "quantityDelta": -52,
     "expirationDate": "2026-04-01",
@@ -605,6 +672,7 @@
   {
     "eventid": 68,
     "itemid": 10,
+    "eventType": "usage",
     "batchNumber": 1017,
     "quantityDelta": -42,
     "expirationDate": "2026-11-20",
@@ -614,6 +682,7 @@
   {
     "eventid": 69,
     "itemid": 11,
+    "eventType": "usage",
     "batchNumber": 1019,
     "quantityDelta": -22,
     "expirationDate": "2026-09-10",
@@ -623,6 +692,7 @@
   {
     "eventid": 70,
     "itemid": 12,
+    "eventType": "usage",
     "batchNumber": 1020,
     "quantityDelta": -27,
     "expirationDate": "2026-06-30",
@@ -632,6 +702,7 @@
   {
     "eventid": 71,
     "itemid": 13,
+    "eventType": "usage",
     "batchNumber": 1021,
     "quantityDelta": -5,
     "expirationDate": "2026-04-03",
@@ -641,6 +712,7 @@
   {
     "eventid": 72,
     "itemid": 14,
+    "eventType": "usage",
     "batchNumber": 1023,
     "quantityDelta": -11,
     "expirationDate": "2026-08-12",
@@ -650,6 +722,7 @@
   {
     "eventid": 73,
     "itemid": 15,
+    "eventType": "usage",
     "batchNumber": 1024,
     "quantityDelta": -17,
     "expirationDate": "2026-11-30",
@@ -659,6 +732,7 @@
   {
     "eventid": 74,
     "itemid": 16,
+    "eventType": "usage",
     "batchNumber": 1025,
     "quantityDelta": -6,
     "expirationDate": "2026-03-25",
@@ -668,6 +742,7 @@
   {
     "eventid": 75,
     "itemid": 1,
+    "eventType": "usage",
     "batchNumber": 1001,
     "quantityDelta": -11,
     "expirationDate": "2026-03-28",
@@ -677,6 +752,7 @@
   {
     "eventid": 76,
     "itemid": 2,
+    "eventType": "usage",
     "batchNumber": 1003,
     "quantityDelta": -5,
     "expirationDate": "2026-12-01",
@@ -686,6 +762,7 @@
   {
     "eventid": 77,
     "itemid": 3,
+    "eventType": "usage",
     "batchNumber": 1005,
     "quantityDelta": -2,
     "expirationDate": "2026-10-20",
@@ -695,6 +772,7 @@
   {
     "eventid": 78,
     "itemid": 4,
+    "eventType": "usage",
     "batchNumber": 1006,
     "quantityDelta": -8,
     "expirationDate": "2026-09-15",
@@ -704,6 +782,7 @@
   {
     "eventid": 79,
     "itemid": 5,
+    "eventType": "usage",
     "batchNumber": 1009,
     "quantityDelta": -13,
     "expirationDate": "2026-10-30",
@@ -713,6 +792,7 @@
   {
     "eventid": 80,
     "itemid": 6,
+    "eventType": "usage",
     "batchNumber": 1010,
     "quantityDelta": -24,
     "expirationDate": "2026-08-20",
@@ -722,6 +802,7 @@
   {
     "eventid": 81,
     "itemid": 7,
+    "eventType": "usage",
     "batchNumber": 1012,
     "quantityDelta": -19,
     "expirationDate": "2026-07-15",
@@ -731,6 +812,7 @@
   {
     "eventid": 82,
     "itemid": 8,
+    "eventType": "usage",
     "batchNumber": 1014,
     "quantityDelta": -10,
     "expirationDate": "2026-12-20",
@@ -740,6 +822,7 @@
   {
     "eventid": 83,
     "itemid": 9,
+    "eventType": "usage",
     "batchNumber": 1015,
     "quantityDelta": -55,
     "expirationDate": "2026-04-01",
@@ -749,6 +832,7 @@
   {
     "eventid": 84,
     "itemid": 10,
+    "eventType": "usage",
     "batchNumber": 1017,
     "quantityDelta": -44,
     "expirationDate": "2026-11-20",
@@ -758,6 +842,7 @@
   {
     "eventid": 85,
     "itemid": 11,
+    "eventType": "usage",
     "batchNumber": 1019,
     "quantityDelta": -21,
     "expirationDate": "2026-09-10",
@@ -767,6 +852,7 @@
   {
     "eventid": 86,
     "itemid": 12,
+    "eventType": "usage",
     "batchNumber": 1020,
     "quantityDelta": -26,
     "expirationDate": "2026-06-30",
@@ -776,6 +862,7 @@
   {
     "eventid": 87,
     "itemid": 13,
+    "eventType": "usage",
     "batchNumber": 1021,
     "quantityDelta": -4,
     "expirationDate": "2026-04-03",
@@ -785,6 +872,7 @@
   {
     "eventid": 88,
     "itemid": 14,
+    "eventType": "usage",
     "batchNumber": 1023,
     "quantityDelta": -14,
     "expirationDate": "2026-08-12",
@@ -794,6 +882,7 @@
   {
     "eventid": 89,
     "itemid": 15,
+    "eventType": "usage",
     "batchNumber": 1024,
     "quantityDelta": -18,
     "expirationDate": "2026-11-30",
@@ -803,6 +892,7 @@
   {
     "eventid": 90,
     "itemid": 16,
+    "eventType": "usage",
     "batchNumber": 1025,
     "quantityDelta": -5,
     "expirationDate": "2026-03-25",
@@ -812,6 +902,7 @@
   {
     "eventid": 91,
     "itemid": 1,
+    "eventType": "usage",
     "batchNumber": 1001,
     "quantityDelta": -10,
     "expirationDate": "2026-03-28",
@@ -821,6 +912,7 @@
   {
     "eventid": 92,
     "itemid": 2,
+    "eventType": "usage",
     "batchNumber": 1003,
     "quantityDelta": -3,
     "expirationDate": "2026-12-01",
@@ -830,6 +922,7 @@
   {
     "eventid": 93,
     "itemid": 3,
+    "eventType": "usage",
     "batchNumber": 1005,
     "quantityDelta": -3,
     "expirationDate": "2026-10-20",
@@ -839,6 +932,7 @@
   {
     "eventid": 94,
     "itemid": 4,
+    "eventType": "usage",
     "batchNumber": 1006,
     "quantityDelta": -7,
     "expirationDate": "2026-09-15",
@@ -848,6 +942,7 @@
   {
     "eventid": 95,
     "itemid": 5,
+    "eventType": "usage",
     "batchNumber": 1009,
     "quantityDelta": -17,
     "expirationDate": "2026-10-30",
@@ -857,6 +952,7 @@
   {
     "eventid": 96,
     "itemid": 6,
+    "eventType": "usage",
     "batchNumber": 1010,
     "quantityDelta": -20,
     "expirationDate": "2026-08-20",
@@ -866,6 +962,7 @@
   {
     "eventid": 97,
     "itemid": 7,
+    "eventType": "usage",
     "batchNumber": 1012,
     "quantityDelta": -21,
     "expirationDate": "2026-07-15",
@@ -875,6 +972,7 @@
   {
     "eventid": 98,
     "itemid": 8,
+    "eventType": "usage",
     "batchNumber": 1014,
     "quantityDelta": -8,
     "expirationDate": "2026-12-20",
@@ -884,6 +982,7 @@
   {
     "eventid": 99,
     "itemid": 9,
+    "eventType": "usage",
     "batchNumber": 1015,
     "quantityDelta": -47,
     "expirationDate": "2026-04-01",
@@ -893,6 +992,7 @@
   {
     "eventid": 100,
     "itemid": 10,
+    "eventType": "usage",
     "batchNumber": 1017,
     "quantityDelta": -37,
     "expirationDate": "2026-11-20",
@@ -902,6 +1002,7 @@
   {
     "eventid": 101,
     "itemid": 11,
+    "eventType": "usage",
     "batchNumber": 1019,
     "quantityDelta": -19,
     "expirationDate": "2026-09-10",
@@ -911,6 +1012,7 @@
   {
     "eventid": 102,
     "itemid": 12,
+    "eventType": "usage",
     "batchNumber": 1020,
     "quantityDelta": -24,
     "expirationDate": "2026-06-30",
@@ -920,6 +1022,7 @@
   {
     "eventid": 103,
     "itemid": 13,
+    "eventType": "usage",
     "batchNumber": 1021,
     "quantityDelta": -3,
     "expirationDate": "2026-04-03",
@@ -929,6 +1032,7 @@
   {
     "eventid": 104,
     "itemid": 14,
+    "eventType": "usage",
     "batchNumber": 1023,
     "quantityDelta": -12,
     "expirationDate": "2026-08-12",
@@ -938,6 +1042,7 @@
   {
     "eventid": 105,
     "itemid": 15,
+    "eventType": "usage",
     "batchNumber": 1024,
     "quantityDelta": -14,
     "expirationDate": "2026-11-30",
@@ -947,6 +1052,7 @@
   {
     "eventid": 106,
     "itemid": 16,
+    "eventType": "usage",
     "batchNumber": 1025,
     "quantityDelta": -4,
     "expirationDate": "2026-03-25",
@@ -956,6 +1062,7 @@
   {
     "eventid": 107,
     "itemid": 1,
+    "eventType": "usage",
     "batchNumber": 1001,
     "quantityDelta": -12,
     "expirationDate": "2026-03-28",
@@ -965,6 +1072,7 @@
   {
     "eventid": 108,
     "itemid": 2,
+    "eventType": "usage",
     "batchNumber": 1003,
     "quantityDelta": -4,
     "expirationDate": "2026-12-01",
@@ -974,6 +1082,7 @@
   {
     "eventid": 109,
     "itemid": 3,
+    "eventType": "usage",
     "batchNumber": 1005,
     "quantityDelta": -2,
     "expirationDate": "2026-10-20",
@@ -983,6 +1092,7 @@
   {
     "eventid": 110,
     "itemid": 4,
+    "eventType": "usage",
     "batchNumber": 1006,
     "quantityDelta": -8,
     "expirationDate": "2026-09-15",
@@ -992,6 +1102,7 @@
   {
     "eventid": 111,
     "itemid": 5,
+    "eventType": "usage",
     "batchNumber": 1009,
     "quantityDelta": -14,
     "expirationDate": "2026-10-30",
@@ -1001,6 +1112,7 @@
   {
     "eventid": 112,
     "itemid": 6,
+    "eventType": "usage",
     "batchNumber": 1010,
     "quantityDelta": -23,
     "expirationDate": "2026-08-20",
@@ -1010,6 +1122,7 @@
   {
     "eventid": 113,
     "itemid": 7,
+    "eventType": "usage",
     "batchNumber": 1012,
     "quantityDelta": -18,
     "expirationDate": "2026-07-15",
@@ -1019,6 +1132,7 @@
   {
     "eventid": 114,
     "itemid": 8,
+    "eventType": "usage",
     "batchNumber": 1014,
     "quantityDelta": -9,
     "expirationDate": "2026-12-20",
@@ -1028,6 +1142,7 @@
   {
     "eventid": 115,
     "itemid": 9,
+    "eventType": "usage",
     "batchNumber": 1016,
     "quantityDelta": -51,
     "expirationDate": "2027-01-15",
@@ -1037,6 +1152,7 @@
   {
     "eventid": 116,
     "itemid": 10,
+    "eventType": "usage",
     "batchNumber": 1017,
     "quantityDelta": -41,
     "expirationDate": "2026-11-20",
@@ -1046,6 +1162,7 @@
   {
     "eventid": 117,
     "itemid": 11,
+    "eventType": "usage",
     "batchNumber": 1019,
     "quantityDelta": -20,
     "expirationDate": "2026-09-10",
@@ -1055,6 +1172,7 @@
   {
     "eventid": 118,
     "itemid": 12,
+    "eventType": "usage",
     "batchNumber": 1020,
     "quantityDelta": -25,
     "expirationDate": "2026-06-30",
@@ -1064,6 +1182,7 @@
   {
     "eventid": 119,
     "itemid": 13,
+    "eventType": "usage",
     "batchNumber": 1021,
     "quantityDelta": -4,
     "expirationDate": "2026-04-03",
@@ -1073,6 +1192,7 @@
   {
     "eventid": 120,
     "itemid": 14,
+    "eventType": "usage",
     "batchNumber": 1023,
     "quantityDelta": -11,
     "expirationDate": "2026-08-12",
@@ -1082,6 +1202,7 @@
   {
     "eventid": 121,
     "itemid": 15,
+    "eventType": "usage",
     "batchNumber": 1024,
     "quantityDelta": -16,
     "expirationDate": "2026-11-30",
@@ -1091,6 +1212,7 @@
   {
     "eventid": 122,
     "itemid": 16,
+    "eventType": "usage",
     "batchNumber": 1025,
     "quantityDelta": -5,
     "expirationDate": "2026-03-25",
@@ -1100,6 +1222,7 @@
   {
     "eventid": 123,
     "itemid": 1,
+    "eventType": "usage",
     "batchNumber": 1001,
     "quantityDelta": -11,
     "expirationDate": "2026-03-28",
@@ -1109,6 +1232,7 @@
   {
     "eventid": 124,
     "itemid": 2,
+    "eventType": "usage",
     "batchNumber": 1003,
     "quantityDelta": -3,
     "expirationDate": "2026-12-01",
@@ -1118,6 +1242,7 @@
   {
     "eventid": 125,
     "itemid": 3,
+    "eventType": "usage",
     "batchNumber": 1005,
     "quantityDelta": -2,
     "expirationDate": "2026-10-20",
@@ -1127,6 +1252,7 @@
   {
     "eventid": 126,
     "itemid": 4,
+    "eventType": "usage",
     "batchNumber": 1006,
     "quantityDelta": -9,
     "expirationDate": "2026-09-15",
@@ -1136,6 +1262,7 @@
   {
     "eventid": 127,
     "itemid": 5,
+    "eventType": "usage",
     "batchNumber": 1009,
     "quantityDelta": -15,
     "expirationDate": "2026-10-30",
@@ -1145,6 +1272,7 @@
   {
     "eventid": 128,
     "itemid": 6,
+    "eventType": "usage",
     "batchNumber": 1010,
     "quantityDelta": -25,
     "expirationDate": "2026-08-20",
@@ -1154,6 +1282,7 @@
   {
     "eventid": 129,
     "itemid": 7,
+    "eventType": "usage",
     "batchNumber": 1012,
     "quantityDelta": -20,
     "expirationDate": "2026-07-15",
@@ -1163,6 +1292,7 @@
   {
     "eventid": 130,
     "itemid": 8,
+    "eventType": "usage",
     "batchNumber": 1014,
     "quantityDelta": -7,
     "expirationDate": "2026-12-20",
@@ -1172,6 +1302,7 @@
   {
     "eventid": 131,
     "itemid": 9,
+    "eventType": "usage",
     "batchNumber": 1016,
     "quantityDelta": -53,
     "expirationDate": "2027-01-15",
@@ -1181,6 +1312,7 @@
   {
     "eventid": 132,
     "itemid": 10,
+    "eventType": "usage",
     "batchNumber": 1017,
     "quantityDelta": -43,
     "expirationDate": "2026-11-20",
@@ -1190,6 +1322,7 @@
   {
     "eventid": 133,
     "itemid": 11,
+    "eventType": "usage",
     "batchNumber": 1019,
     "quantityDelta": -22,
     "expirationDate": "2026-09-10",
@@ -1199,6 +1332,7 @@
   {
     "eventid": 134,
     "itemid": 12,
+    "eventType": "usage",
     "batchNumber": 1020,
     "quantityDelta": -27,
     "expirationDate": "2026-06-30",
@@ -1208,6 +1342,7 @@
   {
     "eventid": 135,
     "itemid": 13,
+    "eventType": "usage",
     "batchNumber": 1021,
     "quantityDelta": -5,
     "expirationDate": "2026-04-03",
@@ -1217,6 +1352,7 @@
   {
     "eventid": 136,
     "itemid": 14,
+    "eventType": "usage",
     "batchNumber": 1023,
     "quantityDelta": -13,
     "expirationDate": "2026-08-12",
@@ -1226,6 +1362,7 @@
   {
     "eventid": 137,
     "itemid": 15,
+    "eventType": "usage",
     "batchNumber": 1024,
     "quantityDelta": -17,
     "expirationDate": "2026-11-30",
@@ -1235,6 +1372,7 @@
   {
     "eventid": 138,
     "itemid": 16,
+    "eventType": "usage",
     "batchNumber": 1025,
     "quantityDelta": -6,
     "expirationDate": "2026-03-25",
@@ -1244,6 +1382,7 @@
   {
     "eventid": 139,
     "itemid": 1,
+    "eventType": "usage",
     "batchNumber": 1001,
     "quantityDelta": -9,
     "expirationDate": "2026-03-28",
@@ -1253,6 +1392,7 @@
   {
     "eventid": 140,
     "itemid": 2,
+    "eventType": "usage",
     "batchNumber": 1003,
     "quantityDelta": -4,
     "expirationDate": "2026-12-01",
@@ -1262,6 +1402,7 @@
   {
     "eventid": 141,
     "itemid": 3,
+    "eventType": "usage",
     "batchNumber": 1005,
     "quantityDelta": -3,
     "expirationDate": "2026-10-20",
@@ -1271,6 +1412,7 @@
   {
     "eventid": 142,
     "itemid": 4,
+    "eventType": "usage",
     "batchNumber": 1006,
     "quantityDelta": -7,
     "expirationDate": "2026-09-15",
@@ -1280,6 +1422,7 @@
   {
     "eventid": 143,
     "itemid": 5,
+    "eventType": "usage",
     "batchNumber": 1009,
     "quantityDelta": -16,
     "expirationDate": "2026-10-30",
@@ -1289,6 +1432,7 @@
   {
     "eventid": 144,
     "itemid": 6,
+    "eventType": "usage",
     "batchNumber": 1010,
     "quantityDelta": -22,
     "expirationDate": "2026-08-20",
@@ -1298,6 +1442,7 @@
   {
     "eventid": 145,
     "itemid": 7,
+    "eventType": "usage",
     "batchNumber": 1012,
     "quantityDelta": -17,
     "expirationDate": "2026-07-15",
@@ -1307,6 +1452,7 @@
   {
     "eventid": 146,
     "itemid": 8,
+    "eventType": "usage",
     "batchNumber": 1014,
     "quantityDelta": -10,
     "expirationDate": "2026-12-20",
@@ -1316,6 +1462,7 @@
   {
     "eventid": 147,
     "itemid": 9,
+    "eventType": "usage",
     "batchNumber": 1016,
     "quantityDelta": -49,
     "expirationDate": "2027-01-15",
@@ -1325,6 +1472,7 @@
   {
     "eventid": 148,
     "itemid": 10,
+    "eventType": "usage",
     "batchNumber": 1017,
     "quantityDelta": -39,
     "expirationDate": "2026-11-20",
@@ -1334,6 +1482,7 @@
   {
     "eventid": 149,
     "itemid": 11,
+    "eventType": "usage",
     "batchNumber": 1019,
     "quantityDelta": -18,
     "expirationDate": "2026-09-10",
@@ -1343,6 +1492,7 @@
   {
     "eventid": 150,
     "itemid": 12,
+    "eventType": "usage",
     "batchNumber": 1020,
     "quantityDelta": -23,
     "expirationDate": "2026-06-30",
@@ -1352,6 +1502,7 @@
   {
     "eventid": 151,
     "itemid": 13,
+    "eventType": "usage",
     "batchNumber": 1022,
     "quantityDelta": -4,
     "expirationDate": "2026-10-15",
@@ -1361,6 +1512,7 @@
   {
     "eventid": 152,
     "itemid": 14,
+    "eventType": "usage",
     "batchNumber": 1023,
     "quantityDelta": -12,
     "expirationDate": "2026-08-12",
@@ -1370,6 +1522,7 @@
   {
     "eventid": 153,
     "itemid": 15,
+    "eventType": "usage",
     "batchNumber": 1024,
     "quantityDelta": -15,
     "expirationDate": "2026-11-30",
@@ -1379,6 +1532,7 @@
   {
     "eventid": 154,
     "itemid": 16,
+    "eventType": "usage",
     "batchNumber": 1025,
     "quantityDelta": -4,
     "expirationDate": "2026-03-25",
@@ -1388,6 +1542,7 @@
   {
     "eventid": 155,
     "itemid": 1,
+    "eventType": "usage",
     "batchNumber": 1001,
     "quantityDelta": -10,
     "expirationDate": "2026-03-28",
@@ -1397,6 +1552,7 @@
   {
     "eventid": 156,
     "itemid": 2,
+    "eventType": "usage",
     "batchNumber": 1003,
     "quantityDelta": -5,
     "expirationDate": "2026-12-01",
@@ -1406,6 +1562,7 @@
   {
     "eventid": 157,
     "itemid": 3,
+    "eventType": "usage",
     "batchNumber": 1005,
     "quantityDelta": -2,
     "expirationDate": "2026-10-20",
@@ -1415,6 +1572,7 @@
   {
     "eventid": 158,
     "itemid": 4,
+    "eventType": "usage",
     "batchNumber": 1006,
     "quantityDelta": -8,
     "expirationDate": "2026-09-15",
@@ -1424,6 +1582,7 @@
   {
     "eventid": 159,
     "itemid": 5,
+    "eventType": "usage",
     "batchNumber": 1009,
     "quantityDelta": -14,
     "expirationDate": "2026-10-30",
@@ -1433,6 +1592,7 @@
   {
     "eventid": 160,
     "itemid": 6,
+    "eventType": "usage",
     "batchNumber": 1010,
     "quantityDelta": -24,
     "expirationDate": "2026-08-20",
@@ -1442,6 +1602,7 @@
   {
     "eventid": 161,
     "itemid": 7,
+    "eventType": "usage",
     "batchNumber": 1012,
     "quantityDelta": -19,
     "expirationDate": "2026-07-15",
@@ -1451,6 +1612,7 @@
   {
     "eventid": 162,
     "itemid": 8,
+    "eventType": "usage",
     "batchNumber": 1014,
     "quantityDelta": -8,
     "expirationDate": "2026-12-20",
@@ -1460,6 +1622,7 @@
   {
     "eventid": 163,
     "itemid": 9,
+    "eventType": "usage",
     "batchNumber": 1016,
     "quantityDelta": -50,
     "expirationDate": "2027-01-15",
@@ -1469,6 +1632,7 @@
   {
     "eventid": 164,
     "itemid": 10,
+    "eventType": "usage",
     "batchNumber": 1017,
     "quantityDelta": -40,
     "expirationDate": "2026-11-20",
@@ -1478,6 +1642,7 @@
   {
     "eventid": 165,
     "itemid": 11,
+    "eventType": "usage",
     "batchNumber": 1019,
     "quantityDelta": -21,
     "expirationDate": "2026-09-10",
@@ -1487,6 +1652,7 @@
   {
     "eventid": 166,
     "itemid": 12,
+    "eventType": "usage",
     "batchNumber": 1020,
     "quantityDelta": -26,
     "expirationDate": "2026-06-30",
@@ -1496,6 +1662,7 @@
   {
     "eventid": 167,
     "itemid": 13,
+    "eventType": "usage",
     "batchNumber": 1022,
     "quantityDelta": -3,
     "expirationDate": "2026-10-15",
@@ -1505,6 +1672,7 @@
   {
     "eventid": 168,
     "itemid": 14,
+    "eventType": "usage",
     "batchNumber": 1023,
     "quantityDelta": -14,
     "expirationDate": "2026-08-12",
@@ -1514,6 +1682,7 @@
   {
     "eventid": 169,
     "itemid": 15,
+    "eventType": "usage",
     "batchNumber": 1024,
     "quantityDelta": -18,
     "expirationDate": "2026-11-30",
@@ -1523,6 +1692,7 @@
   {
     "eventid": 170,
     "itemid": 16,
+    "eventType": "usage",
     "batchNumber": 1026,
     "quantityDelta": -5,
     "expirationDate": "2026-09-01",
@@ -1532,6 +1702,7 @@
   {
     "eventid": 171,
     "itemid": 1,
+    "eventType": "usage",
     "batchNumber": 1001,
     "quantityDelta": -11,
     "expirationDate": "2026-03-28",
@@ -1541,6 +1712,7 @@
   {
     "eventid": 172,
     "itemid": 2,
+    "eventType": "usage",
     "batchNumber": 1003,
     "quantityDelta": -3,
     "expirationDate": "2026-12-01",
@@ -1550,6 +1722,7 @@
   {
     "eventid": 173,
     "itemid": 3,
+    "eventType": "usage",
     "batchNumber": 1005,
     "quantityDelta": -2,
     "expirationDate": "2026-10-20",
@@ -1559,6 +1732,7 @@
   {
     "eventid": 174,
     "itemid": 4,
+    "eventType": "usage",
     "batchNumber": 1006,
     "quantityDelta": -9,
     "expirationDate": "2026-09-15",
@@ -1568,6 +1742,7 @@
   {
     "eventid": 175,
     "itemid": 5,
+    "eventType": "usage",
     "batchNumber": 1009,
     "quantityDelta": -13,
     "expirationDate": "2026-10-30",
@@ -1577,6 +1752,7 @@
   {
     "eventid": 176,
     "itemid": 6,
+    "eventType": "usage",
     "batchNumber": 1010,
     "quantityDelta": -21,
     "expirationDate": "2026-08-20",
@@ -1586,6 +1762,7 @@
   {
     "eventid": 177,
     "itemid": 7,
+    "eventType": "usage",
     "batchNumber": 1012,
     "quantityDelta": -18,
     "expirationDate": "2026-07-15",
@@ -1595,6 +1772,7 @@
   {
     "eventid": 178,
     "itemid": 8,
+    "eventType": "usage",
     "batchNumber": 1014,
     "quantityDelta": -7,
     "expirationDate": "2026-12-20",
@@ -1604,6 +1782,7 @@
   {
     "eventid": 179,
     "itemid": 9,
+    "eventType": "usage",
     "batchNumber": 1016,
     "quantityDelta": -52,
     "expirationDate": "2027-01-15",
@@ -1613,6 +1792,7 @@
   {
     "eventid": 180,
     "itemid": 10,
+    "eventType": "usage",
     "batchNumber": 1017,
     "quantityDelta": -42,
     "expirationDate": "2026-11-20",
@@ -1622,6 +1802,7 @@
   {
     "eventid": 181,
     "itemid": 11,
+    "eventType": "usage",
     "batchNumber": 1019,
     "quantityDelta": -20,
     "expirationDate": "2026-09-10",
@@ -1631,6 +1812,7 @@
   {
     "eventid": 182,
     "itemid": 12,
+    "eventType": "usage",
     "batchNumber": 1020,
     "quantityDelta": -25,
     "expirationDate": "2026-06-30",
@@ -1640,6 +1822,7 @@
   {
     "eventid": 183,
     "itemid": 13,
+    "eventType": "usage",
     "batchNumber": 1022,
     "quantityDelta": -5,
     "expirationDate": "2026-10-15",
@@ -1649,6 +1832,7 @@
   {
     "eventid": 184,
     "itemid": 14,
+    "eventType": "usage",
     "batchNumber": 1023,
     "quantityDelta": -11,
     "expirationDate": "2026-08-12",
@@ -1658,6 +1842,7 @@
   {
     "eventid": 185,
     "itemid": 15,
+    "eventType": "usage",
     "batchNumber": 1024,
     "quantityDelta": -16,
     "expirationDate": "2026-11-30",
@@ -1667,6 +1852,7 @@
   {
     "eventid": 186,
     "itemid": 16,
+    "eventType": "usage",
     "batchNumber": 1026,
     "quantityDelta": -6,
     "expirationDate": "2026-09-01",
@@ -1676,6 +1862,7 @@
   {
     "eventid": 187,
     "itemid": 1,
+    "eventType": "usage",
     "batchNumber": 1001,
     "quantityDelta": -10,
     "expirationDate": "2026-03-28",
@@ -1685,6 +1872,7 @@
   {
     "eventid": 188,
     "itemid": 2,
+    "eventType": "usage",
     "batchNumber": 1003,
     "quantityDelta": -4,
     "expirationDate": "2026-12-01",
@@ -1694,6 +1882,7 @@
   {
     "eventid": 189,
     "itemid": 3,
+    "eventType": "usage",
     "batchNumber": 1005,
     "quantityDelta": -3,
     "expirationDate": "2026-10-20",
@@ -1703,6 +1892,7 @@
   {
     "eventid": 190,
     "itemid": 4,
+    "eventType": "usage",
     "batchNumber": 1006,
     "quantityDelta": -7,
     "expirationDate": "2026-09-15",
@@ -1712,6 +1902,7 @@
   {
     "eventid": 191,
     "itemid": 5,
+    "eventType": "usage",
     "batchNumber": 1009,
     "quantityDelta": -15,
     "expirationDate": "2026-10-30",
@@ -1721,6 +1912,7 @@
   {
     "eventid": 192,
     "itemid": 6,
+    "eventType": "usage",
     "batchNumber": 1010,
     "quantityDelta": -23,
     "expirationDate": "2026-08-20",
@@ -1730,6 +1922,7 @@
   {
     "eventid": 193,
     "itemid": 7,
+    "eventType": "usage",
     "batchNumber": 1012,
     "quantityDelta": -20,
     "expirationDate": "2026-07-15",
@@ -1739,6 +1932,7 @@
   {
     "eventid": 194,
     "itemid": 8,
+    "eventType": "usage",
     "batchNumber": 1014,
     "quantityDelta": -9,
     "expirationDate": "2026-12-20",
@@ -1748,6 +1942,7 @@
   {
     "eventid": 195,
     "itemid": 9,
+    "eventType": "usage",
     "batchNumber": 1016,
     "quantityDelta": -48,
     "expirationDate": "2027-01-15",
@@ -1757,6 +1952,7 @@
   {
     "eventid": 196,
     "itemid": 10,
+    "eventType": "usage",
     "batchNumber": 1017,
     "quantityDelta": -38,
     "expirationDate": "2026-11-20",
@@ -1766,6 +1962,7 @@
   {
     "eventid": 197,
     "itemid": 11,
+    "eventType": "usage",
     "batchNumber": 1019,
     "quantityDelta": -19,
     "expirationDate": "2026-09-10",
@@ -1775,6 +1972,7 @@
   {
     "eventid": 198,
     "itemid": 12,
+    "eventType": "usage",
     "batchNumber": 1020,
     "quantityDelta": -24,
     "expirationDate": "2026-06-30",
@@ -1784,6 +1982,7 @@
   {
     "eventid": 199,
     "itemid": 13,
+    "eventType": "usage",
     "batchNumber": 1022,
     "quantityDelta": -4,
     "expirationDate": "2026-10-15",
@@ -1793,6 +1992,7 @@
   {
     "eventid": 200,
     "itemid": 14,
+    "eventType": "usage",
     "batchNumber": 1023,
     "quantityDelta": -13,
     "expirationDate": "2026-08-12",
@@ -1802,6 +2002,7 @@
   {
     "eventid": 201,
     "itemid": 15,
+    "eventType": "usage",
     "batchNumber": 1024,
     "quantityDelta": -14,
     "expirationDate": "2026-11-30",
@@ -1811,6 +2012,7 @@
   {
     "eventid": 202,
     "itemid": 16,
+    "eventType": "usage",
     "batchNumber": 1026,
     "quantityDelta": -4,
     "expirationDate": "2026-09-01",
@@ -1820,6 +2022,7 @@
   {
     "eventid": 203,
     "itemid": 1,
+    "eventType": "usage",
     "batchNumber": 1001,
     "quantityDelta": -12,
     "expirationDate": "2026-03-28",
@@ -1829,6 +2032,7 @@
   {
     "eventid": 204,
     "itemid": 2,
+    "eventType": "usage",
     "batchNumber": 1003,
     "quantityDelta": -3,
     "expirationDate": "2026-12-01",
@@ -1838,6 +2042,7 @@
   {
     "eventid": 205,
     "itemid": 3,
+    "eventType": "usage",
     "batchNumber": 1005,
     "quantityDelta": -2,
     "expirationDate": "2026-10-20",
@@ -1847,6 +2052,7 @@
   {
     "eventid": 206,
     "itemid": 4,
+    "eventType": "usage",
     "batchNumber": 1006,
     "quantityDelta": -8,
     "expirationDate": "2026-09-15",
@@ -1856,6 +2062,7 @@
   {
     "eventid": 207,
     "itemid": 5,
+    "eventType": "usage",
     "batchNumber": 1009,
     "quantityDelta": -16,
     "expirationDate": "2026-10-30",
@@ -1865,6 +2072,7 @@
   {
     "eventid": 208,
     "itemid": 6,
+    "eventType": "usage",
     "batchNumber": 1010,
     "quantityDelta": -24,
     "expirationDate": "2026-08-20",
@@ -1874,6 +2082,7 @@
   {
     "eventid": 209,
     "itemid": 7,
+    "eventType": "usage",
     "batchNumber": 1012,
     "quantityDelta": -19,
     "expirationDate": "2026-07-15",
@@ -1883,6 +2092,7 @@
   {
     "eventid": 210,
     "itemid": 8,
+    "eventType": "usage",
     "batchNumber": 1014,
     "quantityDelta": -8,
     "expirationDate": "2026-12-20",
@@ -1892,6 +2102,7 @@
   {
     "eventid": 211,
     "itemid": 9,
+    "eventType": "usage",
     "batchNumber": 1016,
     "quantityDelta": -54,
     "expirationDate": "2027-01-15",
@@ -1901,6 +2112,7 @@
   {
     "eventid": 212,
     "itemid": 10,
+    "eventType": "usage",
     "batchNumber": 1017,
     "quantityDelta": -43,
     "expirationDate": "2026-11-20",
@@ -1910,6 +2122,7 @@
   {
     "eventid": 213,
     "itemid": 11,
+    "eventType": "usage",
     "batchNumber": 1019,
     "quantityDelta": -21,
     "expirationDate": "2026-09-10",
@@ -1919,6 +2132,7 @@
   {
     "eventid": 214,
     "itemid": 12,
+    "eventType": "usage",
     "batchNumber": 1020,
     "quantityDelta": -26,
     "expirationDate": "2026-06-30",
@@ -1928,6 +2142,7 @@
   {
     "eventid": 215,
     "itemid": 13,
+    "eventType": "usage",
     "batchNumber": 1022,
     "quantityDelta": -3,
     "expirationDate": "2026-10-15",
@@ -1937,6 +2152,7 @@
   {
     "eventid": 216,
     "itemid": 14,
+    "eventType": "usage",
     "batchNumber": 1023,
     "quantityDelta": -12,
     "expirationDate": "2026-08-12",
@@ -1946,6 +2162,7 @@
   {
     "eventid": 217,
     "itemid": 15,
+    "eventType": "usage",
     "batchNumber": 1024,
     "quantityDelta": -17,
     "expirationDate": "2026-11-30",
@@ -1955,6 +2172,7 @@
   {
     "eventid": 218,
     "itemid": 16,
+    "eventType": "usage",
     "batchNumber": 1026,
     "quantityDelta": -5,
     "expirationDate": "2026-09-01",
@@ -1964,6 +2182,7 @@
   {
     "eventid": 219,
     "itemid": 1,
+    "eventType": "usage",
     "batchNumber": 1001,
     "quantityDelta": -11,
     "expirationDate": "2026-03-28",
@@ -1973,6 +2192,7 @@
   {
     "eventid": 220,
     "itemid": 2,
+    "eventType": "usage",
     "batchNumber": 1003,
     "quantityDelta": -4,
     "expirationDate": "2026-12-01",
@@ -1982,6 +2202,7 @@
   {
     "eventid": 221,
     "itemid": 3,
+    "eventType": "usage",
     "batchNumber": 1005,
     "quantityDelta": -2,
     "expirationDate": "2026-10-20",
@@ -1991,6 +2212,7 @@
   {
     "eventid": 222,
     "itemid": 4,
+    "eventType": "usage",
     "batchNumber": 1006,
     "quantityDelta": -9,
     "expirationDate": "2026-09-15",
@@ -2000,6 +2222,7 @@
   {
     "eventid": 223,
     "itemid": 5,
+    "eventType": "usage",
     "batchNumber": 1009,
     "quantityDelta": -14,
     "expirationDate": "2026-10-30",
@@ -2009,6 +2232,7 @@
   {
     "eventid": 224,
     "itemid": 6,
+    "eventType": "usage",
     "batchNumber": 1010,
     "quantityDelta": -22,
     "expirationDate": "2026-08-20",
@@ -2018,6 +2242,7 @@
   {
     "eventid": 225,
     "itemid": 7,
+    "eventType": "usage",
     "batchNumber": 1012,
     "quantityDelta": -17,
     "expirationDate": "2026-07-15",
@@ -2027,6 +2252,7 @@
   {
     "eventid": 226,
     "itemid": 8,
+    "eventType": "usage",
     "batchNumber": 1014,
     "quantityDelta": -10,
     "expirationDate": "2026-12-20",
@@ -2036,6 +2262,7 @@
   {
     "eventid": 227,
     "itemid": 9,
+    "eventType": "usage",
     "batchNumber": 1016,
     "quantityDelta": -51,
     "expirationDate": "2027-01-15",
@@ -2045,6 +2272,7 @@
   {
     "eventid": 228,
     "itemid": 10,
+    "eventType": "usage",
     "batchNumber": 1017,
     "quantityDelta": -41,
     "expirationDate": "2026-11-20",
@@ -2054,6 +2282,7 @@
   {
     "eventid": 229,
     "itemid": 11,
+    "eventType": "usage",
     "batchNumber": 1019,
     "quantityDelta": -22,
     "expirationDate": "2026-09-10",
@@ -2063,6 +2292,7 @@
   {
     "eventid": 230,
     "itemid": 12,
+    "eventType": "usage",
     "batchNumber": 1020,
     "quantityDelta": -27,
     "expirationDate": "2026-06-30",
@@ -2072,6 +2302,7 @@
   {
     "eventid": 231,
     "itemid": 13,
+    "eventType": "usage",
     "batchNumber": 1022,
     "quantityDelta": -4,
     "expirationDate": "2026-10-15",
@@ -2081,6 +2312,7 @@
   {
     "eventid": 232,
     "itemid": 14,
+    "eventType": "usage",
     "batchNumber": 1023,
     "quantityDelta": -11,
     "expirationDate": "2026-08-12",
@@ -2090,6 +2322,7 @@
   {
     "eventid": 233,
     "itemid": 15,
+    "eventType": "usage",
     "batchNumber": 1024,
     "quantityDelta": -16,
     "expirationDate": "2026-11-30",
@@ -2099,6 +2332,7 @@
   {
     "eventid": 234,
     "itemid": 16,
+    "eventType": "usage",
     "batchNumber": 1026,
     "quantityDelta": -6,
     "expirationDate": "2026-09-01",
@@ -2108,6 +2342,7 @@
   {
     "eventid": 235,
     "itemid": 1,
+    "eventType": "usage",
     "batchNumber": 1001,
     "quantityDelta": -10,
     "expirationDate": "2026-03-28",
@@ -2117,6 +2352,7 @@
   {
     "eventid": 236,
     "itemid": 2,
+    "eventType": "usage",
     "batchNumber": 1003,
     "quantityDelta": -5,
     "expirationDate": "2026-12-01",
@@ -2126,6 +2362,7 @@
   {
     "eventid": 237,
     "itemid": 3,
+    "eventType": "usage",
     "batchNumber": 1005,
     "quantityDelta": -3,
     "expirationDate": "2026-10-20",
@@ -2135,6 +2372,7 @@
   {
     "eventid": 238,
     "itemid": 4,
+    "eventType": "usage",
     "batchNumber": 1006,
     "quantityDelta": -8,
     "expirationDate": "2026-09-15",
@@ -2144,6 +2382,7 @@
   {
     "eventid": 239,
     "itemid": 5,
+    "eventType": "usage",
     "batchNumber": 1009,
     "quantityDelta": -13,
     "expirationDate": "2026-10-30",
@@ -2153,6 +2392,7 @@
   {
     "eventid": 240,
     "itemid": 6,
+    "eventType": "usage",
     "batchNumber": 1010,
     "quantityDelta": -25,
     "expirationDate": "2026-08-20",
@@ -2162,6 +2402,7 @@
   {
     "eventid": 241,
     "itemid": 7,
+    "eventType": "usage",
     "batchNumber": 1012,
     "quantityDelta": -18,
     "expirationDate": "2026-07-15",
@@ -2171,6 +2412,7 @@
   {
     "eventid": 242,
     "itemid": 8,
+    "eventType": "usage",
     "batchNumber": 1014,
     "quantityDelta": -8,
     "expirationDate": "2026-12-20",
@@ -2180,6 +2422,7 @@
   {
     "eventid": 243,
     "itemid": 9,
+    "eventType": "usage",
     "batchNumber": 1016,
     "quantityDelta": -49,
     "expirationDate": "2027-01-15",
@@ -2189,6 +2432,7 @@
   {
     "eventid": 244,
     "itemid": 10,
+    "eventType": "usage",
     "batchNumber": 1017,
     "quantityDelta": -39,
     "expirationDate": "2026-11-20",
@@ -2198,6 +2442,7 @@
   {
     "eventid": 245,
     "itemid": 11,
+    "eventType": "usage",
     "batchNumber": 1019,
     "quantityDelta": -20,
     "expirationDate": "2026-09-10",
@@ -2207,6 +2452,7 @@
   {
     "eventid": 246,
     "itemid": 12,
+    "eventType": "usage",
     "batchNumber": 1020,
     "quantityDelta": -25,
     "expirationDate": "2026-06-30",
@@ -2216,6 +2462,7 @@
   {
     "eventid": 247,
     "itemid": 13,
+    "eventType": "usage",
     "batchNumber": 1022,
     "quantityDelta": -5,
     "expirationDate": "2026-10-15",
@@ -2225,6 +2472,7 @@
   {
     "eventid": 248,
     "itemid": 14,
+    "eventType": "usage",
     "batchNumber": 1023,
     "quantityDelta": -14,
     "expirationDate": "2026-08-12",
@@ -2234,6 +2482,7 @@
   {
     "eventid": 249,
     "itemid": 15,
+    "eventType": "usage",
     "batchNumber": 1024,
     "quantityDelta": -15,
     "expirationDate": "2026-11-30",
@@ -2243,6 +2492,7 @@
   {
     "eventid": 250,
     "itemid": 16,
+    "eventType": "usage",
     "batchNumber": 1026,
     "quantityDelta": -5,
     "expirationDate": "2026-09-01",

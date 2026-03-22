@@ -1,0 +1,26 @@
+[
+  {
+    "catagory_name": "Allergy and Anaphylaxis Treatments",
+    "readiness_score": 48.1,
+    "readiness_badge": "Strained",
+    "justification": "Readiness is Strained at 48.1. The category is experiencing pressure due to rising demand from patients, with a 9% increase in patient visits attributed to this therapeutic category over the last 30 days, driven by current external disease signal. Meanwhile, supply is stable, with 39 units dispensed daily over the last 14 days. Notably, medications like methylprednisolone and epinephrine are facing particularly high demand pressure, with scores of 48.55 and 48.21, respectively. I recommend restocking medications in high demand, such as methylprednisolone and epinephrine, immediately to mitigate the strain on supply and ensure timely availability to patients."
+  },
+  {
+    "catagory_name": "Broad Spectrum Antibiotics",
+    "readiness_score": 56.53,
+    "readiness_badge": "Strained",
+    "justification": "Readiness is Strained at 56.53. The average demand score across all medications in the Broad Spectrum Antibiotics category is 45.11, indicating moderate pressure. However, ceftriaxone, a high-demand medication within its category, is experiencing significantly higher pressure with a demand score of 63.21. This disparity, combined with a falling demand trend over the last 30 days, suggests that the demand for broad spectrum antibiotics is currently exceeding supply. The supply trend has been stable over the last 14 days, but this trend is not currently aligning with the falling patient demand. \n\nAction recommendation: Restock supplies of high-demand medications, such as ceftriaxone, to better align with fluctuating patient needs."
+  },
+  {
+    "catagory_name": "Respiratory Antivirals",
+    "readiness_score": 66.96,
+    "readiness_badge": "Adequate",
+    "justification": "Readiness is Strained at 66.96. The category is trending downwards in recent weeks, with a decline in patient visits attributed to Respiratory Antivirals over the last 30 days. Although the supply trend remains stable, the falling demand trend raises concerns about potential stockouts. The most stressed medication, peramivir, is experiencing elevated demand with a score of 46.79, underscoring the need for timely restocking. To mitigate the risk of stockouts, we recommend immediately adjusting the inventory replenishment schedule to reflect the current demand pressures."
+  },
+  {
+    "catagory_name": "Analgesics and Antipyretics",
+    "readiness_score": 66.97,
+    "readiness_badge": "Adequate",
+    "justification": "Readiness is Adequate at 66.97, indicating manageable pressure within the Analgesics and Antipyretics category. The demand is generally stable, with daily supply of 133 units over the last 14 days holding steady. However, patient demand is trending downwards, with 26 visits attributed to this category over the last 30 days, showing a potential shortage brewing.\n\nIn terms of demand pressure, acetaminophen, ibuprofen, naproxen, and aspirin demonstrate varying degrees of urgency, with acetaminophen being the most stressed due to its high demand score of 39.48. Given the unstable trend of decreasing patient demand, closer monitoring and restocking of these highly demanded medications to prevent stockouts is recommended to maintain adequate supply chain resilience within this category."
+  }
+]

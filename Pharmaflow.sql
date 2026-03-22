@@ -1,37 +1,38 @@
 CREATE TABLE `Items`(
-    `itemid` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `itemName` VARCHAR(255) NOT NULL,
-    `unitType` VARCHAR(255) NOT NULL,
-    `catagoryID` BIGINT NOT NULL,
-    `availabilityStatus` ENUM('high', 'moderate', 'constrained', 'shortage_risk', 'unknown') NOT NULL,
-    `availabilityScore` DECIMAL(8, 2) NOT NULL,
-    `lastUpdate` DATETIME NOT NULL
+    `itemid`             BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `itemName`           VARCHAR(255) NOT NULL,
+    `unitType`           VARCHAR(255) NOT NULL,
+    `catagoryID`         BIGINT NOT NULL,
+    `availabilityStatus` ENUM('high_availability', 'moderate_availability', 'constrained', 'shortage_risk', 'unknown') NOT NULL,
+    `lastUpdate`         DATETIME NOT NULL
 );
 CREATE TABLE `Location`(
-    `locationid` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `locationid`   BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `locationType` ENUM('hospital', 'pharmacy') NOT NULL,
     `locationName` VARCHAR(255) NOT NULL
 );
 CREATE TABLE `Catagories`(
-    `catagoryid` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `catagoryid`   BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `catagoryName` VARCHAR(255) NOT NULL,
-    `endpoint` VARCHAR(255) NOT NULL,
-    `parameters` VARCHAR(255) NOT NULL,
+    `trendStrength` DECIMAL(10, 4) NOT NULL,
+    `endpoint`     VARCHAR(255) NOT NULL,
+    `parameters`   JSON NOT NULL
 );
 CREATE TABLE `PatientVisits`(
-    `visitid` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `visitid`    BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `Catagoryid` BIGINT NOT NULL,
     `visitNumber` DECIMAL(10, 4) NOT NULL,
-    `visitDay` DATETIME NOT NULL
+    `visitDay`   DATETIME NOT NULL
 );
 CREATE TABLE `InventoryEvents`(
-    `eventid` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `itemid` BIGINT NOT NULL,
-    `batchNumber` BIGINT NOT NULL,
-    `quantityDelta` INT NOT NULL,
+    `eventid`        BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `itemid`         BIGINT NOT NULL,
+    `eventType`      ENUM('restock', 'usage') NOT NULL,
+    `batchNumber`    BIGINT NOT NULL,
+    `quantityDelta`  INT NOT NULL,
     `expirationDate` DATE NOT NULL,
-    `eventTime` DATETIME NOT NULL,
-    `locationid` BIGINT NOT NULL
+    `eventTime`      DATETIME NOT NULL,
+    `locationid`     BIGINT NOT NULL
 );
 ALTER TABLE
     `PatientVisits` ADD CONSTRAINT `patientvisits_catagoryid_foreign` FOREIGN KEY(`Catagoryid`) REFERENCES `Catagories`(`catagoryid`);

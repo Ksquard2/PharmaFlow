@@ -8,12 +8,14 @@ categories = [
     {
         "catagoryid": 1,
         "catagoryName": "Respiratory Antivirals",
+        "trendStrength": -0.52,
         "endpoint": "https://api.delphi.cmu.edu/epidata/fluview/",
         "parameters": {"regions": "nat", "epiweeks": "202501-202510"},
     },
     {
         "catagoryid": 2,
         "catagoryName": "Broad Spectrum Antibiotics",
+        "trendStrength": -0.18,
         "endpoint": "https://data.cdc.gov/resource/vjzj-u7u8.json",
         "parameters": {
             "$select": "date, pathogen, geography, percent_visits",
@@ -25,12 +27,14 @@ categories = [
     {
         "catagoryid": 3,
         "catagoryName": "Analgesics and Antipyretics",
+        "trendStrength": -0.46,
         "endpoint": "https://api.delphi.cmu.edu/epidata/fluview/",
         "parameters": {"regions": "nat", "epiweeks": "202501-202510"},
     },
     {
         "catagoryid": 4,
         "catagoryName": "Allergy and Anaphylaxis Treatments",
+        "trendStrength": 0.31,
         "endpoint": "https://data.cdc.gov/resource/3cxc-4k8q.json",
         "parameters": {
             "$select": "mmwrweek_end, level, pcr_percent_positive, percent_pos_2_week",
@@ -51,25 +55,25 @@ categories = [
 # ─────────────────────────────────────────
 items = [
     # Respiratory Antivirals (catagoryID 1)
-    {"itemid":  1, "itemName": "oseltamivir",        "unitType": "capsules",          "catagoryID": 1, "availabilityStatus": "high",        "availabilityScore": 0.10, "lastUpdate": "2026-03-21 06:00:00"},
-    {"itemid":  2, "itemName": "zanamivir",           "unitType": "inhalation_powder", "catagoryID": 1, "availabilityStatus": "high",        "availabilityScore": 0.08, "lastUpdate": "2026-03-21 06:00:00"},
-    {"itemid":  3, "itemName": "peramivir",           "unitType": "vials",             "catagoryID": 1, "availabilityStatus": "high",        "availabilityScore": 0.09, "lastUpdate": "2026-03-21 06:00:00"},
-    {"itemid":  4, "itemName": "baloxavir",           "unitType": "tablets",           "catagoryID": 1, "availabilityStatus": "high",        "availabilityScore": 0.11, "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid":  1, "itemName": "oseltamivir",       "unitType": "capsules",          "catagoryID": 1, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid":  2, "itemName": "zanamivir",          "unitType": "inhalation_powder", "catagoryID": 1, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid":  3, "itemName": "peramivir",          "unitType": "vials",             "catagoryID": 1, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid":  4, "itemName": "baloxavir",          "unitType": "tablets",           "catagoryID": 1, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
     # Broad Spectrum Antibiotics (catagoryID 2)
-    {"itemid":  5, "itemName": "ceftriaxone",         "unitType": "vials",             "catagoryID": 2, "availabilityStatus": "high",        "availabilityScore": 0.18, "lastUpdate": "2026-03-21 06:00:00"},
-    {"itemid":  6, "itemName": "azithromycin",        "unitType": "tablets",           "catagoryID": 2, "availabilityStatus": "high",        "availabilityScore": 0.15, "lastUpdate": "2026-03-21 06:00:00"},
-    {"itemid":  7, "itemName": "levofloxacin",        "unitType": "tablets",           "catagoryID": 2, "availabilityStatus": "high",        "availabilityScore": 0.17, "lastUpdate": "2026-03-21 06:00:00"},
-    {"itemid":  8, "itemName": "vancomycin",          "unitType": "vials",             "catagoryID": 2, "availabilityStatus": "moderate",    "availabilityScore": 0.38, "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid":  5, "itemName": "ceftriaxone",        "unitType": "vials",             "catagoryID": 2, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid":  6, "itemName": "azithromycin",       "unitType": "tablets",           "catagoryID": 2, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid":  7, "itemName": "levofloxacin",       "unitType": "tablets",           "catagoryID": 2, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid":  8, "itemName": "vancomycin",         "unitType": "vials",             "catagoryID": 2, "availabilityStatus": "moderate_availability", "lastUpdate": "2026-03-21 06:00:00"},
     # Analgesics and Antipyretics (catagoryID 3)
-    {"itemid":  9, "itemName": "acetaminophen",       "unitType": "tablets",           "catagoryID": 3, "availabilityStatus": "moderate",    "availabilityScore": 0.42, "lastUpdate": "2026-03-21 06:00:00"},
-    {"itemid": 10, "itemName": "ibuprofen",           "unitType": "tablets",           "catagoryID": 3, "availabilityStatus": "moderate",    "availabilityScore": 0.35, "lastUpdate": "2026-03-21 06:00:00"},
-    {"itemid": 11, "itemName": "naproxen",            "unitType": "tablets",           "catagoryID": 3, "availabilityStatus": "high",        "availabilityScore": 0.16, "lastUpdate": "2026-03-21 06:00:00"},
-    {"itemid": 12, "itemName": "aspirin",             "unitType": "tablets",           "catagoryID": 3, "availabilityStatus": "high",        "availabilityScore": 0.20, "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid":  9, "itemName": "acetaminophen",      "unitType": "tablets",           "catagoryID": 3, "availabilityStatus": "moderate_availability", "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid": 10, "itemName": "ibuprofen",          "unitType": "tablets",           "catagoryID": 3, "availabilityStatus": "moderate_availability", "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid": 11, "itemName": "naproxen",           "unitType": "tablets",           "catagoryID": 3, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid": 12, "itemName": "aspirin",            "unitType": "tablets",           "catagoryID": 3, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
     # Allergy and Anaphylaxis (catagoryID 4)
-    {"itemid": 13, "itemName": "epinephrine",         "unitType": "vials",             "catagoryID": 4, "availabilityStatus": "moderate",    "availabilityScore": 0.40, "lastUpdate": "2026-03-21 06:00:00"},
-    {"itemid": 14, "itemName": "diphenhydramine",     "unitType": "vials",             "catagoryID": 4, "availabilityStatus": "high",        "availabilityScore": 0.22, "lastUpdate": "2026-03-21 06:00:00"},
-    {"itemid": 15, "itemName": "cetirizine",          "unitType": "tablets",           "catagoryID": 4, "availabilityStatus": "high",        "availabilityScore": 0.19, "lastUpdate": "2026-03-21 06:00:00"},
-    {"itemid": 16, "itemName": "methylprednisolone",  "unitType": "vials",             "catagoryID": 4, "availabilityStatus": "constrained", "availabilityScore": 0.62, "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid": 13, "itemName": "epinephrine",        "unitType": "vials",             "catagoryID": 4, "availabilityStatus": "moderate_availability", "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid": 14, "itemName": "diphenhydramine",    "unitType": "vials",             "catagoryID": 4, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid": 15, "itemName": "cetirizine",         "unitType": "tablets",           "catagoryID": 4, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid": 16, "itemName": "methylprednisolone", "unitType": "vials",             "catagoryID": 4, "availabilityStatus": "constrained",           "lastUpdate": "2026-03-21 06:00:00"},
 ]
 
 # ─────────────────────────────────────────
@@ -220,13 +224,14 @@ def generate_inventory_events():
 
     for itemid, batch, qty, evt_date, hm, locid in restocks:
         events.append({
-            "eventid":       eid,
-            "itemid":        itemid,
-            "batchNumber":   batch,
-            "quantityDelta": qty,
+            "eventid":        eid,
+            "itemid":         itemid,
+            "eventType":      "restock",
+            "batchNumber":    batch,
+            "quantityDelta":  qty,
             "expirationDate": batch_expiry[batch],
-            "eventTime":     f"{evt_date} {hm}:00",
-            "locationid":    locid,
+            "eventTime":      f"{evt_date} {hm}:00",
+            "locationid":     locid,
         })
         eid += 1
 
@@ -308,6 +313,7 @@ def generate_inventory_events():
             events.append({
                 "eventid":        eid,
                 "itemid":         itemid,
+                "eventType":      "usage",
                 "batchNumber":    batch,
                 "quantityDelta":  -qty,
                 "expirationDate": batch_expiry[batch],
