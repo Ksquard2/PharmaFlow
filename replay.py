@@ -73,6 +73,73 @@ def get_all_visits():
 def get_all_events():
     return query("SELECT * FROM InventoryEvents")
 
+
+def get_recent_inventory_events(limit: int = 5) -> list[dict[str, Any]]:
+    """
+    Latest N inventory events for server-rendered pages (JOIN Items + Location).
+    Ordered by eventTime descending. Safe for empty tables.
+    """
+    lim = max(1, min(int(limit), 100))
+    sql = text(
+        """
+        SELECT
+          e.eventid,
+          e.itemid,
+          e.eventType,
+          e.batchNumber,
+          e.quantityDelta,
+          e.expirationDate,
+          e.eventTime,
+          e.locationid,
+          COALESCE(i.itemName, 'Unknown item') AS itemName,
+          COALESCE(i.unitType, 'unit') AS unitType,
+          COALESCE(l.locationName, 'Unknown location') AS locationName
+        FROM InventoryEvents e
+        LEFT JOIN Items i ON i.itemid = e.itemid
+        LEFT JOIN Location l ON l.locationid = e.locationid
+        ORDER BY e.eventTime DESC
+        LIMIT :lim
+        """
+    )
+    out: list[dict[str, Any]] = []
+    with engine.connect() as conn:
+        for row in conn.execute(sql, {"lim": lim}):
+            r = serialize_row(row)
+            lk = {str(k).lower(): v for k, v in r.items()}
+            et = lk.get("eventtype") or ""
+            et_l = str(et).lower()
+            ev_raw = lk.get("eventtime")
+            if isinstance(ev_raw, str):
+                ev_display = ev_raw.replace("T", " ")[:19]
+                ev_iso = ev_raw if "T" in ev_raw else ev_raw.replace(" ", "T")
+            else:
+                ev_display = str(ev_raw) if ev_raw is not None else ""
+                ev_iso = ev_display.replace(" ", "T")
+            source = (
+                "inventory_system"
+                if et_l == "usage"
+                else "restock_delivery"
+            )
+            out.append(
+                {
+                    "event_id": lk.get("eventid"),
+                    "item_id": lk.get("itemid"),
+                    "item_name": lk.get("itemname") or "Unknown",
+                    "unit_type": lk.get("unittype") or "unit",
+                    "batch_number": lk.get("batchnumber"),
+                    "quantity_delta": lk.get("quantitydelta"),
+                    "expiration_date": str(lk.get("expirationdate") or ""),
+                    "location_id": lk.get("locationid"),
+                    "location_name": lk.get("locationname") or "—",
+                    "event_type": et,
+                    "event_time_display": ev_display,
+                    "event_time_iso": ev_iso,
+                    "source_type": source,
+                }
+            )
+    return out
+
+
 def get_all_info():
     return {
         "categories": get_all_categories(),

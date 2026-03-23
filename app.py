@@ -2,19 +2,15 @@ import json
 import os
 import threading
 import time
-import uuid
 from concurrent.futures import ThreadPoolExecutor
 
 from flask import Flask, jsonify, render_template, request
 
 from allAPI import sync_recall_availability_from_fda
 from ollama import justify_inventory_health, justify_readiness, readinessCalculator
-from replay import run_replay, arduino_to_db
+from replay import arduino_to_db, get_recent_inventory_events, run_replay
 
 app = Flask(__name__, template_folder="Templates")
-
-# New id each time the Python process starts — used by demo page to reset client-side scan log
-SERVER_BOOT_ID = str(uuid.uuid4())
 
 # Max parallel Ollama requests (HTTP I/O-bound; tune down if GPU queue saturates)
 OLLAMA_MAX_WORKERS = 3
@@ -126,10 +122,13 @@ def _render(template):
 
 
 # ── Routes ─────────────────────────────────────────────────────────────────────
-@app.route("/smartBinScan", methods=["POST"])
+@app.route("/api/event", methods=["POST"])
 def smartBinScan():
     """
     Hardware / bridge POST. Body: {"event": { ... }} — see replay.arduino_to_db docstring.
+
+    Inserts only — does not run replay or Ollama (fast for live demos). Refresh dashboards
+    via /api/refresh-recalls or restart the app if you need projection data updated.
     """
     data = request.get_json(silent=True)
     if not isinstance(data, dict) or "event" not in data:
@@ -149,9 +148,6 @@ def smartBinScan():
     except Exception as ex:  # noqa: BLE001 — DB / driver errors
         return jsonify({"ok": False, "error": str(ex)}), 500
 
-    threading.Thread(
-        target=rebuild_projection_data, daemon=True, name="pharmaflow-scan-rebuild"
-    ).start()
     return jsonify({"ok": True, "message": "success"}), 200
 
 @app.route("/")
@@ -176,11 +172,9 @@ def medication():
 
 @app.route("/demo/inventory-event-log")
 def inventory_event_log_demo():
-    """Hackathon demo: simulated hardware scan log (no backend)."""
-    return render_template(
-        "hw_inventory_log_demo.html",
-        server_boot_id=SERVER_BOOT_ID,
-    )
+    """Latest 5 inventory events from DB (fresh query on each request)."""
+    events = get_recent_inventory_events(5)
+    return render_template("hw_inventory_log_demo.html", events=events)
 
 
 @app.route("/api/refresh-recalls")

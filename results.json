@@ -5,17 +5,17 @@
       "itemName": "oseltamivir",
       "catagory_id": 1,
       "catagory_name": "Respiratory Antivirals",
-      "total_quantity": 372,
-      "current_velocity": 9.1429,
-      "local_velocity": 5.9333,
+      "total_quantity": 370,
+      "current_velocity": 9.4286,
+      "local_velocity": 6.0,
       "usage_pressure": 1.0,
       "coverage_pressure": 0.0,
-      "expiration_pressure": 0.1968,
+      "expiration_pressure": 0.1946,
       "supply_pressure": 0.0,
-      "demand_score": 38.94,
+      "demand_score": 38.89,
       "expiry_breakdown": {
         "safe_qty": 250,
-        "near_qty": 122,
+        "near_qty": 120,
         "expired_qty": 0
       },
       "usage_history": [
@@ -74,6 +74,10 @@
         {
           "date": "2026-03-20",
           "units_used": 12
+        },
+        {
+          "date": "2026-03-22",
+          "units_used": 2
         }
       ]
     },
@@ -1238,7 +1242,7 @@
       "batch_number": 1001,
       "item_id": 1,
       "expiration_date": "2026-03-28",
-      "current_quantity": 122,
+      "current_quantity": 120,
       "location_id": 6
     },
     {
@@ -1478,6 +1482,10 @@
         {
           "date": "2026-03-20",
           "units_used": 15
+        },
+        {
+          "date": "2026-03-22",
+          "units_used": 2
         }
       ],
       "demand_trend": [
@@ -2161,7 +2169,7 @@
   },
   "inventoryExpirySummary": {
     "safe_qty": 7633,
-    "near_qty": 126,
+    "near_qty": 124,
     "expired_qty": 35
   },
   "usageByHospital": [
@@ -2171,7 +2179,7 @@
     },
     {
       "locationName": "Emergency Department",
-      "units_used": 957
+      "units_used": 959
     },
     {
       "locationName": "Intensive Care Unit",
