@@ -26,7 +26,10 @@ def readinessCalculator(replayed_data, catagory_id):
     chart = replayed_data["categoryCharts"][str(catagory_id)]
 
     return {
+        "catagoryid":         catagory_id,
         "catagory_name":      myCatagory["catagoryName"],
+        "description":        myCatagory.get("description", ""),
+        "imagePath":          myCatagory.get("imagePath", ""),
         "readiness_score":    readiness_score,
         "readiness_badge":    badge,
         "avg_demand_score":   round(avg_demand_score, 2),
@@ -105,6 +108,47 @@ def justify_readiness(readiness_data):
     """Full pipeline: build prompts → call Ollama → return explanation string."""
     user_prompt = build_readiness_prompt(readiness_data)
     return call_ollama(READINESS_SYSTEM_PROMPT, user_prompt)
+
+
+INVENTORY_SYSTEM_PROMPT = """You are PharmaFlow's hospital pharmacy operations analyst.
+Write a brief narrative (4–6 sentences) summarizing overall medication inventory health for leadership.
+Use ONLY the facts in the user message — do not invent numbers or drug names not listed.
+Tone: professional, calm, actionable. No bullet points, no markdown, no headers.
+Name specific high-demand medications when helpful. Mention near-expiry or expired stock if the counts are non-trivial.
+End with one practical operational next step."""
+
+
+def build_inventory_prompt(replayed_data: dict) -> str:
+    """Compact facts from replay output for the inventory dashboard summary."""
+    states = sorted(
+        replayed_data.get("currentStates") or [],
+        key=lambda x: x.get("demand_score", 0),
+        reverse=True,
+    )
+    at_risk = [s for s in states if s.get("demand_score", 0) >= 65]
+    monitor = [s for s in states if 35 <= s.get("demand_score", 0) < 65]
+    stable = [s for s in states if s.get("demand_score", 0) < 35]
+    exp = replayed_data.get("inventoryExpirySummary") or {}
+    cats = replayed_data.get("categories") or []
+
+    lines = [
+        f"Total medications: {len(states)}",
+        f"Therapeutic categories: {len(cats)}",
+        f"Demand tiers — At risk (score ≥65): {len(at_risk)}; Monitor (35–64): {len(monitor)}; Stable (<35): {len(stable)}",
+        f"Expiry units — safe: {exp.get('safe_qty', 0)}, nearing expiry: {exp.get('near_qty', 0)}, expired: {exp.get('expired_qty', 0)}",
+        "Highest-demand medications (name, demand_score, category):",
+    ]
+    for s in states[:8]:
+        lines.append(
+            f"  - {s.get('itemName')}: {s.get('demand_score')} — {s.get('catagory_name', 'unknown')}"
+        )
+    return "\n".join(lines)
+
+
+def justify_inventory_health(replayed_data: dict) -> str:
+    """Ollama narrative for the Inventory Dashboard 'Overall Inventory Health' section."""
+    user_prompt = build_inventory_prompt(replayed_data)
+    return call_ollama(INVENTORY_SYSTEM_PROMPT, user_prompt)
 
 
 def call_ollama(system_prompt, user_prompt):

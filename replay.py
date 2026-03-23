@@ -1,9 +1,84 @@
 import datetime
 from typing import Optional
+import json
+from sqlalchemy import create_engine, text
+
+DATABASE_URL = "mysql+mysqlconnector://root:newlatiospower@127.0.0.1:3306/PharmaFlow"
+engine = create_engine(DATABASE_URL)
+
+def serialize_row(row):
+    import decimal
+    def _cast(v):
+        if isinstance(v, (datetime.date, datetime.datetime)):
+            return v.isoformat()
+        if isinstance(v, decimal.Decimal):
+            return float(v)
+        return v
+    return {k: _cast(v) for k, v in dict(row._mapping).items()}
+
+def query(sql):
+    with engine.connect() as conn:
+        result = conn.execute(text(sql))
+        return [serialize_row(row) for row in result]
+
+def get_all_categories():
+    return query("SELECT * FROM Catagories")
+
+def get_all_locations():
+    return query("SELECT * FROM Location")
+
+def get_all_items():
+    return query("SELECT * FROM Items")
+
+def get_all_visits():
+    return query("SELECT * FROM PatientVisits")
+
+def get_all_events():
+    return query("SELECT * FROM InventoryEvents")
+
+def get_all_info():
+    return {
+        "categories": get_all_categories(),
+        "locations": get_all_locations(),
+        "items": get_all_items(),
+        "visits": get_all_visits(),
+        "events": get_all_events(),
+    }
+
+
+# Valid Items.availabilityStatus ENUM values (must match Pharmaflow.sql)
+_AVAILABILITY_ENUM = frozenset(
+    ("high_availability", "moderate_availability", "constrained", "shortage_risk", "unknown")
+)
+
+
+def update_item_availability(itemid: int, availability_status: str, last_update=None):
+    """
+    Persist national-supply signal for one item. Uses a transaction so Flask / sync
+    callers get committed state before the next SELECT.
+    """
+    if availability_status not in _AVAILABILITY_ENUM:
+        raise ValueError(f"Invalid availabilityStatus: {availability_status!r}")
+    if last_update is None:
+        last_update = datetime.datetime.now()
+    if isinstance(last_update, datetime.datetime):
+        lu = last_update.strftime("%Y-%m-%d %H:%M:%S")
+    else:
+        lu = str(last_update)
+    with engine.begin() as conn:
+        conn.execute(
+            text(
+                "UPDATE Items SET availabilityStatus = :st, lastUpdate = :lu "
+                "WHERE itemid = :id"
+            ),
+            {"st": availability_status, "lu": lu, "id": itemid},
+        )
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # CONSTANTS
 # ─────────────────────────────────────────────────────────────────────────────
+
 
 # How many days of usable stock is considered "safe" for coverage pressure.
 TARGET_COVERAGE_DAYS = 14
@@ -364,6 +439,39 @@ class Inventory:
             "expired_qty": sum(s.expired_qty for s in self.states),
         }
 
+        # Location aggregation — for the inventory dashboard pie charts
+        loc_lookup = {loc["locationid"]: loc for loc in self.locations}
+
+        # Hospital usage by department (usage events at hospital-type locations)
+        loc_usage = defaultdict(int)
+        for event in self.events:
+            if event["eventType"] == "usage":
+                loc_usage[event["locationid"]] += abs(event["quantityDelta"])
+
+        usage_by_hospital = [
+            {
+                "locationName": loc_lookup[lid]["locationName"],
+                "units_used":   units,
+            }
+            for lid, units in sorted(loc_usage.items(), key=lambda x: -x[1])
+            if lid in loc_lookup and loc_lookup[lid]["locationType"] == "hospital"
+        ]
+
+        # Pharmacy procurement by supplier (restock events at pharmacy-type locations)
+        loc_restock = defaultdict(int)
+        for event in self.events:
+            if event["eventType"] == "restock":
+                loc_restock[event["locationid"]] += event["quantityDelta"]
+
+        restock_by_pharmacy = [
+            {
+                "locationName":    loc_lookup[lid]["locationName"],
+                "units_restocked": units,
+            }
+            for lid, units in sorted(loc_restock.items(), key=lambda x: -x[1])
+            if lid in loc_lookup and loc_lookup[lid]["locationType"] == "pharmacy"
+        ]
+
         # ── Step 6: return serialisable snapshot ──────────────────────────────
         return {
             "currentStates": [
@@ -406,5 +514,19 @@ class Inventory:
             "categoryCharts": category_charts,
             # Global expiry totals (for the inventory dashboard donut chart)
             "inventoryExpirySummary": inventory_expiry_summary,
+            # Location breakdown (for the inventory dashboard pie charts)
+            "usageByHospital":    usage_by_hospital,
+            "restockByPharmacy":  restock_by_pharmacy,
             "categories": self.categories,
         }
+
+def run_replay():
+    info = get_all_info()
+    inv = Inventory(info["items"], info["events"], info["categories"], info["locations"], info["visits"])
+    result = inv.replay()
+    with open("results.json", "w") as f:
+        json.dump(result, f, indent=2)
+    return result
+
+if __name__ == "__main__":
+    result = run_replay()

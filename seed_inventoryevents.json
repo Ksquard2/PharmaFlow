@@ -14,7 +14,7 @@
     "itemid": 2,
     "eventType": "restock",
     "batchNumber": 1003,
-    "quantityDelta": 120,
+    "quantityDelta": 320,
     "expirationDate": "2026-12-01",
     "eventTime": "2026-03-07 07:30:00",
     "locationid": 6
@@ -24,7 +24,7 @@
     "itemid": 3,
     "eventType": "restock",
     "batchNumber": 1005,
-    "quantityDelta": 50,
+    "quantityDelta": 260,
     "expirationDate": "2026-10-20",
     "eventTime": "2026-03-07 07:30:00",
     "locationid": 6
@@ -34,7 +34,7 @@
     "itemid": 4,
     "eventType": "restock",
     "batchNumber": 1006,
-    "quantityDelta": 200,
+    "quantityDelta": 520,
     "expirationDate": "2026-09-15",
     "eventTime": "2026-03-07 08:00:00",
     "locationid": 5
@@ -54,7 +54,7 @@
     "itemid": 5,
     "eventType": "restock",
     "batchNumber": 1009,
-    "quantityDelta": 250,
+    "quantityDelta": 72,
     "expirationDate": "2026-10-30",
     "eventTime": "2026-03-07 08:05:00",
     "locationid": 7
@@ -64,7 +64,7 @@
     "itemid": 6,
     "eventType": "restock",
     "batchNumber": 1010,
-    "quantityDelta": 600,
+    "quantityDelta": 220,
     "expirationDate": "2026-08-20",
     "eventTime": "2026-03-07 08:15:00",
     "locationid": 5
@@ -74,7 +74,7 @@
     "itemid": 7,
     "eventType": "restock",
     "batchNumber": 1012,
-    "quantityDelta": 500,
+    "quantityDelta": 520,
     "expirationDate": "2026-07-15",
     "eventTime": "2026-03-07 08:15:00",
     "locationid": 5
@@ -94,7 +94,7 @@
     "itemid": 8,
     "eventType": "restock",
     "batchNumber": 1014,
-    "quantityDelta": 200,
+    "quantityDelta": 72,
     "expirationDate": "2026-12-20",
     "eventTime": "2026-03-07 08:35:00",
     "locationid": 6
@@ -104,7 +104,7 @@
     "itemid": 9,
     "eventType": "restock",
     "batchNumber": 1015,
-    "quantityDelta": 300,
+    "quantityDelta": 420,
     "expirationDate": "2026-04-01",
     "eventTime": "2026-03-07 09:00:00",
     "locationid": 7
@@ -114,7 +114,7 @@
     "itemid": 9,
     "eventType": "restock",
     "batchNumber": 1016,
-    "quantityDelta": 1200,
+    "quantityDelta": 580,
     "expirationDate": "2027-01-15",
     "eventTime": "2026-03-07 09:05:00",
     "locationid": 7
@@ -134,7 +134,7 @@
     "itemid": 11,
     "eventType": "restock",
     "batchNumber": 1019,
-    "quantityDelta": 600,
+    "quantityDelta": 1600,
     "expirationDate": "2026-09-10",
     "eventTime": "2026-03-07 09:15:00",
     "locationid": 5
@@ -144,7 +144,7 @@
     "itemid": 12,
     "eventType": "restock",
     "batchNumber": 1020,
-    "quantityDelta": 800,
+    "quantityDelta": 1800,
     "expirationDate": "2026-06-30",
     "eventTime": "2026-03-07 09:15:00",
     "locationid": 6
@@ -184,7 +184,7 @@
     "itemid": 15,
     "eventType": "restock",
     "batchNumber": 1024,
-    "quantityDelta": 600,
+    "quantityDelta": 1100,
     "expirationDate": "2026-11-30",
     "eventTime": "2026-03-07 09:45:00",
     "locationid": 5
@@ -204,7 +204,7 @@
     "itemid": 16,
     "eventType": "restock",
     "batchNumber": 1026,
-    "quantityDelta": 80,
+    "quantityDelta": 42,
     "expirationDate": "2026-09-01",
     "eventTime": "2026-03-07 09:50:00",
     "locationid": 6
@@ -214,7 +214,7 @@
     "itemid": 6,
     "eventType": "restock",
     "batchNumber": 1011,
-    "quantityDelta": 400,
+    "quantityDelta": 200,
     "expirationDate": "2026-12-05",
     "eventTime": "2026-03-12 10:00:00",
     "locationid": 7
@@ -254,7 +254,7 @@
     "itemid": 2,
     "eventType": "restock",
     "batchNumber": 1004,
-    "quantityDelta": 80,
+    "quantityDelta": 200,
     "expirationDate": "2027-03-15",
     "eventTime": "2026-03-16 10:00:00",
     "locationid": 5
@@ -264,7 +264,7 @@
     "itemid": 1,
     "eventType": "usage",
     "batchNumber": 1001,
-    "quantityDelta": -11,
+    "quantityDelta": -13,
     "expirationDate": "2026-03-28",
     "eventTime": "2026-03-07 08:30:00",
     "locationid": 1
@@ -274,7 +274,7 @@
     "itemid": 2,
     "eventType": "usage",
     "batchNumber": 1003,
-    "quantityDelta": -4,
+    "quantityDelta": -7,
     "expirationDate": "2026-12-01",
     "eventTime": "2026-03-07 08:30:00",
     "locationid": 1
@@ -284,7 +284,7 @@
     "itemid": 3,
     "eventType": "usage",
     "batchNumber": 1005,
-    "quantityDelta": -2,
+    "quantityDelta": -6,
     "expirationDate": "2026-10-20",
     "eventTime": "2026-03-07 08:30:00",
     "locationid": 2
@@ -294,7 +294,7 @@
     "itemid": 4,
     "eventType": "usage",
     "batchNumber": 1006,
-    "quantityDelta": -8,
+    "quantityDelta": -9,
     "expirationDate": "2026-09-15",
     "eventTime": "2026-03-07 08:30:00",
     "locationid": 3
@@ -304,7 +304,7 @@
     "itemid": 5,
     "eventType": "usage",
     "batchNumber": 1009,
-    "quantityDelta": -14,
+    "quantityDelta": -33,
     "expirationDate": "2026-10-30",
     "eventTime": "2026-03-07 08:30:00",
     "locationid": 1
@@ -314,7 +314,7 @@
     "itemid": 6,
     "eventType": "usage",
     "batchNumber": 1010,
-    "quantityDelta": -22,
+    "quantityDelta": -47,
     "expirationDate": "2026-08-20",
     "eventTime": "2026-03-07 08:30:00",
     "locationid": 3
@@ -324,7 +324,7 @@
     "itemid": 7,
     "eventType": "usage",
     "batchNumber": 1012,
-    "quantityDelta": -18,
+    "quantityDelta": -19,
     "expirationDate": "2026-07-15",
     "eventTime": "2026-03-07 08:30:00",
     "locationid": 3
@@ -334,7 +334,7 @@
     "itemid": 8,
     "eventType": "usage",
     "batchNumber": 1014,
-    "quantityDelta": -8,
+    "quantityDelta": -16,
     "expirationDate": "2026-12-20",
     "eventTime": "2026-03-07 08:30:00",
     "locationid": 2
@@ -344,7 +344,7 @@
     "itemid": 9,
     "eventType": "usage",
     "batchNumber": 1015,
-    "quantityDelta": -50,
+    "quantityDelta": -112,
     "expirationDate": "2026-04-01",
     "eventTime": "2026-03-07 08:30:00",
     "locationid": 3
@@ -354,7 +354,7 @@
     "itemid": 10,
     "eventType": "usage",
     "batchNumber": 1017,
-    "quantityDelta": -40,
+    "quantityDelta": -41,
     "expirationDate": "2026-11-20",
     "eventTime": "2026-03-07 08:30:00",
     "locationid": 3
@@ -364,7 +364,7 @@
     "itemid": 11,
     "eventType": "usage",
     "batchNumber": 1019,
-    "quantityDelta": -20,
+    "quantityDelta": -9,
     "expirationDate": "2026-09-10",
     "eventTime": "2026-03-07 08:30:00",
     "locationid": 3
@@ -374,7 +374,7 @@
     "itemid": 12,
     "eventType": "usage",
     "batchNumber": 1020,
-    "quantityDelta": -25,
+    "quantityDelta": -9,
     "expirationDate": "2026-06-30",
     "eventTime": "2026-03-07 08:30:00",
     "locationid": 4
@@ -394,7 +394,7 @@
     "itemid": 14,
     "eventType": "usage",
     "batchNumber": 1023,
-    "quantityDelta": -12,
+    "quantityDelta": -13,
     "expirationDate": "2026-08-12",
     "eventTime": "2026-03-07 08:30:00",
     "locationid": 1
@@ -404,7 +404,7 @@
     "itemid": 15,
     "eventType": "usage",
     "batchNumber": 1024,
-    "quantityDelta": -16,
+    "quantityDelta": -8,
     "expirationDate": "2026-11-30",
     "eventTime": "2026-03-07 08:30:00",
     "locationid": 3
@@ -414,7 +414,7 @@
     "itemid": 16,
     "eventType": "usage",
     "batchNumber": 1025,
-    "quantityDelta": -5,
+    "quantityDelta": -11,
     "expirationDate": "2026-03-25",
     "eventTime": "2026-03-07 08:30:00",
     "locationid": 2
@@ -424,7 +424,7 @@
     "itemid": 1,
     "eventType": "usage",
     "batchNumber": 1001,
-    "quantityDelta": -10,
+    "quantityDelta": -12,
     "expirationDate": "2026-03-28",
     "eventTime": "2026-03-08 09:15:00",
     "locationid": 1
@@ -434,7 +434,7 @@
     "itemid": 2,
     "eventType": "usage",
     "batchNumber": 1003,
-    "quantityDelta": -3,
+    "quantityDelta": -7,
     "expirationDate": "2026-12-01",
     "eventTime": "2026-03-08 09:15:00",
     "locationid": 1
@@ -444,7 +444,7 @@
     "itemid": 3,
     "eventType": "usage",
     "batchNumber": 1005,
-    "quantityDelta": -3,
+    "quantityDelta": -6,
     "expirationDate": "2026-10-20",
     "eventTime": "2026-03-08 09:15:00",
     "locationid": 2
@@ -454,7 +454,7 @@
     "itemid": 4,
     "eventType": "usage",
     "batchNumber": 1006,
-    "quantityDelta": -7,
+    "quantityDelta": -9,
     "expirationDate": "2026-09-15",
     "eventTime": "2026-03-08 09:15:00",
     "locationid": 3
@@ -464,7 +464,7 @@
     "itemid": 5,
     "eventType": "usage",
     "batchNumber": 1009,
-    "quantityDelta": -16,
+    "quantityDelta": -38,
     "expirationDate": "2026-10-30",
     "eventTime": "2026-03-08 09:15:00",
     "locationid": 1
@@ -474,7 +474,7 @@
     "itemid": 6,
     "eventType": "usage",
     "batchNumber": 1010,
-    "quantityDelta": -25,
+    "quantityDelta": -54,
     "expirationDate": "2026-08-20",
     "eventTime": "2026-03-08 09:15:00",
     "locationid": 3
@@ -484,7 +484,7 @@
     "itemid": 7,
     "eventType": "usage",
     "batchNumber": 1012,
-    "quantityDelta": -20,
+    "quantityDelta": -21,
     "expirationDate": "2026-07-15",
     "eventTime": "2026-03-08 09:15:00",
     "locationid": 3
@@ -494,7 +494,7 @@
     "itemid": 8,
     "eventType": "usage",
     "batchNumber": 1014,
-    "quantityDelta": -9,
+    "quantityDelta": -18,
     "expirationDate": "2026-12-20",
     "eventTime": "2026-03-08 09:15:00",
     "locationid": 2
@@ -504,7 +504,7 @@
     "itemid": 9,
     "eventType": "usage",
     "batchNumber": 1015,
-    "quantityDelta": -48,
+    "quantityDelta": -108,
     "expirationDate": "2026-04-01",
     "eventTime": "2026-03-08 09:15:00",
     "locationid": 3
@@ -514,7 +514,7 @@
     "itemid": 10,
     "eventType": "usage",
     "batchNumber": 1017,
-    "quantityDelta": -38,
+    "quantityDelta": -39,
     "expirationDate": "2026-11-20",
     "eventTime": "2026-03-08 09:15:00",
     "locationid": 3
@@ -524,7 +524,7 @@
     "itemid": 11,
     "eventType": "usage",
     "batchNumber": 1019,
-    "quantityDelta": -18,
+    "quantityDelta": -9,
     "expirationDate": "2026-09-10",
     "eventTime": "2026-03-08 09:15:00",
     "locationid": 3
@@ -534,7 +534,7 @@
     "itemid": 12,
     "eventType": "usage",
     "batchNumber": 1020,
-    "quantityDelta": -23,
+    "quantityDelta": -9,
     "expirationDate": "2026-06-30",
     "eventTime": "2026-03-08 09:15:00",
     "locationid": 4
@@ -554,7 +554,7 @@
     "itemid": 14,
     "eventType": "usage",
     "batchNumber": 1023,
-    "quantityDelta": -13,
+    "quantityDelta": -14,
     "expirationDate": "2026-08-12",
     "eventTime": "2026-03-08 09:15:00",
     "locationid": 1
@@ -564,7 +564,7 @@
     "itemid": 15,
     "eventType": "usage",
     "batchNumber": 1024,
-    "quantityDelta": -15,
+    "quantityDelta": -8,
     "expirationDate": "2026-11-30",
     "eventTime": "2026-03-08 09:15:00",
     "locationid": 3
@@ -574,7 +574,7 @@
     "itemid": 16,
     "eventType": "usage",
     "batchNumber": 1025,
-    "quantityDelta": -4,
+    "quantityDelta": -9,
     "expirationDate": "2026-03-25",
     "eventTime": "2026-03-08 09:15:00",
     "locationid": 2
@@ -584,7 +584,7 @@
     "itemid": 1,
     "eventType": "usage",
     "batchNumber": 1001,
-    "quantityDelta": -12,
+    "quantityDelta": -14,
     "expirationDate": "2026-03-28",
     "eventTime": "2026-03-09 07:45:00",
     "locationid": 1
@@ -594,7 +594,7 @@
     "itemid": 2,
     "eventType": "usage",
     "batchNumber": 1003,
-    "quantityDelta": -4,
+    "quantityDelta": -7,
     "expirationDate": "2026-12-01",
     "eventTime": "2026-03-09 07:45:00",
     "locationid": 1
@@ -604,7 +604,7 @@
     "itemid": 3,
     "eventType": "usage",
     "batchNumber": 1005,
-    "quantityDelta": -2,
+    "quantityDelta": -6,
     "expirationDate": "2026-10-20",
     "eventTime": "2026-03-09 07:45:00",
     "locationid": 2
@@ -624,7 +624,7 @@
     "itemid": 5,
     "eventType": "usage",
     "batchNumber": 1009,
-    "quantityDelta": -15,
+    "quantityDelta": -35,
     "expirationDate": "2026-10-30",
     "eventTime": "2026-03-09 07:45:00",
     "locationid": 1
@@ -634,7 +634,7 @@
     "itemid": 6,
     "eventType": "usage",
     "batchNumber": 1010,
-    "quantityDelta": -23,
+    "quantityDelta": -49,
     "expirationDate": "2026-08-20",
     "eventTime": "2026-03-09 07:45:00",
     "locationid": 3
@@ -644,7 +644,7 @@
     "itemid": 7,
     "eventType": "usage",
     "batchNumber": 1012,
-    "quantityDelta": -17,
+    "quantityDelta": -18,
     "expirationDate": "2026-07-15",
     "eventTime": "2026-03-09 07:45:00",
     "locationid": 3
@@ -654,7 +654,7 @@
     "itemid": 8,
     "eventType": "usage",
     "batchNumber": 1014,
-    "quantityDelta": -7,
+    "quantityDelta": -14,
     "expirationDate": "2026-12-20",
     "eventTime": "2026-03-09 07:45:00",
     "locationid": 2
@@ -664,7 +664,7 @@
     "itemid": 9,
     "eventType": "usage",
     "batchNumber": 1015,
-    "quantityDelta": -52,
+    "quantityDelta": -117,
     "expirationDate": "2026-04-01",
     "eventTime": "2026-03-09 07:45:00",
     "locationid": 3
@@ -674,7 +674,7 @@
     "itemid": 10,
     "eventType": "usage",
     "batchNumber": 1017,
-    "quantityDelta": -42,
+    "quantityDelta": -43,
     "expirationDate": "2026-11-20",
     "eventTime": "2026-03-09 07:45:00",
     "locationid": 3
@@ -684,7 +684,7 @@
     "itemid": 11,
     "eventType": "usage",
     "batchNumber": 1019,
-    "quantityDelta": -22,
+    "quantityDelta": -9,
     "expirationDate": "2026-09-10",
     "eventTime": "2026-03-09 07:45:00",
     "locationid": 3
@@ -694,7 +694,7 @@
     "itemid": 12,
     "eventType": "usage",
     "batchNumber": 1020,
-    "quantityDelta": -27,
+    "quantityDelta": -9,
     "expirationDate": "2026-06-30",
     "eventTime": "2026-03-09 07:45:00",
     "locationid": 4
@@ -704,7 +704,7 @@
     "itemid": 13,
     "eventType": "usage",
     "batchNumber": 1021,
-    "quantityDelta": -5,
+    "quantityDelta": -4,
     "expirationDate": "2026-04-03",
     "eventTime": "2026-03-09 07:45:00",
     "locationid": 1
@@ -714,7 +714,7 @@
     "itemid": 14,
     "eventType": "usage",
     "batchNumber": 1023,
-    "quantityDelta": -11,
+    "quantityDelta": -12,
     "expirationDate": "2026-08-12",
     "eventTime": "2026-03-09 07:45:00",
     "locationid": 1
@@ -724,7 +724,7 @@
     "itemid": 15,
     "eventType": "usage",
     "batchNumber": 1024,
-    "quantityDelta": -17,
+    "quantityDelta": -8,
     "expirationDate": "2026-11-30",
     "eventTime": "2026-03-09 07:45:00",
     "locationid": 3
@@ -734,7 +734,7 @@
     "itemid": 16,
     "eventType": "usage",
     "batchNumber": 1025,
-    "quantityDelta": -6,
+    "quantityDelta": -13,
     "expirationDate": "2026-03-25",
     "eventTime": "2026-03-09 07:45:00",
     "locationid": 2
@@ -744,7 +744,7 @@
     "itemid": 1,
     "eventType": "usage",
     "batchNumber": 1001,
-    "quantityDelta": -11,
+    "quantityDelta": -13,
     "expirationDate": "2026-03-28",
     "eventTime": "2026-03-10 10:00:00",
     "locationid": 1
@@ -754,7 +754,7 @@
     "itemid": 2,
     "eventType": "usage",
     "batchNumber": 1003,
-    "quantityDelta": -5,
+    "quantityDelta": -7,
     "expirationDate": "2026-12-01",
     "eventTime": "2026-03-10 10:00:00",
     "locationid": 1
@@ -764,7 +764,7 @@
     "itemid": 3,
     "eventType": "usage",
     "batchNumber": 1005,
-    "quantityDelta": -2,
+    "quantityDelta": -6,
     "expirationDate": "2026-10-20",
     "eventTime": "2026-03-10 10:00:00",
     "locationid": 2
@@ -774,7 +774,7 @@
     "itemid": 4,
     "eventType": "usage",
     "batchNumber": 1006,
-    "quantityDelta": -8,
+    "quantityDelta": -9,
     "expirationDate": "2026-09-15",
     "eventTime": "2026-03-10 10:00:00",
     "locationid": 3
@@ -784,7 +784,7 @@
     "itemid": 5,
     "eventType": "usage",
     "batchNumber": 1009,
-    "quantityDelta": -13,
+    "quantityDelta": -31,
     "expirationDate": "2026-10-30",
     "eventTime": "2026-03-10 10:00:00",
     "locationid": 1
@@ -794,7 +794,7 @@
     "itemid": 6,
     "eventType": "usage",
     "batchNumber": 1010,
-    "quantityDelta": -24,
+    "quantityDelta": -52,
     "expirationDate": "2026-08-20",
     "eventTime": "2026-03-10 10:00:00",
     "locationid": 3
@@ -804,7 +804,7 @@
     "itemid": 7,
     "eventType": "usage",
     "batchNumber": 1012,
-    "quantityDelta": -19,
+    "quantityDelta": -20,
     "expirationDate": "2026-07-15",
     "eventTime": "2026-03-10 10:00:00",
     "locationid": 3
@@ -814,7 +814,7 @@
     "itemid": 8,
     "eventType": "usage",
     "batchNumber": 1014,
-    "quantityDelta": -10,
+    "quantityDelta": -20,
     "expirationDate": "2026-12-20",
     "eventTime": "2026-03-10 10:00:00",
     "locationid": 2
@@ -824,7 +824,7 @@
     "itemid": 9,
     "eventType": "usage",
     "batchNumber": 1015,
-    "quantityDelta": -55,
+    "quantityDelta": -124,
     "expirationDate": "2026-04-01",
     "eventTime": "2026-03-10 10:00:00",
     "locationid": 3
@@ -834,7 +834,7 @@
     "itemid": 10,
     "eventType": "usage",
     "batchNumber": 1017,
-    "quantityDelta": -44,
+    "quantityDelta": -45,
     "expirationDate": "2026-11-20",
     "eventTime": "2026-03-10 10:00:00",
     "locationid": 3
@@ -844,7 +844,7 @@
     "itemid": 11,
     "eventType": "usage",
     "batchNumber": 1019,
-    "quantityDelta": -21,
+    "quantityDelta": -9,
     "expirationDate": "2026-09-10",
     "eventTime": "2026-03-10 10:00:00",
     "locationid": 3
@@ -854,7 +854,7 @@
     "itemid": 12,
     "eventType": "usage",
     "batchNumber": 1020,
-    "quantityDelta": -26,
+    "quantityDelta": -9,
     "expirationDate": "2026-06-30",
     "eventTime": "2026-03-10 10:00:00",
     "locationid": 4
@@ -874,7 +874,7 @@
     "itemid": 14,
     "eventType": "usage",
     "batchNumber": 1023,
-    "quantityDelta": -14,
+    "quantityDelta": -15,
     "expirationDate": "2026-08-12",
     "eventTime": "2026-03-10 10:00:00",
     "locationid": 1
@@ -884,7 +884,7 @@
     "itemid": 15,
     "eventType": "usage",
     "batchNumber": 1024,
-    "quantityDelta": -18,
+    "quantityDelta": -8,
     "expirationDate": "2026-11-30",
     "eventTime": "2026-03-10 10:00:00",
     "locationid": 3
@@ -894,7 +894,7 @@
     "itemid": 16,
     "eventType": "usage",
     "batchNumber": 1025,
-    "quantityDelta": -5,
+    "quantityDelta": -11,
     "expirationDate": "2026-03-25",
     "eventTime": "2026-03-10 10:00:00",
     "locationid": 2
@@ -904,7 +904,7 @@
     "itemid": 1,
     "eventType": "usage",
     "batchNumber": 1001,
-    "quantityDelta": -10,
+    "quantityDelta": -12,
     "expirationDate": "2026-03-28",
     "eventTime": "2026-03-11 08:00:00",
     "locationid": 1
@@ -914,7 +914,7 @@
     "itemid": 2,
     "eventType": "usage",
     "batchNumber": 1003,
-    "quantityDelta": -3,
+    "quantityDelta": -7,
     "expirationDate": "2026-12-01",
     "eventTime": "2026-03-11 08:00:00",
     "locationid": 1
@@ -924,7 +924,7 @@
     "itemid": 3,
     "eventType": "usage",
     "batchNumber": 1005,
-    "quantityDelta": -3,
+    "quantityDelta": -6,
     "expirationDate": "2026-10-20",
     "eventTime": "2026-03-11 08:00:00",
     "locationid": 2
@@ -934,7 +934,7 @@
     "itemid": 4,
     "eventType": "usage",
     "batchNumber": 1006,
-    "quantityDelta": -7,
+    "quantityDelta": -9,
     "expirationDate": "2026-09-15",
     "eventTime": "2026-03-11 08:00:00",
     "locationid": 3
@@ -944,7 +944,7 @@
     "itemid": 5,
     "eventType": "usage",
     "batchNumber": 1009,
-    "quantityDelta": -17,
+    "quantityDelta": -40,
     "expirationDate": "2026-10-30",
     "eventTime": "2026-03-11 08:00:00",
     "locationid": 1
@@ -954,7 +954,7 @@
     "itemid": 6,
     "eventType": "usage",
     "batchNumber": 1010,
-    "quantityDelta": -20,
+    "quantityDelta": -43,
     "expirationDate": "2026-08-20",
     "eventTime": "2026-03-11 08:00:00",
     "locationid": 3
@@ -964,7 +964,7 @@
     "itemid": 7,
     "eventType": "usage",
     "batchNumber": 1012,
-    "quantityDelta": -21,
+    "quantityDelta": -22,
     "expirationDate": "2026-07-15",
     "eventTime": "2026-03-11 08:00:00",
     "locationid": 3
@@ -974,7 +974,7 @@
     "itemid": 8,
     "eventType": "usage",
     "batchNumber": 1014,
-    "quantityDelta": -8,
+    "quantityDelta": -16,
     "expirationDate": "2026-12-20",
     "eventTime": "2026-03-11 08:00:00",
     "locationid": 2
@@ -984,7 +984,7 @@
     "itemid": 9,
     "eventType": "usage",
     "batchNumber": 1015,
-    "quantityDelta": -47,
+    "quantityDelta": -106,
     "expirationDate": "2026-04-01",
     "eventTime": "2026-03-11 08:00:00",
     "locationid": 3
@@ -994,7 +994,7 @@
     "itemid": 10,
     "eventType": "usage",
     "batchNumber": 1017,
-    "quantityDelta": -37,
+    "quantityDelta": -38,
     "expirationDate": "2026-11-20",
     "eventTime": "2026-03-11 08:00:00",
     "locationid": 3
@@ -1004,7 +1004,7 @@
     "itemid": 11,
     "eventType": "usage",
     "batchNumber": 1019,
-    "quantityDelta": -19,
+    "quantityDelta": -9,
     "expirationDate": "2026-09-10",
     "eventTime": "2026-03-11 08:00:00",
     "locationid": 3
@@ -1014,7 +1014,7 @@
     "itemid": 12,
     "eventType": "usage",
     "batchNumber": 1020,
-    "quantityDelta": -24,
+    "quantityDelta": -9,
     "expirationDate": "2026-06-30",
     "eventTime": "2026-03-11 08:00:00",
     "locationid": 4
@@ -1034,7 +1034,7 @@
     "itemid": 14,
     "eventType": "usage",
     "batchNumber": 1023,
-    "quantityDelta": -12,
+    "quantityDelta": -13,
     "expirationDate": "2026-08-12",
     "eventTime": "2026-03-11 08:00:00",
     "locationid": 1
@@ -1044,7 +1044,7 @@
     "itemid": 15,
     "eventType": "usage",
     "batchNumber": 1024,
-    "quantityDelta": -14,
+    "quantityDelta": -8,
     "expirationDate": "2026-11-30",
     "eventTime": "2026-03-11 08:00:00",
     "locationid": 3
@@ -1054,7 +1054,7 @@
     "itemid": 16,
     "eventType": "usage",
     "batchNumber": 1025,
-    "quantityDelta": -4,
+    "quantityDelta": -9,
     "expirationDate": "2026-03-25",
     "eventTime": "2026-03-11 08:00:00",
     "locationid": 2
@@ -1064,7 +1064,7 @@
     "itemid": 1,
     "eventType": "usage",
     "batchNumber": 1001,
-    "quantityDelta": -12,
+    "quantityDelta": -14,
     "expirationDate": "2026-03-28",
     "eventTime": "2026-03-12 11:30:00",
     "locationid": 1
@@ -1074,7 +1074,7 @@
     "itemid": 2,
     "eventType": "usage",
     "batchNumber": 1003,
-    "quantityDelta": -4,
+    "quantityDelta": -7,
     "expirationDate": "2026-12-01",
     "eventTime": "2026-03-12 11:30:00",
     "locationid": 1
@@ -1084,7 +1084,7 @@
     "itemid": 3,
     "eventType": "usage",
     "batchNumber": 1005,
-    "quantityDelta": -2,
+    "quantityDelta": -6,
     "expirationDate": "2026-10-20",
     "eventTime": "2026-03-12 11:30:00",
     "locationid": 2
@@ -1094,7 +1094,7 @@
     "itemid": 4,
     "eventType": "usage",
     "batchNumber": 1006,
-    "quantityDelta": -8,
+    "quantityDelta": -9,
     "expirationDate": "2026-09-15",
     "eventTime": "2026-03-12 11:30:00",
     "locationid": 3
@@ -1104,7 +1104,7 @@
     "itemid": 5,
     "eventType": "usage",
     "batchNumber": 1009,
-    "quantityDelta": -14,
+    "quantityDelta": -33,
     "expirationDate": "2026-10-30",
     "eventTime": "2026-03-12 11:30:00",
     "locationid": 1
@@ -1114,7 +1114,7 @@
     "itemid": 6,
     "eventType": "usage",
     "batchNumber": 1010,
-    "quantityDelta": -23,
+    "quantityDelta": -49,
     "expirationDate": "2026-08-20",
     "eventTime": "2026-03-12 11:30:00",
     "locationid": 3
@@ -1124,7 +1124,7 @@
     "itemid": 7,
     "eventType": "usage",
     "batchNumber": 1012,
-    "quantityDelta": -18,
+    "quantityDelta": -19,
     "expirationDate": "2026-07-15",
     "eventTime": "2026-03-12 11:30:00",
     "locationid": 3
@@ -1134,7 +1134,7 @@
     "itemid": 8,
     "eventType": "usage",
     "batchNumber": 1014,
-    "quantityDelta": -9,
+    "quantityDelta": -18,
     "expirationDate": "2026-12-20",
     "eventTime": "2026-03-12 11:30:00",
     "locationid": 2
@@ -1143,9 +1143,9 @@
     "eventid": 115,
     "itemid": 9,
     "eventType": "usage",
-    "batchNumber": 1016,
-    "quantityDelta": -51,
-    "expirationDate": "2027-01-15",
+    "batchNumber": 1015,
+    "quantityDelta": -115,
+    "expirationDate": "2026-04-01",
     "eventTime": "2026-03-12 11:30:00",
     "locationid": 3
   },
@@ -1154,7 +1154,7 @@
     "itemid": 10,
     "eventType": "usage",
     "batchNumber": 1017,
-    "quantityDelta": -41,
+    "quantityDelta": -42,
     "expirationDate": "2026-11-20",
     "eventTime": "2026-03-12 11:30:00",
     "locationid": 3
@@ -1164,7 +1164,7 @@
     "itemid": 11,
     "eventType": "usage",
     "batchNumber": 1019,
-    "quantityDelta": -20,
+    "quantityDelta": -9,
     "expirationDate": "2026-09-10",
     "eventTime": "2026-03-12 11:30:00",
     "locationid": 3
@@ -1174,7 +1174,7 @@
     "itemid": 12,
     "eventType": "usage",
     "batchNumber": 1020,
-    "quantityDelta": -25,
+    "quantityDelta": -9,
     "expirationDate": "2026-06-30",
     "eventTime": "2026-03-12 11:30:00",
     "locationid": 4
@@ -1194,7 +1194,7 @@
     "itemid": 14,
     "eventType": "usage",
     "batchNumber": 1023,
-    "quantityDelta": -11,
+    "quantityDelta": -12,
     "expirationDate": "2026-08-12",
     "eventTime": "2026-03-12 11:30:00",
     "locationid": 1
@@ -1204,7 +1204,7 @@
     "itemid": 15,
     "eventType": "usage",
     "batchNumber": 1024,
-    "quantityDelta": -16,
+    "quantityDelta": -8,
     "expirationDate": "2026-11-30",
     "eventTime": "2026-03-12 11:30:00",
     "locationid": 3
@@ -1213,9 +1213,9 @@
     "eventid": 122,
     "itemid": 16,
     "eventType": "usage",
-    "batchNumber": 1025,
-    "quantityDelta": -5,
-    "expirationDate": "2026-03-25",
+    "batchNumber": 1026,
+    "quantityDelta": -11,
+    "expirationDate": "2026-09-01",
     "eventTime": "2026-03-12 11:30:00",
     "locationid": 2
   },
@@ -1224,7 +1224,7 @@
     "itemid": 1,
     "eventType": "usage",
     "batchNumber": 1001,
-    "quantityDelta": -11,
+    "quantityDelta": -13,
     "expirationDate": "2026-03-28",
     "eventTime": "2026-03-13 09:45:00",
     "locationid": 1
@@ -1234,7 +1234,7 @@
     "itemid": 2,
     "eventType": "usage",
     "batchNumber": 1003,
-    "quantityDelta": -3,
+    "quantityDelta": -7,
     "expirationDate": "2026-12-01",
     "eventTime": "2026-03-13 09:45:00",
     "locationid": 1
@@ -1244,7 +1244,7 @@
     "itemid": 3,
     "eventType": "usage",
     "batchNumber": 1005,
-    "quantityDelta": -2,
+    "quantityDelta": -6,
     "expirationDate": "2026-10-20",
     "eventTime": "2026-03-13 09:45:00",
     "locationid": 2
@@ -1264,7 +1264,7 @@
     "itemid": 5,
     "eventType": "usage",
     "batchNumber": 1009,
-    "quantityDelta": -15,
+    "quantityDelta": -35,
     "expirationDate": "2026-10-30",
     "eventTime": "2026-03-13 09:45:00",
     "locationid": 1
@@ -1274,7 +1274,7 @@
     "itemid": 6,
     "eventType": "usage",
     "batchNumber": 1010,
-    "quantityDelta": -25,
+    "quantityDelta": -54,
     "expirationDate": "2026-08-20",
     "eventTime": "2026-03-13 09:45:00",
     "locationid": 3
@@ -1284,7 +1284,7 @@
     "itemid": 7,
     "eventType": "usage",
     "batchNumber": 1012,
-    "quantityDelta": -20,
+    "quantityDelta": -21,
     "expirationDate": "2026-07-15",
     "eventTime": "2026-03-13 09:45:00",
     "locationid": 3
@@ -1294,7 +1294,7 @@
     "itemid": 8,
     "eventType": "usage",
     "batchNumber": 1014,
-    "quantityDelta": -7,
+    "quantityDelta": -14,
     "expirationDate": "2026-12-20",
     "eventTime": "2026-03-13 09:45:00",
     "locationid": 2
@@ -1304,7 +1304,7 @@
     "itemid": 9,
     "eventType": "usage",
     "batchNumber": 1016,
-    "quantityDelta": -53,
+    "quantityDelta": -119,
     "expirationDate": "2027-01-15",
     "eventTime": "2026-03-13 09:45:00",
     "locationid": 3
@@ -1314,7 +1314,7 @@
     "itemid": 10,
     "eventType": "usage",
     "batchNumber": 1017,
-    "quantityDelta": -43,
+    "quantityDelta": -44,
     "expirationDate": "2026-11-20",
     "eventTime": "2026-03-13 09:45:00",
     "locationid": 3
@@ -1324,7 +1324,7 @@
     "itemid": 11,
     "eventType": "usage",
     "batchNumber": 1019,
-    "quantityDelta": -22,
+    "quantityDelta": -9,
     "expirationDate": "2026-09-10",
     "eventTime": "2026-03-13 09:45:00",
     "locationid": 3
@@ -1334,7 +1334,7 @@
     "itemid": 12,
     "eventType": "usage",
     "batchNumber": 1020,
-    "quantityDelta": -27,
+    "quantityDelta": -9,
     "expirationDate": "2026-06-30",
     "eventTime": "2026-03-13 09:45:00",
     "locationid": 4
@@ -1344,7 +1344,7 @@
     "itemid": 13,
     "eventType": "usage",
     "batchNumber": 1021,
-    "quantityDelta": -5,
+    "quantityDelta": -4,
     "expirationDate": "2026-04-03",
     "eventTime": "2026-03-13 09:45:00",
     "locationid": 1
@@ -1354,7 +1354,7 @@
     "itemid": 14,
     "eventType": "usage",
     "batchNumber": 1023,
-    "quantityDelta": -13,
+    "quantityDelta": -14,
     "expirationDate": "2026-08-12",
     "eventTime": "2026-03-13 09:45:00",
     "locationid": 1
@@ -1364,7 +1364,7 @@
     "itemid": 15,
     "eventType": "usage",
     "batchNumber": 1024,
-    "quantityDelta": -17,
+    "quantityDelta": -8,
     "expirationDate": "2026-11-30",
     "eventTime": "2026-03-13 09:45:00",
     "locationid": 3
@@ -1373,9 +1373,9 @@
     "eventid": 138,
     "itemid": 16,
     "eventType": "usage",
-    "batchNumber": 1025,
-    "quantityDelta": -6,
-    "expirationDate": "2026-03-25",
+    "batchNumber": 1026,
+    "quantityDelta": -13,
+    "expirationDate": "2026-09-01",
     "eventTime": "2026-03-13 09:45:00",
     "locationid": 2
   },
@@ -1384,7 +1384,7 @@
     "itemid": 1,
     "eventType": "usage",
     "batchNumber": 1001,
-    "quantityDelta": -9,
+    "quantityDelta": -11,
     "expirationDate": "2026-03-28",
     "eventTime": "2026-03-14 07:00:00",
     "locationid": 1
@@ -1394,7 +1394,7 @@
     "itemid": 2,
     "eventType": "usage",
     "batchNumber": 1003,
-    "quantityDelta": -4,
+    "quantityDelta": -1,
     "expirationDate": "2026-12-01",
     "eventTime": "2026-03-14 07:00:00",
     "locationid": 1
@@ -1404,7 +1404,7 @@
     "itemid": 3,
     "eventType": "usage",
     "batchNumber": 1005,
-    "quantityDelta": -3,
+    "quantityDelta": -1,
     "expirationDate": "2026-10-20",
     "eventTime": "2026-03-14 07:00:00",
     "locationid": 2
@@ -1414,7 +1414,7 @@
     "itemid": 4,
     "eventType": "usage",
     "batchNumber": 1006,
-    "quantityDelta": -7,
+    "quantityDelta": -1,
     "expirationDate": "2026-09-15",
     "eventTime": "2026-03-14 07:00:00",
     "locationid": 3
@@ -1424,7 +1424,7 @@
     "itemid": 5,
     "eventType": "usage",
     "batchNumber": 1009,
-    "quantityDelta": -16,
+    "quantityDelta": -38,
     "expirationDate": "2026-10-30",
     "eventTime": "2026-03-14 07:00:00",
     "locationid": 1
@@ -1434,7 +1434,7 @@
     "itemid": 6,
     "eventType": "usage",
     "batchNumber": 1010,
-    "quantityDelta": -22,
+    "quantityDelta": -47,
     "expirationDate": "2026-08-20",
     "eventTime": "2026-03-14 07:00:00",
     "locationid": 3
@@ -1444,7 +1444,7 @@
     "itemid": 7,
     "eventType": "usage",
     "batchNumber": 1012,
-    "quantityDelta": -17,
+    "quantityDelta": -18,
     "expirationDate": "2026-07-15",
     "eventTime": "2026-03-14 07:00:00",
     "locationid": 3
@@ -1454,7 +1454,7 @@
     "itemid": 8,
     "eventType": "usage",
     "batchNumber": 1014,
-    "quantityDelta": -10,
+    "quantityDelta": -20,
     "expirationDate": "2026-12-20",
     "eventTime": "2026-03-14 07:00:00",
     "locationid": 2
@@ -1464,7 +1464,7 @@
     "itemid": 9,
     "eventType": "usage",
     "batchNumber": 1016,
-    "quantityDelta": -49,
+    "quantityDelta": -110,
     "expirationDate": "2027-01-15",
     "eventTime": "2026-03-14 07:00:00",
     "locationid": 3
@@ -1474,7 +1474,7 @@
     "itemid": 10,
     "eventType": "usage",
     "batchNumber": 1017,
-    "quantityDelta": -39,
+    "quantityDelta": -40,
     "expirationDate": "2026-11-20",
     "eventTime": "2026-03-14 07:00:00",
     "locationid": 3
@@ -1484,7 +1484,7 @@
     "itemid": 11,
     "eventType": "usage",
     "batchNumber": 1019,
-    "quantityDelta": -18,
+    "quantityDelta": -1,
     "expirationDate": "2026-09-10",
     "eventTime": "2026-03-14 07:00:00",
     "locationid": 3
@@ -1494,7 +1494,7 @@
     "itemid": 12,
     "eventType": "usage",
     "batchNumber": 1020,
-    "quantityDelta": -23,
+    "quantityDelta": -1,
     "expirationDate": "2026-06-30",
     "eventTime": "2026-03-14 07:00:00",
     "locationid": 4
@@ -1514,7 +1514,7 @@
     "itemid": 14,
     "eventType": "usage",
     "batchNumber": 1023,
-    "quantityDelta": -12,
+    "quantityDelta": -13,
     "expirationDate": "2026-08-12",
     "eventTime": "2026-03-14 07:00:00",
     "locationid": 1
@@ -1524,7 +1524,7 @@
     "itemid": 15,
     "eventType": "usage",
     "batchNumber": 1024,
-    "quantityDelta": -15,
+    "quantityDelta": -1,
     "expirationDate": "2026-11-30",
     "eventTime": "2026-03-14 07:00:00",
     "locationid": 3
@@ -1533,9 +1533,9 @@
     "eventid": 154,
     "itemid": 16,
     "eventType": "usage",
-    "batchNumber": 1025,
-    "quantityDelta": -4,
-    "expirationDate": "2026-03-25",
+    "batchNumber": 1026,
+    "quantityDelta": -9,
+    "expirationDate": "2026-09-01",
     "eventTime": "2026-03-14 07:00:00",
     "locationid": 2
   },
@@ -1544,7 +1544,7 @@
     "itemid": 1,
     "eventType": "usage",
     "batchNumber": 1001,
-    "quantityDelta": -10,
+    "quantityDelta": -12,
     "expirationDate": "2026-03-28",
     "eventTime": "2026-03-15 10:30:00",
     "locationid": 1
@@ -1554,7 +1554,7 @@
     "itemid": 2,
     "eventType": "usage",
     "batchNumber": 1003,
-    "quantityDelta": -5,
+    "quantityDelta": -1,
     "expirationDate": "2026-12-01",
     "eventTime": "2026-03-15 10:30:00",
     "locationid": 1
@@ -1564,7 +1564,7 @@
     "itemid": 3,
     "eventType": "usage",
     "batchNumber": 1005,
-    "quantityDelta": -2,
+    "quantityDelta": -1,
     "expirationDate": "2026-10-20",
     "eventTime": "2026-03-15 10:30:00",
     "locationid": 2
@@ -1574,7 +1574,7 @@
     "itemid": 4,
     "eventType": "usage",
     "batchNumber": 1006,
-    "quantityDelta": -8,
+    "quantityDelta": -1,
     "expirationDate": "2026-09-15",
     "eventTime": "2026-03-15 10:30:00",
     "locationid": 3
@@ -1584,7 +1584,7 @@
     "itemid": 5,
     "eventType": "usage",
     "batchNumber": 1009,
-    "quantityDelta": -14,
+    "quantityDelta": -33,
     "expirationDate": "2026-10-30",
     "eventTime": "2026-03-15 10:30:00",
     "locationid": 1
@@ -1594,7 +1594,7 @@
     "itemid": 6,
     "eventType": "usage",
     "batchNumber": 1010,
-    "quantityDelta": -24,
+    "quantityDelta": -52,
     "expirationDate": "2026-08-20",
     "eventTime": "2026-03-15 10:30:00",
     "locationid": 3
@@ -1604,7 +1604,7 @@
     "itemid": 7,
     "eventType": "usage",
     "batchNumber": 1012,
-    "quantityDelta": -19,
+    "quantityDelta": -20,
     "expirationDate": "2026-07-15",
     "eventTime": "2026-03-15 10:30:00",
     "locationid": 3
@@ -1614,7 +1614,7 @@
     "itemid": 8,
     "eventType": "usage",
     "batchNumber": 1014,
-    "quantityDelta": -8,
+    "quantityDelta": -16,
     "expirationDate": "2026-12-20",
     "eventTime": "2026-03-15 10:30:00",
     "locationid": 2
@@ -1624,7 +1624,7 @@
     "itemid": 9,
     "eventType": "usage",
     "batchNumber": 1016,
-    "quantityDelta": -50,
+    "quantityDelta": -112,
     "expirationDate": "2027-01-15",
     "eventTime": "2026-03-15 10:30:00",
     "locationid": 3
@@ -1634,7 +1634,7 @@
     "itemid": 10,
     "eventType": "usage",
     "batchNumber": 1017,
-    "quantityDelta": -40,
+    "quantityDelta": -41,
     "expirationDate": "2026-11-20",
     "eventTime": "2026-03-15 10:30:00",
     "locationid": 3
@@ -1644,7 +1644,7 @@
     "itemid": 11,
     "eventType": "usage",
     "batchNumber": 1019,
-    "quantityDelta": -21,
+    "quantityDelta": -1,
     "expirationDate": "2026-09-10",
     "eventTime": "2026-03-15 10:30:00",
     "locationid": 3
@@ -1654,7 +1654,7 @@
     "itemid": 12,
     "eventType": "usage",
     "batchNumber": 1020,
-    "quantityDelta": -26,
+    "quantityDelta": -1,
     "expirationDate": "2026-06-30",
     "eventTime": "2026-03-15 10:30:00",
     "locationid": 4
@@ -1674,7 +1674,7 @@
     "itemid": 14,
     "eventType": "usage",
     "batchNumber": 1023,
-    "quantityDelta": -14,
+    "quantityDelta": -15,
     "expirationDate": "2026-08-12",
     "eventTime": "2026-03-15 10:30:00",
     "locationid": 1
@@ -1684,7 +1684,7 @@
     "itemid": 15,
     "eventType": "usage",
     "batchNumber": 1024,
-    "quantityDelta": -18,
+    "quantityDelta": -1,
     "expirationDate": "2026-11-30",
     "eventTime": "2026-03-15 10:30:00",
     "locationid": 3
@@ -1694,7 +1694,7 @@
     "itemid": 16,
     "eventType": "usage",
     "batchNumber": 1026,
-    "quantityDelta": -5,
+    "quantityDelta": -11,
     "expirationDate": "2026-09-01",
     "eventTime": "2026-03-15 10:30:00",
     "locationid": 2
@@ -1704,7 +1704,7 @@
     "itemid": 1,
     "eventType": "usage",
     "batchNumber": 1001,
-    "quantityDelta": -11,
+    "quantityDelta": -13,
     "expirationDate": "2026-03-28",
     "eventTime": "2026-03-16 08:15:00",
     "locationid": 1
@@ -1714,7 +1714,7 @@
     "itemid": 2,
     "eventType": "usage",
     "batchNumber": 1003,
-    "quantityDelta": -3,
+    "quantityDelta": -1,
     "expirationDate": "2026-12-01",
     "eventTime": "2026-03-16 08:15:00",
     "locationid": 1
@@ -1724,7 +1724,7 @@
     "itemid": 3,
     "eventType": "usage",
     "batchNumber": 1005,
-    "quantityDelta": -2,
+    "quantityDelta": -1,
     "expirationDate": "2026-10-20",
     "eventTime": "2026-03-16 08:15:00",
     "locationid": 2
@@ -1734,7 +1734,7 @@
     "itemid": 4,
     "eventType": "usage",
     "batchNumber": 1006,
-    "quantityDelta": -9,
+    "quantityDelta": -1,
     "expirationDate": "2026-09-15",
     "eventTime": "2026-03-16 08:15:00",
     "locationid": 3
@@ -1744,7 +1744,7 @@
     "itemid": 5,
     "eventType": "usage",
     "batchNumber": 1009,
-    "quantityDelta": -13,
+    "quantityDelta": -31,
     "expirationDate": "2026-10-30",
     "eventTime": "2026-03-16 08:15:00",
     "locationid": 1
@@ -1754,7 +1754,7 @@
     "itemid": 6,
     "eventType": "usage",
     "batchNumber": 1010,
-    "quantityDelta": -21,
+    "quantityDelta": -45,
     "expirationDate": "2026-08-20",
     "eventTime": "2026-03-16 08:15:00",
     "locationid": 3
@@ -1764,7 +1764,7 @@
     "itemid": 7,
     "eventType": "usage",
     "batchNumber": 1012,
-    "quantityDelta": -18,
+    "quantityDelta": -19,
     "expirationDate": "2026-07-15",
     "eventTime": "2026-03-16 08:15:00",
     "locationid": 3
@@ -1774,7 +1774,7 @@
     "itemid": 8,
     "eventType": "usage",
     "batchNumber": 1014,
-    "quantityDelta": -7,
+    "quantityDelta": -14,
     "expirationDate": "2026-12-20",
     "eventTime": "2026-03-16 08:15:00",
     "locationid": 2
@@ -1784,7 +1784,7 @@
     "itemid": 9,
     "eventType": "usage",
     "batchNumber": 1016,
-    "quantityDelta": -52,
+    "quantityDelta": -117,
     "expirationDate": "2027-01-15",
     "eventTime": "2026-03-16 08:15:00",
     "locationid": 3
@@ -1794,7 +1794,7 @@
     "itemid": 10,
     "eventType": "usage",
     "batchNumber": 1017,
-    "quantityDelta": -42,
+    "quantityDelta": -43,
     "expirationDate": "2026-11-20",
     "eventTime": "2026-03-16 08:15:00",
     "locationid": 3
@@ -1804,7 +1804,7 @@
     "itemid": 11,
     "eventType": "usage",
     "batchNumber": 1019,
-    "quantityDelta": -20,
+    "quantityDelta": -1,
     "expirationDate": "2026-09-10",
     "eventTime": "2026-03-16 08:15:00",
     "locationid": 3
@@ -1814,7 +1814,7 @@
     "itemid": 12,
     "eventType": "usage",
     "batchNumber": 1020,
-    "quantityDelta": -25,
+    "quantityDelta": -1,
     "expirationDate": "2026-06-30",
     "eventTime": "2026-03-16 08:15:00",
     "locationid": 4
@@ -1824,7 +1824,7 @@
     "itemid": 13,
     "eventType": "usage",
     "batchNumber": 1022,
-    "quantityDelta": -5,
+    "quantityDelta": -4,
     "expirationDate": "2026-10-15",
     "eventTime": "2026-03-16 08:15:00",
     "locationid": 1
@@ -1834,7 +1834,7 @@
     "itemid": 14,
     "eventType": "usage",
     "batchNumber": 1023,
-    "quantityDelta": -11,
+    "quantityDelta": -12,
     "expirationDate": "2026-08-12",
     "eventTime": "2026-03-16 08:15:00",
     "locationid": 1
@@ -1844,7 +1844,7 @@
     "itemid": 15,
     "eventType": "usage",
     "batchNumber": 1024,
-    "quantityDelta": -16,
+    "quantityDelta": -1,
     "expirationDate": "2026-11-30",
     "eventTime": "2026-03-16 08:15:00",
     "locationid": 3
@@ -1854,7 +1854,7 @@
     "itemid": 16,
     "eventType": "usage",
     "batchNumber": 1026,
-    "quantityDelta": -6,
+    "quantityDelta": -13,
     "expirationDate": "2026-09-01",
     "eventTime": "2026-03-16 08:15:00",
     "locationid": 2
@@ -1864,7 +1864,7 @@
     "itemid": 1,
     "eventType": "usage",
     "batchNumber": 1001,
-    "quantityDelta": -10,
+    "quantityDelta": -12,
     "expirationDate": "2026-03-28",
     "eventTime": "2026-03-17 11:00:00",
     "locationid": 1
@@ -1874,7 +1874,7 @@
     "itemid": 2,
     "eventType": "usage",
     "batchNumber": 1003,
-    "quantityDelta": -4,
+    "quantityDelta": -1,
     "expirationDate": "2026-12-01",
     "eventTime": "2026-03-17 11:00:00",
     "locationid": 1
@@ -1884,7 +1884,7 @@
     "itemid": 3,
     "eventType": "usage",
     "batchNumber": 1005,
-    "quantityDelta": -3,
+    "quantityDelta": -1,
     "expirationDate": "2026-10-20",
     "eventTime": "2026-03-17 11:00:00",
     "locationid": 2
@@ -1894,7 +1894,7 @@
     "itemid": 4,
     "eventType": "usage",
     "batchNumber": 1006,
-    "quantityDelta": -7,
+    "quantityDelta": -1,
     "expirationDate": "2026-09-15",
     "eventTime": "2026-03-17 11:00:00",
     "locationid": 3
@@ -1904,7 +1904,7 @@
     "itemid": 5,
     "eventType": "usage",
     "batchNumber": 1009,
-    "quantityDelta": -15,
+    "quantityDelta": -35,
     "expirationDate": "2026-10-30",
     "eventTime": "2026-03-17 11:00:00",
     "locationid": 1
@@ -1914,7 +1914,7 @@
     "itemid": 6,
     "eventType": "usage",
     "batchNumber": 1010,
-    "quantityDelta": -23,
+    "quantityDelta": -49,
     "expirationDate": "2026-08-20",
     "eventTime": "2026-03-17 11:00:00",
     "locationid": 3
@@ -1924,7 +1924,7 @@
     "itemid": 7,
     "eventType": "usage",
     "batchNumber": 1012,
-    "quantityDelta": -20,
+    "quantityDelta": -21,
     "expirationDate": "2026-07-15",
     "eventTime": "2026-03-17 11:00:00",
     "locationid": 3
@@ -1934,7 +1934,7 @@
     "itemid": 8,
     "eventType": "usage",
     "batchNumber": 1014,
-    "quantityDelta": -9,
+    "quantityDelta": -18,
     "expirationDate": "2026-12-20",
     "eventTime": "2026-03-17 11:00:00",
     "locationid": 2
@@ -1944,7 +1944,7 @@
     "itemid": 9,
     "eventType": "usage",
     "batchNumber": 1016,
-    "quantityDelta": -48,
+    "quantityDelta": -108,
     "expirationDate": "2027-01-15",
     "eventTime": "2026-03-17 11:00:00",
     "locationid": 3
@@ -1954,7 +1954,7 @@
     "itemid": 10,
     "eventType": "usage",
     "batchNumber": 1017,
-    "quantityDelta": -38,
+    "quantityDelta": -39,
     "expirationDate": "2026-11-20",
     "eventTime": "2026-03-17 11:00:00",
     "locationid": 3
@@ -1964,7 +1964,7 @@
     "itemid": 11,
     "eventType": "usage",
     "batchNumber": 1019,
-    "quantityDelta": -19,
+    "quantityDelta": -1,
     "expirationDate": "2026-09-10",
     "eventTime": "2026-03-17 11:00:00",
     "locationid": 3
@@ -1974,7 +1974,7 @@
     "itemid": 12,
     "eventType": "usage",
     "batchNumber": 1020,
-    "quantityDelta": -24,
+    "quantityDelta": -1,
     "expirationDate": "2026-06-30",
     "eventTime": "2026-03-17 11:00:00",
     "locationid": 4
@@ -1994,7 +1994,7 @@
     "itemid": 14,
     "eventType": "usage",
     "batchNumber": 1023,
-    "quantityDelta": -13,
+    "quantityDelta": -14,
     "expirationDate": "2026-08-12",
     "eventTime": "2026-03-17 11:00:00",
     "locationid": 1
@@ -2004,7 +2004,7 @@
     "itemid": 15,
     "eventType": "usage",
     "batchNumber": 1024,
-    "quantityDelta": -14,
+    "quantityDelta": -1,
     "expirationDate": "2026-11-30",
     "eventTime": "2026-03-17 11:00:00",
     "locationid": 3
@@ -2014,7 +2014,7 @@
     "itemid": 16,
     "eventType": "usage",
     "batchNumber": 1026,
-    "quantityDelta": -4,
+    "quantityDelta": -9,
     "expirationDate": "2026-09-01",
     "eventTime": "2026-03-17 11:00:00",
     "locationid": 2
@@ -2024,7 +2024,7 @@
     "itemid": 1,
     "eventType": "usage",
     "batchNumber": 1001,
-    "quantityDelta": -12,
+    "quantityDelta": -14,
     "expirationDate": "2026-03-28",
     "eventTime": "2026-03-18 09:00:00",
     "locationid": 1
@@ -2034,7 +2034,7 @@
     "itemid": 2,
     "eventType": "usage",
     "batchNumber": 1003,
-    "quantityDelta": -3,
+    "quantityDelta": -1,
     "expirationDate": "2026-12-01",
     "eventTime": "2026-03-18 09:00:00",
     "locationid": 1
@@ -2044,7 +2044,7 @@
     "itemid": 3,
     "eventType": "usage",
     "batchNumber": 1005,
-    "quantityDelta": -2,
+    "quantityDelta": -1,
     "expirationDate": "2026-10-20",
     "eventTime": "2026-03-18 09:00:00",
     "locationid": 2
@@ -2054,7 +2054,7 @@
     "itemid": 4,
     "eventType": "usage",
     "batchNumber": 1006,
-    "quantityDelta": -8,
+    "quantityDelta": -1,
     "expirationDate": "2026-09-15",
     "eventTime": "2026-03-18 09:00:00",
     "locationid": 3
@@ -2064,7 +2064,7 @@
     "itemid": 5,
     "eventType": "usage",
     "batchNumber": 1009,
-    "quantityDelta": -16,
+    "quantityDelta": -38,
     "expirationDate": "2026-10-30",
     "eventTime": "2026-03-18 09:00:00",
     "locationid": 1
@@ -2074,7 +2074,7 @@
     "itemid": 6,
     "eventType": "usage",
     "batchNumber": 1010,
-    "quantityDelta": -24,
+    "quantityDelta": -52,
     "expirationDate": "2026-08-20",
     "eventTime": "2026-03-18 09:00:00",
     "locationid": 3
@@ -2084,7 +2084,7 @@
     "itemid": 7,
     "eventType": "usage",
     "batchNumber": 1012,
-    "quantityDelta": -19,
+    "quantityDelta": -20,
     "expirationDate": "2026-07-15",
     "eventTime": "2026-03-18 09:00:00",
     "locationid": 3
@@ -2094,7 +2094,7 @@
     "itemid": 8,
     "eventType": "usage",
     "batchNumber": 1014,
-    "quantityDelta": -8,
+    "quantityDelta": -16,
     "expirationDate": "2026-12-20",
     "eventTime": "2026-03-18 09:00:00",
     "locationid": 2
@@ -2104,7 +2104,7 @@
     "itemid": 9,
     "eventType": "usage",
     "batchNumber": 1016,
-    "quantityDelta": -54,
+    "quantityDelta": -122,
     "expirationDate": "2027-01-15",
     "eventTime": "2026-03-18 09:00:00",
     "locationid": 3
@@ -2114,7 +2114,7 @@
     "itemid": 10,
     "eventType": "usage",
     "batchNumber": 1017,
-    "quantityDelta": -43,
+    "quantityDelta": -44,
     "expirationDate": "2026-11-20",
     "eventTime": "2026-03-18 09:00:00",
     "locationid": 3
@@ -2124,7 +2124,7 @@
     "itemid": 11,
     "eventType": "usage",
     "batchNumber": 1019,
-    "quantityDelta": -21,
+    "quantityDelta": -1,
     "expirationDate": "2026-09-10",
     "eventTime": "2026-03-18 09:00:00",
     "locationid": 3
@@ -2134,7 +2134,7 @@
     "itemid": 12,
     "eventType": "usage",
     "batchNumber": 1020,
-    "quantityDelta": -26,
+    "quantityDelta": -1,
     "expirationDate": "2026-06-30",
     "eventTime": "2026-03-18 09:00:00",
     "locationid": 4
@@ -2154,7 +2154,7 @@
     "itemid": 14,
     "eventType": "usage",
     "batchNumber": 1023,
-    "quantityDelta": -12,
+    "quantityDelta": -13,
     "expirationDate": "2026-08-12",
     "eventTime": "2026-03-18 09:00:00",
     "locationid": 1
@@ -2164,7 +2164,7 @@
     "itemid": 15,
     "eventType": "usage",
     "batchNumber": 1024,
-    "quantityDelta": -17,
+    "quantityDelta": -1,
     "expirationDate": "2026-11-30",
     "eventTime": "2026-03-18 09:00:00",
     "locationid": 3
@@ -2174,7 +2174,7 @@
     "itemid": 16,
     "eventType": "usage",
     "batchNumber": 1026,
-    "quantityDelta": -5,
+    "quantityDelta": -11,
     "expirationDate": "2026-09-01",
     "eventTime": "2026-03-18 09:00:00",
     "locationid": 2
@@ -2184,7 +2184,7 @@
     "itemid": 1,
     "eventType": "usage",
     "batchNumber": 1001,
-    "quantityDelta": -11,
+    "quantityDelta": -13,
     "expirationDate": "2026-03-28",
     "eventTime": "2026-03-19 07:30:00",
     "locationid": 1
@@ -2194,7 +2194,7 @@
     "itemid": 2,
     "eventType": "usage",
     "batchNumber": 1003,
-    "quantityDelta": -4,
+    "quantityDelta": -1,
     "expirationDate": "2026-12-01",
     "eventTime": "2026-03-19 07:30:00",
     "locationid": 1
@@ -2204,7 +2204,7 @@
     "itemid": 3,
     "eventType": "usage",
     "batchNumber": 1005,
-    "quantityDelta": -2,
+    "quantityDelta": -1,
     "expirationDate": "2026-10-20",
     "eventTime": "2026-03-19 07:30:00",
     "locationid": 2
@@ -2214,7 +2214,7 @@
     "itemid": 4,
     "eventType": "usage",
     "batchNumber": 1006,
-    "quantityDelta": -9,
+    "quantityDelta": -1,
     "expirationDate": "2026-09-15",
     "eventTime": "2026-03-19 07:30:00",
     "locationid": 3
@@ -2224,7 +2224,7 @@
     "itemid": 5,
     "eventType": "usage",
     "batchNumber": 1009,
-    "quantityDelta": -14,
+    "quantityDelta": -33,
     "expirationDate": "2026-10-30",
     "eventTime": "2026-03-19 07:30:00",
     "locationid": 1
@@ -2234,7 +2234,7 @@
     "itemid": 6,
     "eventType": "usage",
     "batchNumber": 1010,
-    "quantityDelta": -22,
+    "quantityDelta": -47,
     "expirationDate": "2026-08-20",
     "eventTime": "2026-03-19 07:30:00",
     "locationid": 3
@@ -2244,7 +2244,7 @@
     "itemid": 7,
     "eventType": "usage",
     "batchNumber": 1012,
-    "quantityDelta": -17,
+    "quantityDelta": -18,
     "expirationDate": "2026-07-15",
     "eventTime": "2026-03-19 07:30:00",
     "locationid": 3
@@ -2254,7 +2254,7 @@
     "itemid": 8,
     "eventType": "usage",
     "batchNumber": 1014,
-    "quantityDelta": -10,
+    "quantityDelta": -20,
     "expirationDate": "2026-12-20",
     "eventTime": "2026-03-19 07:30:00",
     "locationid": 2
@@ -2264,7 +2264,7 @@
     "itemid": 9,
     "eventType": "usage",
     "batchNumber": 1016,
-    "quantityDelta": -51,
+    "quantityDelta": -115,
     "expirationDate": "2027-01-15",
     "eventTime": "2026-03-19 07:30:00",
     "locationid": 3
@@ -2274,7 +2274,7 @@
     "itemid": 10,
     "eventType": "usage",
     "batchNumber": 1017,
-    "quantityDelta": -41,
+    "quantityDelta": -42,
     "expirationDate": "2026-11-20",
     "eventTime": "2026-03-19 07:30:00",
     "locationid": 3
@@ -2284,7 +2284,7 @@
     "itemid": 11,
     "eventType": "usage",
     "batchNumber": 1019,
-    "quantityDelta": -22,
+    "quantityDelta": -1,
     "expirationDate": "2026-09-10",
     "eventTime": "2026-03-19 07:30:00",
     "locationid": 3
@@ -2294,7 +2294,7 @@
     "itemid": 12,
     "eventType": "usage",
     "batchNumber": 1020,
-    "quantityDelta": -27,
+    "quantityDelta": -1,
     "expirationDate": "2026-06-30",
     "eventTime": "2026-03-19 07:30:00",
     "locationid": 4
@@ -2314,7 +2314,7 @@
     "itemid": 14,
     "eventType": "usage",
     "batchNumber": 1023,
-    "quantityDelta": -11,
+    "quantityDelta": -12,
     "expirationDate": "2026-08-12",
     "eventTime": "2026-03-19 07:30:00",
     "locationid": 1
@@ -2324,7 +2324,7 @@
     "itemid": 15,
     "eventType": "usage",
     "batchNumber": 1024,
-    "quantityDelta": -16,
+    "quantityDelta": -1,
     "expirationDate": "2026-11-30",
     "eventTime": "2026-03-19 07:30:00",
     "locationid": 3
@@ -2334,7 +2334,7 @@
     "itemid": 16,
     "eventType": "usage",
     "batchNumber": 1026,
-    "quantityDelta": -6,
+    "quantityDelta": -13,
     "expirationDate": "2026-09-01",
     "eventTime": "2026-03-19 07:30:00",
     "locationid": 2
@@ -2344,7 +2344,7 @@
     "itemid": 1,
     "eventType": "usage",
     "batchNumber": 1001,
-    "quantityDelta": -10,
+    "quantityDelta": -12,
     "expirationDate": "2026-03-28",
     "eventTime": "2026-03-20 10:45:00",
     "locationid": 1
@@ -2354,7 +2354,7 @@
     "itemid": 2,
     "eventType": "usage",
     "batchNumber": 1003,
-    "quantityDelta": -5,
+    "quantityDelta": -1,
     "expirationDate": "2026-12-01",
     "eventTime": "2026-03-20 10:45:00",
     "locationid": 1
@@ -2364,7 +2364,7 @@
     "itemid": 3,
     "eventType": "usage",
     "batchNumber": 1005,
-    "quantityDelta": -3,
+    "quantityDelta": -1,
     "expirationDate": "2026-10-20",
     "eventTime": "2026-03-20 10:45:00",
     "locationid": 2
@@ -2374,7 +2374,7 @@
     "itemid": 4,
     "eventType": "usage",
     "batchNumber": 1006,
-    "quantityDelta": -8,
+    "quantityDelta": -1,
     "expirationDate": "2026-09-15",
     "eventTime": "2026-03-20 10:45:00",
     "locationid": 3
@@ -2384,7 +2384,7 @@
     "itemid": 5,
     "eventType": "usage",
     "batchNumber": 1009,
-    "quantityDelta": -13,
+    "quantityDelta": -31,
     "expirationDate": "2026-10-30",
     "eventTime": "2026-03-20 10:45:00",
     "locationid": 1
@@ -2394,7 +2394,7 @@
     "itemid": 6,
     "eventType": "usage",
     "batchNumber": 1010,
-    "quantityDelta": -25,
+    "quantityDelta": -54,
     "expirationDate": "2026-08-20",
     "eventTime": "2026-03-20 10:45:00",
     "locationid": 3
@@ -2404,7 +2404,7 @@
     "itemid": 7,
     "eventType": "usage",
     "batchNumber": 1012,
-    "quantityDelta": -18,
+    "quantityDelta": -19,
     "expirationDate": "2026-07-15",
     "eventTime": "2026-03-20 10:45:00",
     "locationid": 3
@@ -2414,7 +2414,7 @@
     "itemid": 8,
     "eventType": "usage",
     "batchNumber": 1014,
-    "quantityDelta": -8,
+    "quantityDelta": -16,
     "expirationDate": "2026-12-20",
     "eventTime": "2026-03-20 10:45:00",
     "locationid": 2
@@ -2424,7 +2424,7 @@
     "itemid": 9,
     "eventType": "usage",
     "batchNumber": 1016,
-    "quantityDelta": -49,
+    "quantityDelta": -110,
     "expirationDate": "2027-01-15",
     "eventTime": "2026-03-20 10:45:00",
     "locationid": 3
@@ -2434,7 +2434,7 @@
     "itemid": 10,
     "eventType": "usage",
     "batchNumber": 1017,
-    "quantityDelta": -39,
+    "quantityDelta": -40,
     "expirationDate": "2026-11-20",
     "eventTime": "2026-03-20 10:45:00",
     "locationid": 3
@@ -2444,7 +2444,7 @@
     "itemid": 11,
     "eventType": "usage",
     "batchNumber": 1019,
-    "quantityDelta": -20,
+    "quantityDelta": -1,
     "expirationDate": "2026-09-10",
     "eventTime": "2026-03-20 10:45:00",
     "locationid": 3
@@ -2454,7 +2454,7 @@
     "itemid": 12,
     "eventType": "usage",
     "batchNumber": 1020,
-    "quantityDelta": -25,
+    "quantityDelta": -1,
     "expirationDate": "2026-06-30",
     "eventTime": "2026-03-20 10:45:00",
     "locationid": 4
@@ -2464,7 +2464,7 @@
     "itemid": 13,
     "eventType": "usage",
     "batchNumber": 1022,
-    "quantityDelta": -5,
+    "quantityDelta": -4,
     "expirationDate": "2026-10-15",
     "eventTime": "2026-03-20 10:45:00",
     "locationid": 1
@@ -2474,7 +2474,7 @@
     "itemid": 14,
     "eventType": "usage",
     "batchNumber": 1023,
-    "quantityDelta": -14,
+    "quantityDelta": -15,
     "expirationDate": "2026-08-12",
     "eventTime": "2026-03-20 10:45:00",
     "locationid": 1
@@ -2484,7 +2484,7 @@
     "itemid": 15,
     "eventType": "usage",
     "batchNumber": 1024,
-    "quantityDelta": -15,
+    "quantityDelta": -1,
     "expirationDate": "2026-11-30",
     "eventTime": "2026-03-20 10:45:00",
     "locationid": 3
@@ -2494,7 +2494,7 @@
     "itemid": 16,
     "eventType": "usage",
     "batchNumber": 1026,
-    "quantityDelta": -5,
+    "quantityDelta": -11,
     "expirationDate": "2026-09-01",
     "eventTime": "2026-03-20 10:45:00",
     "locationid": 2

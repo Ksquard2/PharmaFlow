@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaFlow - Illness Readiness Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(to bottom right, #f0f9ff, #dbeafe);
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+        }
+        
+        .logo-text {
+            font-size: clamp(1.1rem, 1.4vw + 0.75rem, 1.4rem);
+            font-weight: 600;
+            color: #0f172a;
+            letter-spacing: -0.02em;
+            white-space: nowrap;
+        }
+        
+        .logo-thumb {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: clamp(2.65rem, 2.5vw + 1.85rem, 3.35rem);
+            height: clamp(2.65rem, 2.5vw + 1.85rem, 3.35rem);
+            flex-shrink: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        .logo-thumb img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center center;
+        }
+        
+        nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .nav-link {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        
+        .nav-link.active {
+            background: #eff6ff;
+            color: #1d4ed8;
+        }
+        
+        .nav-link:not(.active) {
+            color: #475569;
+        }
+        
+        .nav-link:not(.active):hover {
+            background: #f1f5f9;
+            color: #0f172a;
+        }
+        
+        main {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        h1 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            color: #64748b;
+            margin-bottom: 1.5rem;
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .category-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        
+        .category-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        
+        .category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        
+        .category-icon {
+            padding: 0.75rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .gradient-blue { background: linear-gradient(to bottom right, #3b82f6, #06b6d4); }
+        .gradient-red { background: linear-gradient(to bottom right, #ef4444, #ec4899); }
+        .gradient-purple { background: linear-gradient(to bottom right, #a855f7, #6366f1); }
+        .gradient-teal { background: linear-gradient(to bottom right, #14b8a6, #10b981); }
+        .gradient-orange { background: linear-gradient(to bottom right, #f97316, #f59e0b); }
+        .gradient-violet { background: linear-gradient(to bottom right, #8b5cf6, #a855f7); }
+        
+        .generate-btn {
+            padding: 0.5rem 1rem;
+            background: linear-gradient(to right, #4f46e5, #9333ea);
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s;
+        }
+        
+        .generate-btn:hover {
+            background: linear-gradient(to right, #4338ca, #7e22ce);
+        }
+        
+        .category-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+        }
+        
+        .category-summary {
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+        
+        .info-card {
+            background: linear-gradient(to bottom right, #f8fafc, #f1f5f9);
+            border: 2px solid #e2e8f0;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+        }
+        
+        .info-text {
+            color: #334155;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        
+        .feature-card {
+            padding: 1rem;
+            background: white;
+            border: 2px solid;
+            border-radius: 0.75rem;
+        }
+        
+        .feature-card.blue { border-color: #bfdbfe; }
+        .feature-card.purple { border-color: #ddd6fe; }
+        .feature-card.emerald { border-color: #a7f3d0; }
+        
+        .feature-title {
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+        
+        .feature-card.blue .feature-title { color: #1e3a8a; }
+        .feature-card.purple .feature-title { color: #581c87; }
+        .feature-card.emerald .feature-title { color: #064e3b; }
+        
+        .feature-desc {
+            font-size: 0.875rem;
+        }
+        
+        .feature-card.blue .feature-desc { color: #1d4ed8; }
+        .feature-card.purple .feature-desc { color: #7e22ce; }
+        .feature-card.emerald .feature-desc { color: #059669; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <a href="/" class="logo-thumb" title="PharmaFlow home"><img src="/static/logo.jpg" alt=""></a>
+                <span class="logo-text">PharmaFlow</span>
+            </div>
+            <nav>
+                <a href="/" class="nav-link">Inventory Dashboard</a>
+                <a href="/readiness" class="nav-link active">Illness Readiness</a>
+                <a href="/demo/inventory-event-log" class="nav-link">Event log (demo)</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div>
+            <h1>Illness Readiness Dashboard</h1>
+            <p class="subtitle">Generate AI-powered preparedness analysis for therapeutic categories</p>
+        </div>
+        
+        <div class="categories-grid" id="categoriesGrid"></div>
+        
+        <div class="info-card">
+            <h2>How It Works</h2>
+            <p class="info-text">
+                Click "Generate" on any therapeutic category to activate AI-powered readiness analysis. 
+                The system will evaluate current inventory levels, demand trends, supply chain data, 
+                and seasonal patterns to produce comprehensive preparedness metrics, risk assessments, 
+                and actionable recommendations for optimal inventory management.
+            </p>
+            <div class="features-grid">
+                <div class="feature-card blue">
+                    <div class="feature-title">📊 Analysis</div>
+                    <div class="feature-desc">Real-time metrics</div>
+                </div>
+                <div class="feature-card purple">
+                    <div class="feature-title">🎯 Insights</div>
+                    <div class="feature-desc">AI recommendations</div>
+                </div>
+                <div class="feature-card emerald">
+                    <div class="feature-title">📈 Forecasts</div>
+                    <div class="feature-desc">Demand projections</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const REPLAY  = {{ replay_data | safe }};
+        const AI_DATA = {{ ai_data | safe }};
+
+        const GRADIENTS = ['gradient-blue', 'gradient-red', 'gradient-purple', 'gradient-teal'];
+        const BADGE_COLORS = {
+            'Strong':   '#10b981',
+            'Adequate': '#f59e0b',
+            'Strained': '#f97316',
+            'Critical': '#ef4444'
+        };
+
+        const grid = document.getElementById('categoriesGrid');
+        grid.innerHTML = AI_DATA.map((cat, idx) => `
+            <a href="/category?id=${cat.catagoryid}" class="category-card">
+                <div class="category-header">
+                    <div class="category-icon ${GRADIENTS[idx % GRADIENTS.length]}"
+                         style="padding:0;overflow:hidden;width:52px;height:52px;">
+                        <img src="${cat.imagePath}" alt="${cat.catagory_name}"
+                             style="width:100%;height:100%;object-fit:cover;"
+                             onerror="this.parentElement.innerHTML='💊'">
+                    </div>
+                    <button class="generate-btn" onclick="event.preventDefault(); window.location='/category?id=${cat.catagoryid}';">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                        </svg>
+                        Generate
+                    </button>
+                </div>
+                <h3 class="category-title">${cat.catagory_name}</h3>
+                <p class="category-summary">${cat.justification.split('.')[0]}.</p>
+            </a>
+        `).join('');
+    </script>
+</body>
+</html>

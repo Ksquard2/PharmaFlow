@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaFlow - Inventory Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(to bottom right, #f0f9ff, #dbeafe);
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+        }
+        
+        .logo-text {
+            font-size: clamp(1.1rem, 1.4vw + 0.75rem, 1.4rem);
+            font-weight: 600;
+            color: #0f172a;
+            letter-spacing: -0.02em;
+            white-space: nowrap;
+        }
+        
+        .logo-thumb {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: clamp(2.65rem, 2.5vw + 1.85rem, 3.35rem);
+            height: clamp(2.65rem, 2.5vw + 1.85rem, 3.35rem);
+            flex-shrink: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        .logo-thumb img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center center;
+        }
+        
+        nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .nav-link {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        
+        .nav-link.active {
+            background: #eff6ff;
+            color: #1d4ed8;
+        }
+        
+        .nav-link:not(.active) {
+            color: #475569;
+        }
+        
+        .nav-link:not(.active):hover {
+            background: #f1f5f9;
+            color: #0f172a;
+        }
+        
+        main {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        h1 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            color: #64748b;
+            margin-bottom: 1.5rem;
+        }
+        
+        .search-container {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 0.75rem 1rem 0.75rem 3rem;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+        
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .grid-2 {
+            grid-template-columns: 1fr;
+        }
+        
+        @media (min-width: 1024px) {
+            .grid-2 {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        
+        .med-item {
+            display: block;
+            padding: 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            margin-bottom: 0.75rem;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        
+        .med-item:hover {
+            border-color: #93c5fd;
+            background: #eff6ff;
+        }
+        
+        .med-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .med-name-section {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .med-rank {
+            color: #94a3b8;
+            min-width: 24px;
+        }
+        
+        .med-name {
+            color: #0f172a;
+            font-weight: 500;
+        }
+        
+        .status-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            border: 1px solid;
+        }
+        
+        .status-high {
+            background: #fee2e2;
+            color: #991b1b;
+            border-color: #fecaca;
+        }
+        
+        .status-medium {
+            background: #fef3c7;
+            color: #92400e;
+            border-color: #fde68a;
+        }
+        
+        .status-low {
+            background: #dcfce7;
+            color: #166534;
+            border-color: #bbf7d0;
+        }
+        
+        .progress-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-left: 33px;
+        }
+        
+        .progress-bar {
+            flex: 1;
+            height: 0.5rem;
+            background: #f1f5f9;
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            border-radius: 9999px;
+        }
+        
+        .progress-red { background: #ef4444; }
+        .progress-amber { background: #f59e0b; }
+        .progress-green { background: #10b981; }
+        
+        .progress-score {
+            color: #64748b;
+            font-size: 0.875rem;
+            min-width: 40px;
+        }
+        
+        .tab-container {
+            display: flex;
+            gap: 0.5rem;
+            background: #f1f5f9;
+            padding: 0.25rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .tab-button {
+            flex: 1;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: transparent;
+            color: #64748b;
+        }
+        
+        .tab-button.active {
+            background: white;
+            color: #1d4ed8;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        
+        .tab-button:not(.active):hover {
+            color: #0f172a;
+        }
+        
+        .chart-container {
+            position: relative;
+            height: 300px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        
+        .stat-card {
+            padding: 1rem;
+            border: 1px solid;
+            border-radius: 0.5rem;
+        }
+        
+        .stat-card.red {
+            background: #fef2f2;
+            border-color: #fecaca;
+        }
+        
+        .stat-card.green {
+            background: #f0fdf4;
+            border-color: #bbf7d0;
+        }
+        
+        .stat-card.amber {
+            background: #fffbeb;
+            border-color: #fde68a;
+        }
+        
+        .stat-title {
+            color: #0f172a;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+        
+        .stat-card.red .stat-title { color: #7f1d1d; }
+        .stat-card.green .stat-title { color: #14532d; }
+        .stat-card.amber .stat-title { color: #78350f; }
+        
+        .stat-value {
+            font-size: 0.875rem;
+        }
+        
+        .stat-card.red .stat-value { color: #991b1b; }
+        .stat-card.green .stat-value { color: #166534; }
+        .stat-card.amber .stat-value { color: #92400e; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <a href="/" class="logo-thumb" title="PharmaFlow home"><img src="/static/logo.jpg" alt=""></a>
+                <span class="logo-text">PharmaFlow</span>
+            </div>
+            <nav>
+                <a href="/" class="nav-link active">Inventory Dashboard</a>
+                <a href="/readiness" class="nav-link">Illness Readiness</a>
+                <a href="/demo/inventory-event-log" class="nav-link">Event log (demo)</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div>
+            <h1>Inventory Dashboard</h1>
+            <p class="subtitle">Monitor medication inventory levels and demand patterns</p>
+        </div>
+        
+        <div class="search-container">
+            <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+            <input type="text" class="search-input" placeholder="Search medications..." id="searchInput">
+        </div>
+        
+        <div id="searchResults" style="display: none; background: white; border: 1px solid #e2e8f0; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1.5rem;">
+            <h3 style="color: #0f172a; margin-bottom: 0.75rem;">Search Results</h3>
+            <div id="resultsContainer"></div>
+        </div>
+        
+        <div class="grid grid-2">
+            <div class="card">
+                <h2>Top 5 Medications by Demand</h2>
+                <div id="topMedications"></div>
+            </div>
+            
+            <div class="card">
+                <h2 id="chartTitle">Usage Distribution by Hospital Department</h2>
+                <div class="tab-container">
+                    <button class="tab-button active" onclick="switchChart('hospital')">By Hospital Dept</button>
+                    <button class="tab-button" onclick="switchChart('pharmacy')">By Pharmacy</button>
+                    <button class="tab-button" onclick="switchChart('medusage')">By Medication</button>
+                </div>
+                <div class="chart-container">
+                    <canvas id="usageChart"></canvas>
+                </div>
+                <div id="medLegend" style="display:none;margin-top:1rem;"></div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Health Inventory Summary</h2>
+            <p id="inventoryHealthSummary" style="color: #334155; margin-bottom: 1rem; line-height: 1.6;">
+                {{ inventory_summary }}
+            </p>
+            <div class="stats-grid">
+                <div class="stat-card red">
+                    <div class="stat-title">At Risk</div>
+                    <div class="stat-value">2 medications</div>
+                </div>
+                <div class="stat-card green">
+                    <div class="stat-title">Stable</div>
+                    <div class="stat-value">9 medications</div>
+                </div>
+                <div class="stat-card amber">
+                    <div class="stat-title">Overstocked</div>
+                    <div class="stat-value">3 medications</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        const REPLAY  = {{ replay_data | safe }};
+        const AI_DATA = {{ ai_data | safe }};
+
+        // ── Derived chart data from replay output ─────────────────────────────
+        const PALETTE = ['#3b82f6', '#ef4444', '#10b981', '#f59e0b', '#8b5cf6', '#06b6d4', '#6b7280'];
+
+        const chartData = {
+            hospital: {
+                labels: REPLAY.usageByHospital.map(l => l.locationName),
+                data:   REPLAY.usageByHospital.map(l => l.units_used),
+                colors: PALETTE.slice(0, REPLAY.usageByHospital.length),
+                title:  'Usage Distribution by Hospital Department',
+                suffix: ' units dispensed'
+            },
+            pharmacy: {
+                labels: REPLAY.restockByPharmacy.map(l => l.locationName),
+                data:   REPLAY.restockByPharmacy.map(l => l.units_restocked),
+                colors: ['#10b981', '#3b82f6', '#8b5cf6'],
+                title:  'Procurement Distribution by Pharmacy Supplier',
+                suffix: ' units purchased'
+            },
+            medusage: (() => {
+                const cutoff = new Date();
+                cutoff.setDate(cutoff.getDate() - 14);
+                const cutoffStr = cutoff.toISOString().split('T')[0];
+                const MED_COLORS = [
+                    '#3b82f6','#ef4444','#10b981','#f59e0b','#8b5cf6',
+                    '#06b6d4','#f97316','#84cc16','#ec4899','#14b8a6',
+                    '#a855f7','#fb923c','#22d3ee','#4ade80','#facc15','#f43f5e'
+                ];
+                const totals = REPLAY.currentStates.map(med => ({
+                    name:  med.itemName,
+                    units: (med.usage_history || [])
+                               .filter(d => d.date >= cutoffStr)
+                               .reduce((s, d) => s + d.units_used, 0)
+                })).filter(m => m.units > 0)
+                   .sort((a, b) => b.units - a.units);
+                return {
+                    labels: totals.map(m => m.name),
+                    data:   totals.map(m => m.units),
+                    colors: MED_COLORS.slice(0, totals.length),
+                    title:  'Medication Usage Proportion (Last 14 Days)',
+                    suffix: ' units'
+                };
+            })()
+        };
+
+        let currentChart = null;
+
+        // ── Top 5 list ────────────────────────────────────────────────────────
+        function demandStatus(score) {
+            return score >= 65 ? 'high' : score >= 35 ? 'medium' : 'low';
+        }
+        function demandLabel(score) {
+            return score >= 65 ? 'At Risk' : score >= 35 ? 'Monitor' : 'Stable';
+        }
+
+        function renderTopMedications() {
+            const container = document.getElementById('topMedications');
+            const top5 = REPLAY.currentStates.slice(0, 5);
+            container.innerHTML = top5.map((med, index) => `
+                <a href="/medication?id=${med.itemid}" class="med-item">
+                    <div class="med-header">
+                        <div class="med-name-section">
+                            <span class="med-rank">#${index + 1}</span>
+                            <span class="med-name">${med.itemName}</span>
+                        </div>
+                        <span class="status-badge status-${demandStatus(med.demand_score)}">${demandLabel(med.demand_score)}</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-${med.demand_score >= 65 ? 'red' : med.demand_score >= 35 ? 'amber' : 'green'}"
+                                 style="width: ${med.demand_score}%"></div>
+                        </div>
+                        <span class="progress-score">${med.demand_score}</span>
+                    </div>
+                </a>
+            `).join('');
+        }
+
+        // ── Pie chart ─────────────────────────────────────────────────────────
+        function createChart(view) {
+            const ctx = document.getElementById('usageChart').getContext('2d');
+            const d   = chartData[view];
+            if (currentChart) currentChart.destroy();
+            currentChart = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: d.labels,
+                    datasets: [{ data: d.data, backgroundColor: d.colors, borderWidth: 2, borderColor: '#fff' }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: view !== 'medusage', position: 'bottom' },
+                        tooltip: {
+                            callbacks: {
+                                label: ctx => ctx.label + ': ' + ctx.parsed + d.suffix
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Custom percentage legend for the medication tab
+            const legendEl = document.getElementById('medLegend');
+            if (view === 'medusage') {
+                const total = d.data.reduce((s, v) => s + v, 0);
+                legendEl.style.display = 'grid';
+                legendEl.style.gridTemplateColumns = 'repeat(auto-fill, minmax(160px, 1fr))';
+                legendEl.style.gap = '0.4rem';
+                legendEl.innerHTML = d.labels.map((label, i) => {
+                    const pct = total > 0 ? ((d.data[i] / total) * 100).toFixed(1) : '0.0';
+                    return `<div style="display:flex;align-items:center;gap:0.4rem;font-size:0.8rem;color:#334155;">
+                        <span style="width:10px;height:10px;border-radius:2px;background:${d.colors[i]};flex-shrink:0;"></span>
+                        <span style="flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;" title="${label}">${label}</span>
+                        <span style="font-weight:600;color:#0f172a;">${pct}%</span>
+                    </div>`;
+                }).join('');
+            } else {
+                legendEl.style.display = 'none';
+                legendEl.innerHTML = '';
+            }
+        }
+
+        function switchChart(view) {
+            document.querySelectorAll('.tab-button').forEach((btn, idx) => {
+                btn.classList.toggle('active',
+                    (view === 'hospital' && idx === 0) ||
+                    (view === 'pharmacy' && idx === 1) ||
+                    (view === 'medusage' && idx === 2));
+            });
+            document.getElementById('chartTitle').textContent = chartData[view].title;
+            createChart(view);
+        }
+
+        // ── Overall health stats ──────────────────────────────────────────────
+        function renderHealthStats() {
+            const states    = REPLAY.currentStates;
+            const atRisk    = states.filter(s => s.demand_score >= 65).length;
+            const monitor   = states.filter(s => s.demand_score >= 35 && s.demand_score < 65).length;
+            const stable    = states.filter(s => s.demand_score < 35).length;
+
+            document.querySelector('.stats-grid').innerHTML = `
+                <div class="stat-card red">
+                    <div class="stat-title">At Risk</div>
+                    <div class="stat-value">${atRisk} medication${atRisk !== 1 ? 's' : ''}</div>
+                </div>
+                <div class="stat-card amber">
+                    <div class="stat-title">Monitor</div>
+                    <div class="stat-value">${monitor} medication${monitor !== 1 ? 's' : ''}</div>
+                </div>
+                <div class="stat-card green">
+                    <div class="stat-title">Stable</div>
+                    <div class="stat-value">${stable} medication${stable !== 1 ? 's' : ''}</div>
+                </div>
+            `;
+            /* AI narrative for this section is server-rendered (Ollama); do not overwrite #inventoryHealthSummary */
+        }
+
+        // ── Search ────────────────────────────────────────────────────────────
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const q           = e.target.value.toLowerCase();
+            const resultsDiv  = document.getElementById('searchResults');
+            const container   = document.getElementById('resultsContainer');
+            if (!q) { resultsDiv.style.display = 'none'; return; }
+            const filtered = REPLAY.currentStates.filter(m => m.itemName.toLowerCase().includes(q));
+            container.innerHTML = filtered.length
+                ? filtered.map(m => `
+                    <a href="/medication?id=${m.itemid}" class="med-item">
+                        <div style="display:flex;justify-content:space-between;align-items:center;">
+                            <span class="med-name">${m.itemName}</span>
+                            <span class="status-badge status-${demandStatus(m.demand_score)}">${demandLabel(m.demand_score)} Demand</span>
+                        </div>
+                    </a>`).join('')
+                : '<p style="color:#64748b;">No medications found</p>';
+            resultsDiv.style.display = 'block';
+        });
+
+        // ── Init ──────────────────────────────────────────────────────────────
+        renderTopMedications();
+        renderHealthStats();
+        createChart('hospital');
+    </script>
+</body>
+</html>

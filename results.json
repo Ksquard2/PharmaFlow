@@ -1,695 +1,79 @@
 {
   "currentStates": [
     {
-      "itemid": 5,
-      "itemName": "ceftriaxone",
-      "catagory_id": 2,
-      "catagory_name": "Broad Spectrum Antibiotics",
-      "total_quantity": 65,
-      "current_velocity": 12.1429,
-      "local_velocity": 6.8333,
-      "usage_pressure": 1.0,
-      "coverage_pressure": 0.7353,
-      "expiration_pressure": 0.3077,
-      "supply_pressure": 0.0,
-      "demand_score": 63.21,
-      "expiry_breakdown": {
-        "safe_qty": 45,
-        "near_qty": 0,
-        "expired_qty": 20
-      },
-      "usage_history": [
-        {
-          "date": "2026-03-07",
-          "units_used": 14
-        },
-        {
-          "date": "2026-03-08",
-          "units_used": 16
-        },
-        {
-          "date": "2026-03-09",
-          "units_used": 15
-        },
-        {
-          "date": "2026-03-10",
-          "units_used": 13
-        },
-        {
-          "date": "2026-03-11",
-          "units_used": 17
-        },
-        {
-          "date": "2026-03-12",
-          "units_used": 14
-        },
-        {
-          "date": "2026-03-13",
-          "units_used": 15
-        },
-        {
-          "date": "2026-03-14",
-          "units_used": 16
-        },
-        {
-          "date": "2026-03-15",
-          "units_used": 14
-        },
-        {
-          "date": "2026-03-16",
-          "units_used": 13
-        },
-        {
-          "date": "2026-03-17",
-          "units_used": 15
-        },
-        {
-          "date": "2026-03-18",
-          "units_used": 16
-        },
-        {
-          "date": "2026-03-19",
-          "units_used": 14
-        },
-        {
-          "date": "2026-03-20",
-          "units_used": 13
-        }
-      ]
-    },
-    {
-      "itemid": 16,
-      "itemName": "methylprednisolone",
-      "catagory_id": 4,
-      "catagory_name": "Allergy and Anaphylaxis Treatments",
-      "total_quantity": 50,
-      "current_velocity": 4.4286,
-      "local_velocity": 2.3333,
-      "usage_pressure": 1.0,
-      "coverage_pressure": 0.1935,
-      "expiration_pressure": 0.012,
-      "supply_pressure": 0.5,
-      "demand_score": 48.55,
-      "expiry_breakdown": {
-        "safe_qty": 49,
-        "near_qty": 1,
-        "expired_qty": 0
-      },
-      "usage_history": [
-        {
-          "date": "2026-03-07",
-          "units_used": 5
-        },
-        {
-          "date": "2026-03-08",
-          "units_used": 4
-        },
-        {
-          "date": "2026-03-09",
-          "units_used": 6
-        },
-        {
-          "date": "2026-03-10",
-          "units_used": 5
-        },
-        {
-          "date": "2026-03-11",
-          "units_used": 4
-        },
-        {
-          "date": "2026-03-12",
-          "units_used": 5
-        },
-        {
-          "date": "2026-03-13",
-          "units_used": 6
-        },
-        {
-          "date": "2026-03-14",
-          "units_used": 4
-        },
-        {
-          "date": "2026-03-15",
-          "units_used": 5
-        },
-        {
-          "date": "2026-03-16",
-          "units_used": 6
-        },
-        {
-          "date": "2026-03-17",
-          "units_used": 4
-        },
-        {
-          "date": "2026-03-18",
-          "units_used": 5
-        },
-        {
-          "date": "2026-03-19",
-          "units_used": 6
-        },
-        {
-          "date": "2026-03-20",
-          "units_used": 5
-        }
-      ]
-    },
-    {
-      "itemid": 13,
-      "itemName": "epinephrine",
-      "catagory_id": 4,
-      "catagory_name": "Allergy and Anaphylaxis Treatments",
-      "total_quantity": 34,
-      "current_velocity": 3.4286,
-      "local_velocity": 1.8667,
-      "usage_pressure": 1.0,
-      "coverage_pressure": 0.2917,
-      "expiration_pressure": 0.0353,
-      "supply_pressure": 0.25,
-      "demand_score": 48.21,
-      "expiry_breakdown": {
-        "safe_qty": 32,
-        "near_qty": 2,
-        "expired_qty": 0
-      },
-      "usage_history": [
-        {
-          "date": "2026-03-07",
-          "units_used": 4
-        },
-        {
-          "date": "2026-03-08",
-          "units_used": 3
-        },
-        {
-          "date": "2026-03-09",
-          "units_used": 5
-        },
-        {
-          "date": "2026-03-10",
-          "units_used": 4
-        },
-        {
-          "date": "2026-03-11",
-          "units_used": 3
-        },
-        {
-          "date": "2026-03-12",
-          "units_used": 4
-        },
-        {
-          "date": "2026-03-13",
-          "units_used": 5
-        },
-        {
-          "date": "2026-03-14",
-          "units_used": 4
-        },
-        {
-          "date": "2026-03-15",
-          "units_used": 3
-        },
-        {
-          "date": "2026-03-16",
-          "units_used": 5
-        },
-        {
-          "date": "2026-03-17",
-          "units_used": 4
-        },
-        {
-          "date": "2026-03-18",
-          "units_used": 3
-        },
-        {
-          "date": "2026-03-19",
-          "units_used": 4
-        },
-        {
-          "date": "2026-03-20",
-          "units_used": 5
-        }
-      ]
-    },
-    {
-      "itemid": 8,
-      "itemName": "vancomycin",
-      "catagory_id": 2,
-      "catagory_name": "Broad Spectrum Antibiotics",
-      "total_quantity": 97,
-      "current_velocity": 7.1429,
-      "local_velocity": 3.9333,
-      "usage_pressure": 1.0,
-      "coverage_pressure": 0.18,
-      "expiration_pressure": 0.1546,
-      "supply_pressure": 0.25,
-      "demand_score": 47.24,
-      "expiry_breakdown": {
-        "safe_qty": 82,
-        "near_qty": 0,
-        "expired_qty": 15
-      },
-      "usage_history": [
-        {
-          "date": "2026-03-07",
-          "units_used": 8
-        },
-        {
-          "date": "2026-03-08",
-          "units_used": 9
-        },
-        {
-          "date": "2026-03-09",
-          "units_used": 7
-        },
-        {
-          "date": "2026-03-10",
-          "units_used": 10
-        },
-        {
-          "date": "2026-03-11",
-          "units_used": 8
-        },
-        {
-          "date": "2026-03-12",
-          "units_used": 9
-        },
-        {
-          "date": "2026-03-13",
-          "units_used": 7
-        },
-        {
-          "date": "2026-03-14",
-          "units_used": 10
-        },
-        {
-          "date": "2026-03-15",
-          "units_used": 8
-        },
-        {
-          "date": "2026-03-16",
-          "units_used": 7
-        },
-        {
-          "date": "2026-03-17",
-          "units_used": 9
-        },
-        {
-          "date": "2026-03-18",
-          "units_used": 8
-        },
-        {
-          "date": "2026-03-19",
-          "units_used": 10
-        },
-        {
-          "date": "2026-03-20",
-          "units_used": 8
-        }
-      ]
-    },
-    {
-      "itemid": 3,
-      "itemName": "peramivir",
-      "catagory_id": 1,
-      "catagory_name": "Respiratory Antivirals",
-      "total_quantity": 17,
-      "current_velocity": 2.0,
-      "local_velocity": 1.1,
-      "usage_pressure": 1.0,
-      "coverage_pressure": 0.3929,
-      "expiration_pressure": 0.0,
-      "supply_pressure": 0.0,
-      "demand_score": 46.79,
-      "expiry_breakdown": {
-        "safe_qty": 17,
-        "near_qty": 0,
-        "expired_qty": 0
-      },
-      "usage_history": [
-        {
-          "date": "2026-03-07",
-          "units_used": 2
-        },
-        {
-          "date": "2026-03-08",
-          "units_used": 3
-        },
-        {
-          "date": "2026-03-09",
-          "units_used": 2
-        },
-        {
-          "date": "2026-03-10",
-          "units_used": 2
-        },
-        {
-          "date": "2026-03-11",
-          "units_used": 3
-        },
-        {
-          "date": "2026-03-12",
-          "units_used": 2
-        },
-        {
-          "date": "2026-03-13",
-          "units_used": 2
-        },
-        {
-          "date": "2026-03-14",
-          "units_used": 3
-        },
-        {
-          "date": "2026-03-15",
-          "units_used": 2
-        },
-        {
-          "date": "2026-03-16",
-          "units_used": 2
-        },
-        {
-          "date": "2026-03-17",
-          "units_used": 3
-        },
-        {
-          "date": "2026-03-18",
-          "units_used": 2
-        },
-        {
-          "date": "2026-03-19",
-          "units_used": 2
-        },
-        {
-          "date": "2026-03-20",
-          "units_used": 3
-        }
-      ]
-    },
-    {
-      "itemid": 14,
-      "itemName": "diphenhydramine",
-      "catagory_id": 4,
-      "catagory_name": "Allergy and Anaphylaxis Treatments",
-      "total_quantity": 127,
-      "current_velocity": 10.7143,
-      "local_velocity": 5.7667,
-      "usage_pressure": 1.0,
-      "coverage_pressure": 0.1533,
-      "expiration_pressure": 0.0,
-      "supply_pressure": 0.0,
-      "demand_score": 39.6,
-      "expiry_breakdown": {
-        "safe_qty": 127,
-        "near_qty": 0,
-        "expired_qty": 0
-      },
-      "usage_history": [
-        {
-          "date": "2026-03-07",
-          "units_used": 12
-        },
-        {
-          "date": "2026-03-08",
-          "units_used": 13
-        },
-        {
-          "date": "2026-03-09",
-          "units_used": 11
-        },
-        {
-          "date": "2026-03-10",
-          "units_used": 14
-        },
-        {
-          "date": "2026-03-11",
-          "units_used": 12
-        },
-        {
-          "date": "2026-03-12",
-          "units_used": 11
-        },
-        {
-          "date": "2026-03-13",
-          "units_used": 13
-        },
-        {
-          "date": "2026-03-14",
-          "units_used": 12
-        },
-        {
-          "date": "2026-03-15",
-          "units_used": 14
-        },
-        {
-          "date": "2026-03-16",
-          "units_used": 11
-        },
-        {
-          "date": "2026-03-17",
-          "units_used": 13
-        },
-        {
-          "date": "2026-03-18",
-          "units_used": 12
-        },
-        {
-          "date": "2026-03-19",
-          "units_used": 11
-        },
-        {
-          "date": "2026-03-20",
-          "units_used": 14
-        }
-      ]
-    },
-    {
       "itemid": 1,
       "itemName": "oseltamivir",
       "catagory_id": 1,
       "catagory_name": "Respiratory Antivirals",
-      "total_quantity": 400,
+      "total_quantity": 372,
       "current_velocity": 9.1429,
-      "local_velocity": 5.0,
+      "local_velocity": 5.9333,
       "usage_pressure": 1.0,
       "coverage_pressure": 0.0,
-      "expiration_pressure": 0.225,
+      "expiration_pressure": 0.1968,
       "supply_pressure": 0.0,
-      "demand_score": 39.5,
+      "demand_score": 38.94,
       "expiry_breakdown": {
         "safe_qty": 250,
-        "near_qty": 150,
+        "near_qty": 122,
         "expired_qty": 0
       },
       "usage_history": [
         {
           "date": "2026-03-07",
-          "units_used": 11
+          "units_used": 13
         },
         {
           "date": "2026-03-08",
-          "units_used": 10
-        },
-        {
-          "date": "2026-03-09",
           "units_used": 12
         },
         {
+          "date": "2026-03-09",
+          "units_used": 14
+        },
+        {
           "date": "2026-03-10",
-          "units_used": 11
+          "units_used": 13
         },
         {
           "date": "2026-03-11",
-          "units_used": 10
-        },
-        {
-          "date": "2026-03-12",
           "units_used": 12
         },
         {
+          "date": "2026-03-12",
+          "units_used": 14
+        },
+        {
           "date": "2026-03-13",
-          "units_used": 11
+          "units_used": 13
         },
         {
           "date": "2026-03-14",
-          "units_used": 9
-        },
-        {
-          "date": "2026-03-15",
-          "units_used": 10
-        },
-        {
-          "date": "2026-03-16",
           "units_used": 11
         },
         {
-          "date": "2026-03-17",
-          "units_used": 10
-        },
-        {
-          "date": "2026-03-18",
+          "date": "2026-03-15",
           "units_used": 12
         },
         {
-          "date": "2026-03-19",
-          "units_used": 11
-        },
-        {
-          "date": "2026-03-20",
-          "units_used": 10
-        }
-      ]
-    },
-    {
-      "itemid": 9,
-      "itemName": "acetaminophen",
-      "catagory_id": 3,
-      "catagory_name": "Analgesics and Antipyretics",
-      "total_quantity": 791,
-      "current_velocity": 43.4286,
-      "local_velocity": 23.6333,
-      "usage_pressure": 1.0,
-      "coverage_pressure": 0.0,
-      "expiration_pressure": 0.0364,
-      "supply_pressure": 0.25,
-      "demand_score": 39.48,
-      "expiry_breakdown": {
-        "safe_qty": 743,
-        "near_qty": 48,
-        "expired_qty": 0
-      },
-      "usage_history": [
-        {
-          "date": "2026-03-07",
-          "units_used": 50
-        },
-        {
-          "date": "2026-03-08",
-          "units_used": 48
-        },
-        {
-          "date": "2026-03-09",
-          "units_used": 52
-        },
-        {
-          "date": "2026-03-10",
-          "units_used": 55
-        },
-        {
-          "date": "2026-03-11",
-          "units_used": 47
-        },
-        {
-          "date": "2026-03-12",
-          "units_used": 51
-        },
-        {
-          "date": "2026-03-13",
-          "units_used": 53
-        },
-        {
-          "date": "2026-03-14",
-          "units_used": 49
-        },
-        {
-          "date": "2026-03-15",
-          "units_used": 50
-        },
-        {
           "date": "2026-03-16",
-          "units_used": 52
+          "units_used": 13
         },
         {
           "date": "2026-03-17",
-          "units_used": 48
+          "units_used": 12
         },
         {
           "date": "2026-03-18",
-          "units_used": 54
+          "units_used": 14
         },
         {
           "date": "2026-03-19",
-          "units_used": 51
+          "units_used": 13
         },
         {
           "date": "2026-03-20",
-          "units_used": 49
-        }
-      ]
-    },
-    {
-      "itemid": 10,
-      "itemName": "ibuprofen",
-      "catagory_id": 3,
-      "catagory_name": "Analgesics and Antipyretics",
-      "total_quantity": 1233,
-      "current_velocity": 34.7143,
-      "local_velocity": 18.9,
-      "usage_pressure": 1.0,
-      "coverage_pressure": 0.0,
-      "expiration_pressure": 0.0,
-      "supply_pressure": 0.25,
-      "demand_score": 38.75,
-      "expiry_breakdown": {
-        "safe_qty": 1233,
-        "near_qty": 0,
-        "expired_qty": 0
-      },
-      "usage_history": [
-        {
-          "date": "2026-03-07",
-          "units_used": 40
-        },
-        {
-          "date": "2026-03-08",
-          "units_used": 38
-        },
-        {
-          "date": "2026-03-09",
-          "units_used": 42
-        },
-        {
-          "date": "2026-03-10",
-          "units_used": 44
-        },
-        {
-          "date": "2026-03-11",
-          "units_used": 37
-        },
-        {
-          "date": "2026-03-12",
-          "units_used": 41
-        },
-        {
-          "date": "2026-03-13",
-          "units_used": 43
-        },
-        {
-          "date": "2026-03-14",
-          "units_used": 39
-        },
-        {
-          "date": "2026-03-15",
-          "units_used": 40
-        },
-        {
-          "date": "2026-03-16",
-          "units_used": 42
-        },
-        {
-          "date": "2026-03-17",
-          "units_used": 38
-        },
-        {
-          "date": "2026-03-18",
-          "units_used": 43
-        },
-        {
-          "date": "2026-03-19",
-          "units_used": 41
-        },
-        {
-          "date": "2026-03-20",
-          "units_used": 39
+          "units_used": 12
         }
       ]
     },
@@ -698,75 +82,152 @@
       "itemName": "zanamivir",
       "catagory_id": 1,
       "catagory_name": "Respiratory Antivirals",
-      "total_quantity": 146,
-      "current_velocity": 3.4286,
-      "local_velocity": 1.8,
-      "usage_pressure": 1.0,
+      "total_quantity": 464,
+      "current_velocity": 0.7143,
+      "local_velocity": 1.8667,
+      "usage_pressure": 0.4502,
       "coverage_pressure": 0.0,
       "expiration_pressure": 0.0,
       "supply_pressure": 0.0,
-      "demand_score": 35.0,
+      "demand_score": 15.76,
       "expiry_breakdown": {
-        "safe_qty": 146,
+        "safe_qty": 464,
         "near_qty": 0,
         "expired_qty": 0
       },
       "usage_history": [
         {
           "date": "2026-03-07",
-          "units_used": 4
+          "units_used": 7
         },
         {
           "date": "2026-03-08",
-          "units_used": 3
+          "units_used": 7
         },
         {
           "date": "2026-03-09",
-          "units_used": 4
+          "units_used": 7
         },
         {
           "date": "2026-03-10",
-          "units_used": 5
+          "units_used": 7
         },
         {
           "date": "2026-03-11",
-          "units_used": 3
+          "units_used": 7
         },
         {
           "date": "2026-03-12",
-          "units_used": 4
+          "units_used": 7
         },
         {
           "date": "2026-03-13",
-          "units_used": 3
+          "units_used": 7
         },
         {
           "date": "2026-03-14",
-          "units_used": 4
+          "units_used": 1
         },
         {
           "date": "2026-03-15",
-          "units_used": 5
+          "units_used": 1
         },
         {
           "date": "2026-03-16",
-          "units_used": 3
+          "units_used": 1
         },
         {
           "date": "2026-03-17",
-          "units_used": 4
+          "units_used": 1
         },
         {
           "date": "2026-03-18",
-          "units_used": 3
+          "units_used": 1
         },
         {
           "date": "2026-03-19",
-          "units_used": 4
+          "units_used": 1
         },
         {
           "date": "2026-03-20",
-          "units_used": 5
+          "units_used": 1
+        }
+      ]
+    },
+    {
+      "itemid": 3,
+      "itemName": "peramivir",
+      "catagory_id": 1,
+      "catagory_name": "Respiratory Antivirals",
+      "total_quantity": 211,
+      "current_velocity": 0.7143,
+      "local_velocity": 1.6333,
+      "usage_pressure": 0.5145,
+      "coverage_pressure": 0.0,
+      "expiration_pressure": 0.0,
+      "supply_pressure": 0.0,
+      "demand_score": 18.01,
+      "expiry_breakdown": {
+        "safe_qty": 211,
+        "near_qty": 0,
+        "expired_qty": 0
+      },
+      "usage_history": [
+        {
+          "date": "2026-03-07",
+          "units_used": 6
+        },
+        {
+          "date": "2026-03-08",
+          "units_used": 6
+        },
+        {
+          "date": "2026-03-09",
+          "units_used": 6
+        },
+        {
+          "date": "2026-03-10",
+          "units_used": 6
+        },
+        {
+          "date": "2026-03-11",
+          "units_used": 6
+        },
+        {
+          "date": "2026-03-12",
+          "units_used": 6
+        },
+        {
+          "date": "2026-03-13",
+          "units_used": 6
+        },
+        {
+          "date": "2026-03-14",
+          "units_used": 1
+        },
+        {
+          "date": "2026-03-15",
+          "units_used": 1
+        },
+        {
+          "date": "2026-03-16",
+          "units_used": 1
+        },
+        {
+          "date": "2026-03-17",
+          "units_used": 1
+        },
+        {
+          "date": "2026-03-18",
+          "units_used": 1
+        },
+        {
+          "date": "2026-03-19",
+          "units_used": 1
+        },
+        {
+          "date": "2026-03-20",
+          "units_used": 1
         }
       ]
     },
@@ -775,27 +236,27 @@
       "itemName": "baloxavir",
       "catagory_id": 1,
       "catagory_name": "Respiratory Antivirals",
-      "total_quantity": 238,
-      "current_velocity": 7.0,
-      "local_velocity": 3.7333,
-      "usage_pressure": 1.0,
+      "total_quantity": 600,
+      "current_velocity": 0.7143,
+      "local_velocity": 2.3333,
+      "usage_pressure": 0.3601,
       "coverage_pressure": 0.0,
       "expiration_pressure": 0.0,
       "supply_pressure": 0.0,
-      "demand_score": 35.0,
+      "demand_score": 12.61,
       "expiry_breakdown": {
-        "safe_qty": 238,
+        "safe_qty": 600,
         "near_qty": 0,
         "expired_qty": 0
       },
       "usage_history": [
         {
           "date": "2026-03-07",
-          "units_used": 8
+          "units_used": 9
         },
         {
           "date": "2026-03-08",
-          "units_used": 7
+          "units_used": 9
         },
         {
           "date": "2026-03-09",
@@ -803,15 +264,15 @@
         },
         {
           "date": "2026-03-10",
-          "units_used": 8
+          "units_used": 9
         },
         {
           "date": "2026-03-11",
-          "units_used": 7
+          "units_used": 9
         },
         {
           "date": "2026-03-12",
-          "units_used": 8
+          "units_used": 9
         },
         {
           "date": "2026-03-13",
@@ -819,31 +280,108 @@
         },
         {
           "date": "2026-03-14",
-          "units_used": 7
+          "units_used": 1
         },
         {
           "date": "2026-03-15",
-          "units_used": 8
+          "units_used": 1
         },
         {
           "date": "2026-03-16",
-          "units_used": 9
+          "units_used": 1
         },
         {
           "date": "2026-03-17",
-          "units_used": 7
+          "units_used": 1
         },
         {
           "date": "2026-03-18",
-          "units_used": 8
+          "units_used": 1
         },
         {
           "date": "2026-03-19",
-          "units_used": 9
+          "units_used": 1
         },
         {
           "date": "2026-03-20",
-          "units_used": 8
+          "units_used": 1
+        }
+      ]
+    },
+    {
+      "itemid": 5,
+      "itemName": "ceftriaxone",
+      "catagory_id": 2,
+      "catagory_name": "Broad Spectrum Antibiotics",
+      "total_quantity": -392,
+      "current_velocity": 24.0,
+      "local_velocity": 16.1333,
+      "usage_pressure": 1.0,
+      "coverage_pressure": 1.0,
+      "expiration_pressure": 1.0,
+      "supply_pressure": 0.0,
+      "demand_score": 85.0,
+      "expiry_breakdown": {
+        "safe_qty": 0,
+        "near_qty": 0,
+        "expired_qty": 20
+      },
+      "usage_history": [
+        {
+          "date": "2026-03-07",
+          "units_used": 33
+        },
+        {
+          "date": "2026-03-08",
+          "units_used": 38
+        },
+        {
+          "date": "2026-03-09",
+          "units_used": 35
+        },
+        {
+          "date": "2026-03-10",
+          "units_used": 31
+        },
+        {
+          "date": "2026-03-11",
+          "units_used": 40
+        },
+        {
+          "date": "2026-03-12",
+          "units_used": 33
+        },
+        {
+          "date": "2026-03-13",
+          "units_used": 35
+        },
+        {
+          "date": "2026-03-14",
+          "units_used": 38
+        },
+        {
+          "date": "2026-03-15",
+          "units_used": 33
+        },
+        {
+          "date": "2026-03-16",
+          "units_used": 31
+        },
+        {
+          "date": "2026-03-17",
+          "units_used": 35
+        },
+        {
+          "date": "2026-03-18",
+          "units_used": 38
+        },
+        {
+          "date": "2026-03-19",
+          "units_used": 33
+        },
+        {
+          "date": "2026-03-20",
+          "units_used": 31
         }
       ]
     },
@@ -852,75 +390,75 @@
       "itemName": "azithromycin",
       "catagory_id": 2,
       "catagory_name": "Broad Spectrum Antibiotics",
-      "total_quantity": 677,
-      "current_velocity": 19.8571,
-      "local_velocity": 10.7667,
+      "total_quantity": -274,
+      "current_velocity": 35.2857,
+      "local_velocity": 23.1333,
       "usage_pressure": 1.0,
-      "coverage_pressure": 0.0,
+      "coverage_pressure": 0.5951,
       "expiration_pressure": 0.0,
       "supply_pressure": 0.0,
-      "demand_score": 35.0,
+      "demand_score": 52.85,
       "expiry_breakdown": {
-        "safe_qty": 677,
+        "safe_qty": 200,
         "near_qty": 0,
         "expired_qty": 0
       },
       "usage_history": [
         {
           "date": "2026-03-07",
-          "units_used": 22
+          "units_used": 47
         },
         {
           "date": "2026-03-08",
-          "units_used": 25
+          "units_used": 54
         },
         {
           "date": "2026-03-09",
-          "units_used": 23
+          "units_used": 49
         },
         {
           "date": "2026-03-10",
-          "units_used": 24
+          "units_used": 52
         },
         {
           "date": "2026-03-11",
-          "units_used": 20
+          "units_used": 43
         },
         {
           "date": "2026-03-12",
-          "units_used": 23
+          "units_used": 49
         },
         {
           "date": "2026-03-13",
-          "units_used": 25
+          "units_used": 54
         },
         {
           "date": "2026-03-14",
-          "units_used": 22
+          "units_used": 47
         },
         {
           "date": "2026-03-15",
-          "units_used": 24
+          "units_used": 52
         },
         {
           "date": "2026-03-16",
-          "units_used": 21
+          "units_used": 45
         },
         {
           "date": "2026-03-17",
-          "units_used": 23
+          "units_used": 49
         },
         {
           "date": "2026-03-18",
-          "units_used": 24
+          "units_used": 52
         },
         {
           "date": "2026-03-19",
-          "units_used": 22
+          "units_used": 47
         },
         {
           "date": "2026-03-20",
-          "units_used": 25
+          "units_used": 54
         }
       ]
     },
@@ -929,39 +467,116 @@
       "itemName": "levofloxacin",
       "catagory_id": 2,
       "catagory_name": "Broad Spectrum Antibiotics",
-      "total_quantity": 239,
-      "current_velocity": 15.8571,
-      "local_velocity": 8.7,
+      "total_quantity": 245,
+      "current_velocity": 13.8571,
+      "local_velocity": 9.1667,
       "usage_pressure": 1.0,
       "coverage_pressure": 0.0,
       "expiration_pressure": 0.0,
       "supply_pressure": 0.0,
       "demand_score": 35.0,
       "expiry_breakdown": {
-        "safe_qty": 239,
+        "safe_qty": 245,
         "near_qty": 0,
         "expired_qty": 0
       },
       "usage_history": [
         {
           "date": "2026-03-07",
-          "units_used": 18
-        },
-        {
-          "date": "2026-03-08",
-          "units_used": 20
-        },
-        {
-          "date": "2026-03-09",
-          "units_used": 17
-        },
-        {
-          "date": "2026-03-10",
           "units_used": 19
         },
         {
-          "date": "2026-03-11",
+          "date": "2026-03-08",
           "units_used": 21
+        },
+        {
+          "date": "2026-03-09",
+          "units_used": 18
+        },
+        {
+          "date": "2026-03-10",
+          "units_used": 20
+        },
+        {
+          "date": "2026-03-11",
+          "units_used": 22
+        },
+        {
+          "date": "2026-03-12",
+          "units_used": 19
+        },
+        {
+          "date": "2026-03-13",
+          "units_used": 21
+        },
+        {
+          "date": "2026-03-14",
+          "units_used": 18
+        },
+        {
+          "date": "2026-03-15",
+          "units_used": 20
+        },
+        {
+          "date": "2026-03-16",
+          "units_used": 19
+        },
+        {
+          "date": "2026-03-17",
+          "units_used": 21
+        },
+        {
+          "date": "2026-03-18",
+          "units_used": 20
+        },
+        {
+          "date": "2026-03-19",
+          "units_used": 18
+        },
+        {
+          "date": "2026-03-20",
+          "units_used": 19
+        }
+      ]
+    },
+    {
+      "itemid": 8,
+      "itemName": "vancomycin",
+      "catagory_id": 2,
+      "catagory_name": "Broad Spectrum Antibiotics",
+      "total_quantity": -149,
+      "current_velocity": 12.0,
+      "local_velocity": 7.8667,
+      "usage_pressure": 1.0,
+      "coverage_pressure": 1.0,
+      "expiration_pressure": 1.0,
+      "supply_pressure": 0.0,
+      "demand_score": 85.0,
+      "expiry_breakdown": {
+        "safe_qty": 0,
+        "near_qty": 0,
+        "expired_qty": 15
+      },
+      "usage_history": [
+        {
+          "date": "2026-03-07",
+          "units_used": 16
+        },
+        {
+          "date": "2026-03-08",
+          "units_used": 18
+        },
+        {
+          "date": "2026-03-09",
+          "units_used": 14
+        },
+        {
+          "date": "2026-03-10",
+          "units_used": 20
+        },
+        {
+          "date": "2026-03-11",
+          "units_used": 16
         },
         {
           "date": "2026-03-12",
@@ -969,35 +584,189 @@
         },
         {
           "date": "2026-03-13",
-          "units_used": 20
+          "units_used": 14
         },
         {
           "date": "2026-03-14",
-          "units_used": 17
-        },
-        {
-          "date": "2026-03-15",
-          "units_used": 19
-        },
-        {
-          "date": "2026-03-16",
-          "units_used": 18
-        },
-        {
-          "date": "2026-03-17",
           "units_used": 20
         },
         {
+          "date": "2026-03-15",
+          "units_used": 16
+        },
+        {
+          "date": "2026-03-16",
+          "units_used": 14
+        },
+        {
+          "date": "2026-03-17",
+          "units_used": 18
+        },
+        {
           "date": "2026-03-18",
-          "units_used": 19
+          "units_used": 16
         },
         {
           "date": "2026-03-19",
-          "units_used": 17
+          "units_used": 20
         },
         {
           "date": "2026-03-20",
-          "units_used": 18
+          "units_used": 16
+        }
+      ]
+    },
+    {
+      "itemid": 9,
+      "itemName": "acetaminophen",
+      "catagory_id": 3,
+      "catagory_name": "Analgesics and Antipyretics",
+      "total_quantity": -595,
+      "current_velocity": 81.7143,
+      "local_velocity": 53.1667,
+      "usage_pressure": 1.0,
+      "coverage_pressure": 1.0,
+      "expiration_pressure": 0.0,
+      "supply_pressure": 0.0,
+      "demand_score": 65.0,
+      "expiry_breakdown": {
+        "safe_qty": 0,
+        "near_qty": 0,
+        "expired_qty": 0
+      },
+      "usage_history": [
+        {
+          "date": "2026-03-07",
+          "units_used": 112
+        },
+        {
+          "date": "2026-03-08",
+          "units_used": 108
+        },
+        {
+          "date": "2026-03-09",
+          "units_used": 117
+        },
+        {
+          "date": "2026-03-10",
+          "units_used": 124
+        },
+        {
+          "date": "2026-03-11",
+          "units_used": 106
+        },
+        {
+          "date": "2026-03-12",
+          "units_used": 115
+        },
+        {
+          "date": "2026-03-13",
+          "units_used": 119
+        },
+        {
+          "date": "2026-03-14",
+          "units_used": 110
+        },
+        {
+          "date": "2026-03-15",
+          "units_used": 112
+        },
+        {
+          "date": "2026-03-16",
+          "units_used": 117
+        },
+        {
+          "date": "2026-03-17",
+          "units_used": 108
+        },
+        {
+          "date": "2026-03-18",
+          "units_used": 122
+        },
+        {
+          "date": "2026-03-19",
+          "units_used": 115
+        },
+        {
+          "date": "2026-03-20",
+          "units_used": 110
+        }
+      ]
+    },
+    {
+      "itemid": 10,
+      "itemName": "ibuprofen",
+      "catagory_id": 3,
+      "catagory_name": "Analgesics and Antipyretics",
+      "total_quantity": 1219,
+      "current_velocity": 29.7143,
+      "local_velocity": 19.3667,
+      "usage_pressure": 1.0,
+      "coverage_pressure": 0.0,
+      "expiration_pressure": 0.0,
+      "supply_pressure": 0.0,
+      "demand_score": 35.0,
+      "expiry_breakdown": {
+        "safe_qty": 1219,
+        "near_qty": 0,
+        "expired_qty": 0
+      },
+      "usage_history": [
+        {
+          "date": "2026-03-07",
+          "units_used": 41
+        },
+        {
+          "date": "2026-03-08",
+          "units_used": 39
+        },
+        {
+          "date": "2026-03-09",
+          "units_used": 43
+        },
+        {
+          "date": "2026-03-10",
+          "units_used": 45
+        },
+        {
+          "date": "2026-03-11",
+          "units_used": 38
+        },
+        {
+          "date": "2026-03-12",
+          "units_used": 42
+        },
+        {
+          "date": "2026-03-13",
+          "units_used": 44
+        },
+        {
+          "date": "2026-03-14",
+          "units_used": 40
+        },
+        {
+          "date": "2026-03-15",
+          "units_used": 41
+        },
+        {
+          "date": "2026-03-16",
+          "units_used": 43
+        },
+        {
+          "date": "2026-03-17",
+          "units_used": 39
+        },
+        {
+          "date": "2026-03-18",
+          "units_used": 44
+        },
+        {
+          "date": "2026-03-19",
+          "units_used": 42
+        },
+        {
+          "date": "2026-03-20",
+          "units_used": 40
         }
       ]
     },
@@ -1006,75 +775,75 @@
       "itemName": "naproxen",
       "catagory_id": 3,
       "catagory_name": "Analgesics and Antipyretics",
-      "total_quantity": 317,
-      "current_velocity": 17.5714,
-      "local_velocity": 9.4333,
-      "usage_pressure": 1.0,
+      "total_quantity": 1530,
+      "current_velocity": 0.7143,
+      "local_velocity": 2.3333,
+      "usage_pressure": 0.3601,
       "coverage_pressure": 0.0,
       "expiration_pressure": 0.0,
       "supply_pressure": 0.0,
-      "demand_score": 35.0,
+      "demand_score": 12.61,
       "expiry_breakdown": {
-        "safe_qty": 317,
+        "safe_qty": 1530,
         "near_qty": 0,
         "expired_qty": 0
       },
       "usage_history": [
         {
           "date": "2026-03-07",
-          "units_used": 20
+          "units_used": 9
         },
         {
           "date": "2026-03-08",
-          "units_used": 18
+          "units_used": 9
         },
         {
           "date": "2026-03-09",
-          "units_used": 22
+          "units_used": 9
         },
         {
           "date": "2026-03-10",
-          "units_used": 21
+          "units_used": 9
         },
         {
           "date": "2026-03-11",
-          "units_used": 19
+          "units_used": 9
         },
         {
           "date": "2026-03-12",
-          "units_used": 20
+          "units_used": 9
         },
         {
           "date": "2026-03-13",
-          "units_used": 22
+          "units_used": 9
         },
         {
           "date": "2026-03-14",
-          "units_used": 18
+          "units_used": 1
         },
         {
           "date": "2026-03-15",
-          "units_used": 21
+          "units_used": 1
         },
         {
           "date": "2026-03-16",
-          "units_used": 20
+          "units_used": 1
         },
         {
           "date": "2026-03-17",
-          "units_used": 19
+          "units_used": 1
         },
         {
           "date": "2026-03-18",
-          "units_used": 21
+          "units_used": 1
         },
         {
           "date": "2026-03-19",
-          "units_used": 22
+          "units_used": 1
         },
         {
           "date": "2026-03-20",
-          "units_used": 20
+          "units_used": 1
         }
       ]
     },
@@ -1083,75 +852,229 @@
       "itemName": "aspirin",
       "catagory_id": 3,
       "catagory_name": "Analgesics and Antipyretics",
-      "total_quantity": 447,
-      "current_velocity": 21.8571,
-      "local_velocity": 11.7667,
-      "usage_pressure": 1.0,
+      "total_quantity": 1730,
+      "current_velocity": 0.7143,
+      "local_velocity": 2.3333,
+      "usage_pressure": 0.3601,
       "coverage_pressure": 0.0,
       "expiration_pressure": 0.0,
       "supply_pressure": 0.0,
-      "demand_score": 35.0,
+      "demand_score": 12.61,
       "expiry_breakdown": {
-        "safe_qty": 447,
+        "safe_qty": 1730,
         "near_qty": 0,
         "expired_qty": 0
       },
       "usage_history": [
         {
           "date": "2026-03-07",
-          "units_used": 25
+          "units_used": 9
         },
         {
           "date": "2026-03-08",
-          "units_used": 23
+          "units_used": 9
         },
         {
           "date": "2026-03-09",
-          "units_used": 27
+          "units_used": 9
         },
         {
           "date": "2026-03-10",
-          "units_used": 26
+          "units_used": 9
         },
         {
           "date": "2026-03-11",
-          "units_used": 24
+          "units_used": 9
         },
         {
           "date": "2026-03-12",
-          "units_used": 25
+          "units_used": 9
         },
         {
           "date": "2026-03-13",
-          "units_used": 27
+          "units_used": 9
         },
         {
           "date": "2026-03-14",
-          "units_used": 23
+          "units_used": 1
         },
         {
           "date": "2026-03-15",
-          "units_used": 26
+          "units_used": 1
         },
         {
           "date": "2026-03-16",
-          "units_used": 25
+          "units_used": 1
         },
         {
           "date": "2026-03-17",
-          "units_used": 24
+          "units_used": 1
         },
         {
           "date": "2026-03-18",
-          "units_used": 26
+          "units_used": 1
         },
         {
           "date": "2026-03-19",
-          "units_used": 27
+          "units_used": 1
         },
         {
           "date": "2026-03-20",
-          "units_used": 25
+          "units_used": 1
+        }
+      ]
+    },
+    {
+      "itemid": 13,
+      "itemName": "epinephrine",
+      "catagory_id": 4,
+      "catagory_name": "Allergy and Anaphylaxis Treatments",
+      "total_quantity": 38,
+      "current_velocity": 2.7143,
+      "local_velocity": 1.7333,
+      "usage_pressure": 1.0,
+      "coverage_pressure": 0.0,
+      "expiration_pressure": 0.0632,
+      "supply_pressure": 0.0,
+      "demand_score": 36.26,
+      "expiry_breakdown": {
+        "safe_qty": 34,
+        "near_qty": 4,
+        "expired_qty": 0
+      },
+      "usage_history": [
+        {
+          "date": "2026-03-07",
+          "units_used": 4
+        },
+        {
+          "date": "2026-03-08",
+          "units_used": 3
+        },
+        {
+          "date": "2026-03-09",
+          "units_used": 4
+        },
+        {
+          "date": "2026-03-10",
+          "units_used": 4
+        },
+        {
+          "date": "2026-03-11",
+          "units_used": 3
+        },
+        {
+          "date": "2026-03-12",
+          "units_used": 4
+        },
+        {
+          "date": "2026-03-13",
+          "units_used": 4
+        },
+        {
+          "date": "2026-03-14",
+          "units_used": 4
+        },
+        {
+          "date": "2026-03-15",
+          "units_used": 3
+        },
+        {
+          "date": "2026-03-16",
+          "units_used": 4
+        },
+        {
+          "date": "2026-03-17",
+          "units_used": 4
+        },
+        {
+          "date": "2026-03-18",
+          "units_used": 3
+        },
+        {
+          "date": "2026-03-19",
+          "units_used": 4
+        },
+        {
+          "date": "2026-03-20",
+          "units_used": 4
+        }
+      ]
+    },
+    {
+      "itemid": 14,
+      "itemName": "diphenhydramine",
+      "catagory_id": 4,
+      "catagory_name": "Allergy and Anaphylaxis Treatments",
+      "total_quantity": 113,
+      "current_velocity": 9.4286,
+      "local_velocity": 6.2333,
+      "usage_pressure": 1.0,
+      "coverage_pressure": 0.1439,
+      "expiration_pressure": 0.0,
+      "supply_pressure": 0.0,
+      "demand_score": 39.32,
+      "expiry_breakdown": {
+        "safe_qty": 113,
+        "near_qty": 0,
+        "expired_qty": 0
+      },
+      "usage_history": [
+        {
+          "date": "2026-03-07",
+          "units_used": 13
+        },
+        {
+          "date": "2026-03-08",
+          "units_used": 14
+        },
+        {
+          "date": "2026-03-09",
+          "units_used": 12
+        },
+        {
+          "date": "2026-03-10",
+          "units_used": 15
+        },
+        {
+          "date": "2026-03-11",
+          "units_used": 13
+        },
+        {
+          "date": "2026-03-12",
+          "units_used": 12
+        },
+        {
+          "date": "2026-03-13",
+          "units_used": 14
+        },
+        {
+          "date": "2026-03-14",
+          "units_used": 13
+        },
+        {
+          "date": "2026-03-15",
+          "units_used": 15
+        },
+        {
+          "date": "2026-03-16",
+          "units_used": 12
+        },
+        {
+          "date": "2026-03-17",
+          "units_used": 14
+        },
+        {
+          "date": "2026-03-18",
+          "units_used": 13
+        },
+        {
+          "date": "2026-03-19",
+          "units_used": 12
+        },
+        {
+          "date": "2026-03-20",
+          "units_used": 15
         }
       ]
     },
@@ -1160,75 +1083,152 @@
       "itemName": "cetirizine",
       "catagory_id": 4,
       "catagory_name": "Allergy and Anaphylaxis Treatments",
-      "total_quantity": 376,
-      "current_velocity": 13.7143,
-      "local_velocity": 7.4667,
-      "usage_pressure": 1.0,
+      "total_quantity": 1037,
+      "current_velocity": 0.7143,
+      "local_velocity": 2.1,
+      "usage_pressure": 0.2945,
       "coverage_pressure": 0.0,
       "expiration_pressure": 0.0,
       "supply_pressure": 0.0,
-      "demand_score": 35.0,
+      "demand_score": 10.31,
       "expiry_breakdown": {
-        "safe_qty": 376,
+        "safe_qty": 1037,
         "near_qty": 0,
         "expired_qty": 0
       },
       "usage_history": [
         {
           "date": "2026-03-07",
-          "units_used": 16
+          "units_used": 8
         },
         {
           "date": "2026-03-08",
-          "units_used": 15
+          "units_used": 8
         },
         {
           "date": "2026-03-09",
-          "units_used": 17
+          "units_used": 8
         },
         {
           "date": "2026-03-10",
-          "units_used": 18
+          "units_used": 8
         },
         {
           "date": "2026-03-11",
-          "units_used": 14
+          "units_used": 8
         },
         {
           "date": "2026-03-12",
-          "units_used": 16
+          "units_used": 8
         },
         {
           "date": "2026-03-13",
-          "units_used": 17
+          "units_used": 8
         },
         {
           "date": "2026-03-14",
-          "units_used": 15
+          "units_used": 1
         },
         {
           "date": "2026-03-15",
-          "units_used": 18
+          "units_used": 1
         },
         {
           "date": "2026-03-16",
-          "units_used": 16
+          "units_used": 1
         },
         {
           "date": "2026-03-17",
-          "units_used": 14
+          "units_used": 1
         },
         {
           "date": "2026-03-18",
-          "units_used": 17
+          "units_used": 1
         },
         {
           "date": "2026-03-19",
-          "units_used": 16
+          "units_used": 1
         },
         {
           "date": "2026-03-20",
-          "units_used": 15
+          "units_used": 1
+        }
+      ]
+    },
+    {
+      "itemid": 16,
+      "itemName": "methylprednisolone",
+      "catagory_id": 4,
+      "catagory_name": "Allergy and Anaphylaxis Treatments",
+      "total_quantity": -72,
+      "current_velocity": 8.1429,
+      "local_velocity": 5.1333,
+      "usage_pressure": 1.0,
+      "coverage_pressure": 1.0,
+      "expiration_pressure": 0.0,
+      "supply_pressure": 0.0,
+      "demand_score": 65.0,
+      "expiry_breakdown": {
+        "safe_qty": 0,
+        "near_qty": 0,
+        "expired_qty": 0
+      },
+      "usage_history": [
+        {
+          "date": "2026-03-07",
+          "units_used": 11
+        },
+        {
+          "date": "2026-03-08",
+          "units_used": 9
+        },
+        {
+          "date": "2026-03-09",
+          "units_used": 13
+        },
+        {
+          "date": "2026-03-10",
+          "units_used": 11
+        },
+        {
+          "date": "2026-03-11",
+          "units_used": 9
+        },
+        {
+          "date": "2026-03-12",
+          "units_used": 11
+        },
+        {
+          "date": "2026-03-13",
+          "units_used": 13
+        },
+        {
+          "date": "2026-03-14",
+          "units_used": 9
+        },
+        {
+          "date": "2026-03-15",
+          "units_used": 11
+        },
+        {
+          "date": "2026-03-16",
+          "units_used": 13
+        },
+        {
+          "date": "2026-03-17",
+          "units_used": 9
+        },
+        {
+          "date": "2026-03-18",
+          "units_used": 11
+        },
+        {
+          "date": "2026-03-19",
+          "units_used": 13
+        },
+        {
+          "date": "2026-03-20",
+          "units_used": 11
         }
       ]
     }
@@ -1238,28 +1238,28 @@
       "batch_number": 1001,
       "item_id": 1,
       "expiration_date": "2026-03-28",
-      "current_quantity": 150,
+      "current_quantity": 122,
       "location_id": 6
     },
     {
       "batch_number": 1003,
       "item_id": 2,
       "expiration_date": "2026-12-01",
-      "current_quantity": 66,
+      "current_quantity": 264,
       "location_id": 6
     },
     {
       "batch_number": 1005,
       "item_id": 3,
       "expiration_date": "2026-10-20",
-      "current_quantity": 17,
+      "current_quantity": 211,
       "location_id": 6
     },
     {
       "batch_number": 1006,
       "item_id": 4,
       "expiration_date": "2026-09-15",
-      "current_quantity": 88,
+      "current_quantity": 450,
       "location_id": 5
     },
     {
@@ -1273,21 +1273,21 @@
       "batch_number": 1009,
       "item_id": 5,
       "expiration_date": "2026-10-30",
-      "current_quantity": 45,
+      "current_quantity": -412,
       "location_id": 7
     },
     {
       "batch_number": 1010,
       "item_id": 6,
       "expiration_date": "2026-08-20",
-      "current_quantity": 277,
+      "current_quantity": -474,
       "location_id": 5
     },
     {
       "batch_number": 1012,
       "item_id": 7,
       "expiration_date": "2026-07-15",
-      "current_quantity": 239,
+      "current_quantity": 245,
       "location_id": 5
     },
     {
@@ -1301,91 +1301,91 @@
       "batch_number": 1014,
       "item_id": 8,
       "expiration_date": "2026-12-20",
-      "current_quantity": 82,
+      "current_quantity": -164,
       "location_id": 6
     },
     {
       "batch_number": 1015,
       "item_id": 9,
       "expiration_date": "2026-04-01",
-      "current_quantity": 48,
+      "current_quantity": -262,
       "location_id": 7
     },
     {
       "batch_number": 1016,
       "item_id": 9,
       "expiration_date": "2027-01-15",
-      "current_quantity": 743,
+      "current_quantity": -333,
       "location_id": 7
     },
     {
       "batch_number": 1017,
       "item_id": 10,
       "expiration_date": "2026-11-20",
-      "current_quantity": 433,
+      "current_quantity": 419,
       "location_id": 5
     },
     {
       "batch_number": 1019,
       "item_id": 11,
       "expiration_date": "2026-09-10",
-      "current_quantity": 317,
+      "current_quantity": 1530,
       "location_id": 5
     },
     {
       "batch_number": 1020,
       "item_id": 12,
       "expiration_date": "2026-06-30",
-      "current_quantity": 447,
+      "current_quantity": 1730,
       "location_id": 6
     },
     {
       "batch_number": 1021,
       "item_id": 13,
       "expiration_date": "2026-04-03",
-      "current_quantity": 2,
+      "current_quantity": 4,
       "location_id": 7
     },
     {
       "batch_number": 1022,
       "item_id": 13,
       "expiration_date": "2026-10-15",
-      "current_quantity": 32,
+      "current_quantity": 34,
       "location_id": 7
     },
     {
       "batch_number": 1023,
       "item_id": 14,
       "expiration_date": "2026-08-12",
-      "current_quantity": 127,
+      "current_quantity": 113,
       "location_id": 5
     },
     {
       "batch_number": 1024,
       "item_id": 15,
       "expiration_date": "2026-11-30",
-      "current_quantity": 376,
+      "current_quantity": 1037,
       "location_id": 5
     },
     {
       "batch_number": 1025,
       "item_id": 16,
       "expiration_date": "2026-03-25",
-      "current_quantity": 1,
+      "current_quantity": -13,
       "location_id": 6
     },
     {
       "batch_number": 1026,
       "item_id": 16,
       "expiration_date": "2026-09-01",
-      "current_quantity": 49,
+      "current_quantity": -59,
       "location_id": 6
     },
     {
       "batch_number": 1011,
       "item_id": 6,
       "expiration_date": "2026-12-05",
-      "current_quantity": 400,
+      "current_quantity": 200,
       "location_id": 7
     },
     {
@@ -1413,7 +1413,7 @@
       "batch_number": 1004,
       "item_id": 2,
       "expiration_date": "2027-03-15",
-      "current_quantity": 80,
+      "current_quantity": 200,
       "location_id": 5
     }
   ],
@@ -1425,181 +1425,181 @@
       "supply_trend": [
         {
           "date": "2026-03-07",
-          "units_used": 25
+          "units_used": 35
         },
         {
           "date": "2026-03-08",
-          "units_used": 23
+          "units_used": 34
         },
         {
           "date": "2026-03-09",
-          "units_used": 27
+          "units_used": 36
         },
         {
           "date": "2026-03-10",
-          "units_used": 26
+          "units_used": 35
         },
         {
           "date": "2026-03-11",
-          "units_used": 23
+          "units_used": 34
         },
         {
           "date": "2026-03-12",
-          "units_used": 26
+          "units_used": 36
         },
         {
           "date": "2026-03-13",
-          "units_used": 25
+          "units_used": 35
         },
         {
           "date": "2026-03-14",
-          "units_used": 23
+          "units_used": 14
         },
         {
           "date": "2026-03-15",
-          "units_used": 25
+          "units_used": 15
         },
         {
           "date": "2026-03-16",
-          "units_used": 25
+          "units_used": 16
         },
         {
           "date": "2026-03-17",
-          "units_used": 24
+          "units_used": 15
         },
         {
           "date": "2026-03-18",
-          "units_used": 25
+          "units_used": 17
         },
         {
           "date": "2026-03-19",
-          "units_used": 26
+          "units_used": 16
         },
         {
           "date": "2026-03-20",
-          "units_used": 26
+          "units_used": 15
         }
       ],
       "demand_trend": [
         {
           "date": "2026-02-20",
-          "visit_count": 15
+          "visit_count": 15.0
         },
         {
           "date": "2026-02-21",
-          "visit_count": 14
+          "visit_count": 14.0
         },
         {
           "date": "2026-02-22",
-          "visit_count": 15
+          "visit_count": 15.0
         },
         {
           "date": "2026-02-23",
-          "visit_count": 13
+          "visit_count": 13.0
         },
         {
           "date": "2026-02-24",
-          "visit_count": 14
+          "visit_count": 14.0
         },
         {
           "date": "2026-02-25",
-          "visit_count": 13
+          "visit_count": 13.0
         },
         {
           "date": "2026-02-26",
-          "visit_count": 12
+          "visit_count": 12.0
         },
         {
           "date": "2026-02-27",
-          "visit_count": 13
+          "visit_count": 13.0
         },
         {
           "date": "2026-02-28",
-          "visit_count": 12
+          "visit_count": 12.0
         },
         {
           "date": "2026-03-01",
-          "visit_count": 11
+          "visit_count": 11.0
         },
         {
           "date": "2026-03-02",
-          "visit_count": 12
+          "visit_count": 12.0
         },
         {
           "date": "2026-03-03",
-          "visit_count": 11
+          "visit_count": 11.0
         },
         {
           "date": "2026-03-04",
-          "visit_count": 10
+          "visit_count": 10.0
         },
         {
           "date": "2026-03-05",
-          "visit_count": 11
+          "visit_count": 11.0
         },
         {
           "date": "2026-03-06",
-          "visit_count": 10
+          "visit_count": 10.0
         },
         {
           "date": "2026-03-07",
-          "visit_count": 10
+          "visit_count": 10.0
         },
         {
           "date": "2026-03-08",
-          "visit_count": 9
+          "visit_count": 9.0
         },
         {
           "date": "2026-03-09",
-          "visit_count": 10
+          "visit_count": 10.0
         },
         {
           "date": "2026-03-10",
-          "visit_count": 9
+          "visit_count": 9.0
         },
         {
           "date": "2026-03-11",
-          "visit_count": 8
+          "visit_count": 8.0
         },
         {
           "date": "2026-03-12",
-          "visit_count": 9
+          "visit_count": 9.0
         },
         {
           "date": "2026-03-13",
-          "visit_count": 9
+          "visit_count": 9.0
         },
         {
           "date": "2026-03-14",
-          "visit_count": 8
+          "visit_count": 8.0
         },
         {
           "date": "2026-03-15",
-          "visit_count": 9
+          "visit_count": 9.0
         },
         {
           "date": "2026-03-16",
-          "visit_count": 8
+          "visit_count": 8.0
         },
         {
           "date": "2026-03-17",
-          "visit_count": 8
+          "visit_count": 8.0
         },
         {
           "date": "2026-03-18",
-          "visit_count": 9
+          "visit_count": 9.0
         },
         {
           "date": "2026-03-19",
-          "visit_count": 8
+          "visit_count": 8.0
         },
         {
           "date": "2026-03-20",
-          "visit_count": 9
+          "visit_count": 9.0
         },
         {
           "date": "2026-03-21",
-          "visit_count": 8
+          "visit_count": 8.0
         }
       ]
     },
@@ -1610,181 +1610,181 @@
       "supply_trend": [
         {
           "date": "2026-03-07",
-          "units_used": 62
+          "units_used": 115
         },
         {
           "date": "2026-03-08",
-          "units_used": 70
+          "units_used": 131
         },
         {
           "date": "2026-03-09",
-          "units_used": 62
+          "units_used": 116
         },
         {
           "date": "2026-03-10",
-          "units_used": 66
+          "units_used": 123
         },
         {
           "date": "2026-03-11",
-          "units_used": 66
+          "units_used": 121
         },
         {
           "date": "2026-03-12",
-          "units_used": 64
+          "units_used": 119
         },
         {
           "date": "2026-03-13",
-          "units_used": 67
+          "units_used": 124
         },
         {
           "date": "2026-03-14",
-          "units_used": 65
+          "units_used": 123
         },
         {
           "date": "2026-03-15",
-          "units_used": 65
+          "units_used": 121
         },
         {
           "date": "2026-03-16",
-          "units_used": 59
+          "units_used": 109
         },
         {
           "date": "2026-03-17",
-          "units_used": 67
+          "units_used": 123
         },
         {
           "date": "2026-03-18",
-          "units_used": 67
+          "units_used": 126
         },
         {
           "date": "2026-03-19",
-          "units_used": 63
+          "units_used": 118
         },
         {
           "date": "2026-03-20",
-          "units_used": 64
+          "units_used": 120
         }
       ],
       "demand_trend": [
         {
           "date": "2026-02-20",
-          "visit_count": 31
+          "visit_count": 31.0
         },
         {
           "date": "2026-02-21",
-          "visit_count": 33
+          "visit_count": 33.0
         },
         {
           "date": "2026-02-22",
-          "visit_count": 30
+          "visit_count": 30.0
         },
         {
           "date": "2026-02-23",
-          "visit_count": 32
+          "visit_count": 32.0
         },
         {
           "date": "2026-02-24",
-          "visit_count": 31
+          "visit_count": 31.0
         },
         {
           "date": "2026-02-25",
-          "visit_count": 29
+          "visit_count": 29.0
         },
         {
           "date": "2026-02-26",
-          "visit_count": 28
+          "visit_count": 28.0
         },
         {
           "date": "2026-02-27",
-          "visit_count": 30
+          "visit_count": 30.0
         },
         {
           "date": "2026-02-28",
-          "visit_count": 31
+          "visit_count": 31.0
         },
         {
           "date": "2026-03-01",
-          "visit_count": 29
+          "visit_count": 29.0
         },
         {
           "date": "2026-03-02",
-          "visit_count": 30
+          "visit_count": 30.0
         },
         {
           "date": "2026-03-03",
-          "visit_count": 28
+          "visit_count": 28.0
         },
         {
           "date": "2026-03-04",
-          "visit_count": 27
+          "visit_count": 27.0
         },
         {
           "date": "2026-03-05",
-          "visit_count": 29
+          "visit_count": 29.0
         },
         {
           "date": "2026-03-06",
-          "visit_count": 28
+          "visit_count": 28.0
         },
         {
           "date": "2026-03-07",
-          "visit_count": 27
+          "visit_count": 27.0
         },
         {
           "date": "2026-03-08",
-          "visit_count": 26
+          "visit_count": 26.0
         },
         {
           "date": "2026-03-09",
-          "visit_count": 28
+          "visit_count": 28.0
         },
         {
           "date": "2026-03-10",
-          "visit_count": 26
+          "visit_count": 26.0
         },
         {
           "date": "2026-03-11",
-          "visit_count": 25
+          "visit_count": 25.0
         },
         {
           "date": "2026-03-12",
-          "visit_count": 27
+          "visit_count": 27.0
         },
         {
           "date": "2026-03-13",
-          "visit_count": 26
+          "visit_count": 26.0
         },
         {
           "date": "2026-03-14",
-          "visit_count": 25
+          "visit_count": 25.0
         },
         {
           "date": "2026-03-15",
-          "visit_count": 27
+          "visit_count": 27.0
         },
         {
           "date": "2026-03-16",
-          "visit_count": 25
+          "visit_count": 25.0
         },
         {
           "date": "2026-03-17",
-          "visit_count": 24
+          "visit_count": 24.0
         },
         {
           "date": "2026-03-18",
-          "visit_count": 26
+          "visit_count": 26.0
         },
         {
           "date": "2026-03-19",
-          "visit_count": 25
+          "visit_count": 25.0
         },
         {
           "date": "2026-03-20",
-          "visit_count": 24
+          "visit_count": 24.0
         },
         {
           "date": "2026-03-21",
-          "visit_count": 26
+          "visit_count": 26.0
         }
       ]
     },
@@ -1795,181 +1795,181 @@
       "supply_trend": [
         {
           "date": "2026-03-07",
-          "units_used": 135
+          "units_used": 171
         },
         {
           "date": "2026-03-08",
-          "units_used": 127
+          "units_used": 165
         },
         {
           "date": "2026-03-09",
-          "units_used": 143
+          "units_used": 178
         },
         {
           "date": "2026-03-10",
-          "units_used": 146
+          "units_used": 187
         },
         {
           "date": "2026-03-11",
-          "units_used": 127
+          "units_used": 162
         },
         {
           "date": "2026-03-12",
-          "units_used": 137
+          "units_used": 175
         },
         {
           "date": "2026-03-13",
-          "units_used": 145
+          "units_used": 181
         },
         {
           "date": "2026-03-14",
-          "units_used": 129
+          "units_used": 152
         },
         {
           "date": "2026-03-15",
-          "units_used": 137
+          "units_used": 155
         },
         {
           "date": "2026-03-16",
-          "units_used": 139
+          "units_used": 162
         },
         {
           "date": "2026-03-17",
-          "units_used": 129
+          "units_used": 149
         },
         {
           "date": "2026-03-18",
-          "units_used": 144
+          "units_used": 168
         },
         {
           "date": "2026-03-19",
-          "units_used": 141
+          "units_used": 159
         },
         {
           "date": "2026-03-20",
-          "units_used": 133
+          "units_used": 152
         }
       ],
       "demand_trend": [
         {
           "date": "2026-02-20",
-          "visit_count": 42
+          "visit_count": 42.0
         },
         {
           "date": "2026-02-21",
-          "visit_count": 40
+          "visit_count": 40.0
         },
         {
           "date": "2026-02-22",
-          "visit_count": 43
+          "visit_count": 43.0
         },
         {
           "date": "2026-02-23",
-          "visit_count": 41
+          "visit_count": 41.0
         },
         {
           "date": "2026-02-24",
-          "visit_count": 39
+          "visit_count": 39.0
         },
         {
           "date": "2026-02-25",
-          "visit_count": 38
+          "visit_count": 38.0
         },
         {
           "date": "2026-02-26",
-          "visit_count": 36
+          "visit_count": 36.0
         },
         {
           "date": "2026-02-27",
-          "visit_count": 39
+          "visit_count": 39.0
         },
         {
           "date": "2026-02-28",
-          "visit_count": 37
+          "visit_count": 37.0
         },
         {
           "date": "2026-03-01",
-          "visit_count": 35
+          "visit_count": 35.0
         },
         {
           "date": "2026-03-02",
-          "visit_count": 36
+          "visit_count": 36.0
         },
         {
           "date": "2026-03-03",
-          "visit_count": 34
+          "visit_count": 34.0
         },
         {
           "date": "2026-03-04",
-          "visit_count": 33
+          "visit_count": 33.0
         },
         {
           "date": "2026-03-05",
-          "visit_count": 35
+          "visit_count": 35.0
         },
         {
           "date": "2026-03-06",
-          "visit_count": 33
+          "visit_count": 33.0
         },
         {
           "date": "2026-03-07",
-          "visit_count": 32
+          "visit_count": 32.0
         },
         {
           "date": "2026-03-08",
-          "visit_count": 30
+          "visit_count": 30.0
         },
         {
           "date": "2026-03-09",
-          "visit_count": 32
+          "visit_count": 32.0
         },
         {
           "date": "2026-03-10",
-          "visit_count": 30
+          "visit_count": 30.0
         },
         {
           "date": "2026-03-11",
-          "visit_count": 29
+          "visit_count": 29.0
         },
         {
           "date": "2026-03-12",
-          "visit_count": 31
+          "visit_count": 31.0
         },
         {
           "date": "2026-03-13",
-          "visit_count": 30
+          "visit_count": 30.0
         },
         {
           "date": "2026-03-14",
-          "visit_count": 28
+          "visit_count": 28.0
         },
         {
           "date": "2026-03-15",
-          "visit_count": 29
+          "visit_count": 29.0
         },
         {
           "date": "2026-03-16",
-          "visit_count": 27
+          "visit_count": 27.0
         },
         {
           "date": "2026-03-17",
-          "visit_count": 26
+          "visit_count": 26.0
         },
         {
           "date": "2026-03-18",
-          "visit_count": 28
+          "visit_count": 28.0
         },
         {
           "date": "2026-03-19",
-          "visit_count": 27
+          "visit_count": 27.0
         },
         {
           "date": "2026-03-20",
-          "visit_count": 25
+          "visit_count": 25.0
         },
         {
           "date": "2026-03-21",
-          "visit_count": 26
+          "visit_count": 26.0
         }
       ]
     },
@@ -1980,19 +1980,19 @@
       "supply_trend": [
         {
           "date": "2026-03-07",
-          "units_used": 37
+          "units_used": 36
         },
         {
           "date": "2026-03-08",
-          "units_used": 35
+          "units_used": 34
         },
         {
           "date": "2026-03-09",
-          "units_used": 39
+          "units_used": 37
         },
         {
           "date": "2026-03-10",
-          "units_used": 41
+          "units_used": 38
         },
         {
           "date": "2026-03-11",
@@ -2000,214 +2000,238 @@
         },
         {
           "date": "2026-03-12",
-          "units_used": 36
+          "units_used": 35
         },
         {
           "date": "2026-03-13",
-          "units_used": 41
+          "units_used": 39
         },
         {
           "date": "2026-03-14",
-          "units_used": 35
+          "units_used": 27
         },
         {
           "date": "2026-03-15",
-          "units_used": 40
+          "units_used": 30
         },
         {
           "date": "2026-03-16",
-          "units_used": 38
+          "units_used": 30
         },
         {
           "date": "2026-03-17",
-          "units_used": 35
+          "units_used": 28
         },
         {
           "date": "2026-03-18",
-          "units_used": 37
+          "units_used": 28
         },
         {
           "date": "2026-03-19",
-          "units_used": 37
+          "units_used": 30
         },
         {
           "date": "2026-03-20",
-          "units_used": 39
+          "units_used": 31
         }
       ],
       "demand_trend": [
         {
           "date": "2026-02-20",
-          "visit_count": 11
+          "visit_count": 11.0
         },
         {
           "date": "2026-02-21",
-          "visit_count": 12
+          "visit_count": 12.0
         },
         {
           "date": "2026-02-22",
-          "visit_count": 11
+          "visit_count": 11.0
         },
         {
           "date": "2026-02-23",
-          "visit_count": 13
+          "visit_count": 13.0
         },
         {
           "date": "2026-02-24",
-          "visit_count": 12
+          "visit_count": 12.0
         },
         {
           "date": "2026-02-25",
-          "visit_count": 12
+          "visit_count": 12.0
         },
         {
           "date": "2026-02-26",
-          "visit_count": 13
+          "visit_count": 13.0
         },
         {
           "date": "2026-02-27",
-          "visit_count": 12
+          "visit_count": 12.0
         },
         {
           "date": "2026-02-28",
-          "visit_count": 13
+          "visit_count": 13.0
         },
         {
           "date": "2026-03-01",
-          "visit_count": 14
+          "visit_count": 14.0
         },
         {
           "date": "2026-03-02",
-          "visit_count": 13
+          "visit_count": 13.0
         },
         {
           "date": "2026-03-03",
-          "visit_count": 14
+          "visit_count": 14.0
         },
         {
           "date": "2026-03-04",
-          "visit_count": 15
+          "visit_count": 15.0
         },
         {
           "date": "2026-03-05",
-          "visit_count": 13
+          "visit_count": 13.0
         },
         {
           "date": "2026-03-06",
-          "visit_count": 14
+          "visit_count": 14.0
         },
         {
           "date": "2026-03-07",
-          "visit_count": 15
+          "visit_count": 15.0
         },
         {
           "date": "2026-03-08",
-          "visit_count": 14
+          "visit_count": 14.0
         },
         {
           "date": "2026-03-09",
-          "visit_count": 15
+          "visit_count": 15.0
         },
         {
           "date": "2026-03-10",
-          "visit_count": 16
+          "visit_count": 16.0
         },
         {
           "date": "2026-03-11",
-          "visit_count": 14
+          "visit_count": 14.0
         },
         {
           "date": "2026-03-12",
-          "visit_count": 15
+          "visit_count": 15.0
         },
         {
           "date": "2026-03-13",
-          "visit_count": 16
+          "visit_count": 16.0
         },
         {
           "date": "2026-03-14",
-          "visit_count": 15
+          "visit_count": 15.0
         },
         {
           "date": "2026-03-15",
-          "visit_count": 16
+          "visit_count": 16.0
         },
         {
           "date": "2026-03-16",
-          "visit_count": 17
+          "visit_count": 17.0
         },
         {
           "date": "2026-03-17",
-          "visit_count": 15
+          "visit_count": 15.0
         },
         {
           "date": "2026-03-18",
-          "visit_count": 16
+          "visit_count": 16.0
         },
         {
           "date": "2026-03-19",
-          "visit_count": 17
+          "visit_count": 17.0
         },
         {
           "date": "2026-03-20",
-          "visit_count": 16
+          "visit_count": 16.0
         },
         {
           "date": "2026-03-21",
-          "visit_count": 17
+          "visit_count": 17.0
         }
       ]
     }
   },
   "inventoryExpirySummary": {
-    "safe_qty": 5018,
-    "near_qty": 201,
+    "safe_qty": 7633,
+    "near_qty": 126,
     "expired_qty": 35
   },
+  "usageByHospital": [
+    {
+      "locationName": "General Medical Ward",
+      "units_used": 3348
+    },
+    {
+      "locationName": "Emergency Department",
+      "units_used": 957
+    },
+    {
+      "locationName": "Intensive Care Unit",
+      "units_used": 439
+    },
+    {
+      "locationName": "Surgical Ward",
+      "units_used": 70
+    }
+  ],
+  "restockByPharmacy": [
+    {
+      "locationName": "Cardinal Health - Atlanta Distribution Center",
+      "units_restocked": 5610
+    },
+    {
+      "locationName": "McKesson Southeast Regional Warehouse",
+      "units_restocked": 3099
+    },
+    {
+      "locationName": "AmerisourceBergen Fulfillment Center",
+      "units_restocked": 2182
+    }
+  ],
   "categories": [
     {
       "catagoryid": 1,
       "catagoryName": "Respiratory Antivirals",
       "trendStrength": -0.52,
+      "description": "Antiviral medications used to treat and prevent respiratory viral infections, primarily influenza and RSV. These agents work by inhibiting viral replication and are most effective when administered early in the course of illness. Stockpile readiness is critical during flu season and outbreak periods.",
+      "imagePath": "https://openmoji.org/data/color/svg/1FAC1.svg",
       "endpoint": "https://api.delphi.cmu.edu/epidata/fluview/",
-      "parameters": {
-        "regions": "nat",
-        "epiweeks": "202501-202510"
-      }
+      "parameters": "{\"regions\": \"nat\", \"epiweeks\": \"202501-202510\"}"
     },
     {
       "catagoryid": 2,
       "catagoryName": "Broad Spectrum Antibiotics",
       "trendStrength": -0.18,
+      "description": "Wide-coverage antibacterial agents effective against a broad range of gram-positive and gram-negative organisms. Used empirically in serious infections before culture results are available. High-demand during respiratory illness surges due to secondary bacterial pneumonia risk.",
+      "imagePath": "https://openmoji.org/data/color/svg/1F9A0.svg",
       "endpoint": "https://data.cdc.gov/resource/vjzj-u7u8.json",
-      "parameters": {
-        "$select": "date, pathogen, geography, percent_visits",
-        "$where": "geography='Georgia' AND pathogen='ARI'",
-        "$order": "date DESC",
-        "$limit": 30
-      }
+      "parameters": "{\"$limit\": 30, \"$order\": \"date DESC\", \"$where\": \"geography='Georgia' AND pathogen='ARI'\", \"$select\": \"date, pathogen, geography, percent_visits\"}"
     },
     {
       "catagoryid": 3,
       "catagoryName": "Analgesics and Antipyretics",
       "trendStrength": -0.46,
+      "description": "Pain-relieving and fever-reducing medications that form the backbone of symptomatic treatment across nearly every care setting. Demand is closely tied to overall patient volume and spikes sharply during flu season, post-operative surges, and pediatric illness waves.",
+      "imagePath": "https://openmoji.org/data/color/svg/1F48A.svg",
       "endpoint": "https://api.delphi.cmu.edu/epidata/fluview/",
-      "parameters": {
-        "regions": "nat",
-        "epiweeks": "202501-202510"
-      }
+      "parameters": "{\"regions\": \"nat\", \"epiweeks\": \"202501-202510\"}"
     },
     {
       "catagoryid": 4,
       "catagoryName": "Allergy and Anaphylaxis Treatments",
       "trendStrength": 0.31,
+      "description": "Emergency and maintenance medications for allergic reactions ranging from mild urticaria to life-threatening anaphylaxis. Epinephrine availability is a direct patient safety requirement. Seasonal allergen trends and RSV activity drive demand variability throughout the year.",
+      "imagePath": "https://openmoji.org/data/color/svg/1F489.svg",
       "endpoint": "https://data.cdc.gov/resource/3cxc-4k8q.json",
-      "parameters": {
-        "$select": "mmwrweek_end, level, pcr_percent_positive, percent_pos_2_week",
-        "$where": "level='National'",
-        "$order": "mmwrweek_end DESC",
-        "$limit": 20
-      }
+      "parameters": "{\"$limit\": 20, \"$order\": \"mmwrweek_end DESC\", \"$where\": \"level='National'\", \"$select\": \"mmwrweek_end, level, pcr_percent_positive, percent_pos_2_week\"}"
     }
   ]
 }

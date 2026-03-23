@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaFlow - Medication Detail</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(to bottom right, #f0f9ff, #dbeafe);
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+        }
+        
+        .logo-text {
+            font-size: clamp(1.1rem, 1.4vw + 0.75rem, 1.4rem);
+            font-weight: 600;
+            color: #0f172a;
+            letter-spacing: -0.02em;
+            white-space: nowrap;
+        }
+        
+        .logo-thumb {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: clamp(2.65rem, 2.5vw + 1.85rem, 3.35rem);
+            height: clamp(2.65rem, 2.5vw + 1.85rem, 3.35rem);
+            flex-shrink: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        .logo-thumb img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center center;
+        }
+        
+        nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .nav-link {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            color: #475569;
+        }
+        
+        .nav-link:hover {
+            background: #f1f5f9;
+            color: #0f172a;
+        }
+        
+        main {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #64748b;
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            transition: color 0.2s;
+        }
+        
+        .back-link:hover {
+            color: #0f172a;
+        }
+        
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        h1 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        
+        h2 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 1.5rem;
+        }
+        
+        .risk-badge {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            border: 2px solid;
+        }
+        
+        .risk-at-risk {
+            background: #fee2e2;
+            color: #991b1b;
+            border-color: #fca5a5;
+        }
+        
+        .risk-stable {
+            background: #dcfce7;
+            color: #166534;
+            border-color: #86efac;
+        }
+        
+        .risk-overstocked {
+            background: #fef3c7;
+            color: #92400e;
+            border-color: #fde047;
+        }
+        
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .grid-2 {
+            grid-template-columns: 1fr;
+        }
+        
+        @media (min-width: 1024px) {
+            .grid-2 {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+        }
+        
+        .metric-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+        
+        .metric-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .metric-icon {
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+        }
+        
+        .icon-blue { background: #eff6ff; }
+        .icon-purple { background: #faf5ff; }
+        .icon-amber { background: #fffbeb; }
+        .icon-green { background: #f0fdf4; }
+        
+        .metric-content {
+            flex: 1;
+        }
+        
+        .metric-label {
+            color: #64748b;
+            font-size: 0.875rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .metric-value {
+            color: #0f172a;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        
+        .chart-container {
+            position: relative;
+            height: 300px;
+        }
+        
+        .analysis-text {
+            color: #334155;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <a href="/" class="logo-thumb" title="PharmaFlow home"><img src="/static/logo.jpg" alt=""></a>
+                <span class="logo-text">PharmaFlow</span>
+            </div>
+            <nav>
+                <a href="/" class="nav-link">Inventory Dashboard</a>
+                <a href="/readiness" class="nav-link">Illness Readiness</a>
+                <a href="/demo/inventory-event-log" class="nav-link">Event log (demo)</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <a href="/" class="back-link">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            Back to Dashboard
+        </a>
+        
+        <div class="page-header">
+            <h1 id="medName">Loading...</h1>
+            <span id="riskBadge" class="risk-badge"></span>
+        </div>
+        
+        <div class="grid grid-2">
+            <div class="card">
+                <h2>Key Metrics</h2>
+                <div class="metric-item">
+                    <div class="metric-icon icon-blue">
+                        <svg width="24" height="24" fill="none" stroke="#2563eb" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <div class="metric-content">
+                        <div class="metric-label">Usage Velocity</div>
+                        <div class="metric-value" id="usageVelocity"></div>
+                    </div>
+                </div>
+                
+                <div class="metric-item">
+                    <div class="metric-icon icon-purple">
+                        <svg width="24" height="24" fill="none" stroke="#9333ea" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                        </svg>
+                    </div>
+                    <div class="metric-content">
+                        <div class="metric-label">Amount Remaining</div>
+                        <div class="metric-value" id="amountRemaining"></div>
+                    </div>
+                </div>
+                
+                <div class="metric-item">
+                    <div class="metric-icon icon-amber">
+                        <svg width="24" height="24" fill="none" stroke="#d97706" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="metric-content">
+                        <div class="metric-label">Nearing Expiration</div>
+                        <div class="metric-value" id="expiration"></div>
+                    </div>
+                </div>
+                
+                <div class="metric-item">
+                    <div class="metric-icon icon-green">
+                        <svg width="24" height="24" fill="none" stroke="#16a34a" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <div class="metric-content">
+                        <div class="metric-label">Demand Score</div>
+                        <div class="metric-value" id="demandScore"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Daily Usage History (Last 14 Days)</h2>
+                <div class="chart-container">
+                    <canvas id="supplyChart"></canvas>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Analysis & Recommendation</h2>
+            <p class="analysis-text" id="recommendation"></p>
+        </div>
+    </main>
+    
+    <script>
+        const REPLAY  = {{ replay_data | safe }};
+        const AI_DATA = {{ ai_data | safe }};
+
+        // ── Look up medication from URL param ─────────────────────────────────
+        const medId    = parseInt(new URLSearchParams(window.location.search).get('id'));
+        const med      = REPLAY.currentStates.find(m => m.itemid === medId) || REPLAY.currentStates[0];
+
+        // ── Risk classification ───────────────────────────────────────────────
+        const riskLabel = med.demand_score >= 65 ? 'At Risk'  :
+                          med.demand_score >= 35 ? 'Monitor'  : 'Stable';
+        const riskClass = med.demand_score >= 65 ? 'risk-at-risk' :
+                          med.demand_score >= 35 ? 'risk-stable'  : 'risk-stable';
+
+        function getRecommendation(m) {
+            const nearExpiry = m.expiry_breakdown.near_qty + m.expiry_breakdown.expired_qty;
+            if (m.demand_score >= 65)
+                return `At Risk: Demand pressure is high (score ${m.demand_score}/100). Current velocity is ${m.current_velocity.toFixed(1)} units/day against ${m.total_quantity} units remaining. Immediate restock recommended.`;
+            if (nearExpiry > 0)
+                return `Monitor: ${nearExpiry} units are nearing or past expiration. Review FEFO rotation and consider accelerated dispensing to reduce waste.`;
+            return `Stable: Supply levels are adequate at ${m.total_quantity} units with ${m.current_velocity.toFixed(1)} units/day average usage. Maintain current reorder schedule.`;
+        }
+
+        // ── Populate static fields ────────────────────────────────────────────
+        document.getElementById('medName').textContent        = med.itemName;
+        document.getElementById('riskBadge').textContent      = riskLabel;
+        document.getElementById('riskBadge').className        = 'risk-badge ' + riskClass;
+        document.getElementById('usageVelocity').textContent  = med.current_velocity.toFixed(1) + ' units/day';
+        document.getElementById('amountRemaining').textContent = med.total_quantity.toLocaleString() + ' units';
+        document.getElementById('expiration').textContent     =
+            (med.expiry_breakdown.near_qty + med.expiry_breakdown.expired_qty) + ' units at risk';
+        document.getElementById('demandScore').textContent    = med.demand_score + ' / 100';
+        document.getElementById('recommendation').textContent = getRecommendation(med);
+
+        // ── Usage history line chart ──────────────────────────────────────────
+        new Chart(document.getElementById('supplyChart').getContext('2d'), {
+            type: 'line',
+            data: {
+                labels: med.usage_history.map(d => d.date.slice(5)),   // MM-DD
+                datasets: [{
+                    label: 'Units Used per Day',
+                    data: med.usage_history.map(d => d.units_used),
+                    borderColor: '#3b82f6',
+                    backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                    borderWidth: 2,
+                    tension: 0.4,
+                    pointRadius: 3,
+                    pointBackgroundColor: '#3b82f6'
+                }]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                plugins: { legend: { position: 'bottom' } },
+                scales: {
+                    y: { beginAtZero: true, grid: { color: '#e2e8f0' } },
+                    x: { grid: { color: '#e2e8f0' } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

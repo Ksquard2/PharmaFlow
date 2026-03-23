@@ -9,6 +9,8 @@ categories = [
         "catagoryid": 1,
         "catagoryName": "Respiratory Antivirals",
         "trendStrength": -0.52,
+        "description": "Antiviral medications used to treat and prevent respiratory viral infections, primarily influenza and RSV. These agents work by inhibiting viral replication and are most effective when administered early in the course of illness. Stockpile readiness is critical during flu season and outbreak periods.",
+        "imagePath": "https://openmoji.org/data/color/svg/1FAC1.svg",
         "endpoint": "https://api.delphi.cmu.edu/epidata/fluview/",
         "parameters": {"regions": "nat", "epiweeks": "202501-202510"},
     },
@@ -16,6 +18,8 @@ categories = [
         "catagoryid": 2,
         "catagoryName": "Broad Spectrum Antibiotics",
         "trendStrength": -0.18,
+        "description": "Wide-coverage antibacterial agents effective against a broad range of gram-positive and gram-negative organisms. Used empirically in serious infections before culture results are available. High-demand during respiratory illness surges due to secondary bacterial pneumonia risk.",
+        "imagePath": "https://openmoji.org/data/color/svg/1F9A0.svg",
         "endpoint": "https://data.cdc.gov/resource/vjzj-u7u8.json",
         "parameters": {
             "$select": "date, pathogen, geography, percent_visits",
@@ -28,6 +32,8 @@ categories = [
         "catagoryid": 3,
         "catagoryName": "Analgesics and Antipyretics",
         "trendStrength": -0.46,
+        "description": "Pain-relieving and fever-reducing medications that form the backbone of symptomatic treatment across nearly every care setting. Demand is closely tied to overall patient volume and spikes sharply during flu season, post-operative surges, and pediatric illness waves.",
+        "imagePath": "https://openmoji.org/data/color/svg/1F48A.svg",
         "endpoint": "https://api.delphi.cmu.edu/epidata/fluview/",
         "parameters": {"regions": "nat", "epiweeks": "202501-202510"},
     },
@@ -35,6 +41,8 @@ categories = [
         "catagoryid": 4,
         "catagoryName": "Allergy and Anaphylaxis Treatments",
         "trendStrength": 0.31,
+        "description": "Emergency and maintenance medications for allergic reactions ranging from mild urticaria to life-threatening anaphylaxis. Epinephrine availability is a direct patient safety requirement. Seasonal allergen trends and RSV activity drive demand variability throughout the year.",
+        "imagePath": "https://openmoji.org/data/color/svg/1F489.svg",
         "endpoint": "https://data.cdc.gov/resource/3cxc-4k8q.json",
         "parameters": {
             "$select": "mmwrweek_end, level, pcr_percent_positive, percent_pos_2_week",
@@ -54,26 +62,27 @@ categories = [
 #   all others → high
 # ─────────────────────────────────────────
 items = [
+    # availabilityStatus + usage/restock tuned so replay yields a mix of At risk / Monitor / Stable
     # Respiratory Antivirals (catagoryID 1)
     {"itemid":  1, "itemName": "oseltamivir",       "unitType": "capsules",          "catagoryID": 1, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
     {"itemid":  2, "itemName": "zanamivir",          "unitType": "inhalation_powder", "catagoryID": 1, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
     {"itemid":  3, "itemName": "peramivir",          "unitType": "vials",             "catagoryID": 1, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
     {"itemid":  4, "itemName": "baloxavir",          "unitType": "tablets",           "catagoryID": 1, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
     # Broad Spectrum Antibiotics (catagoryID 2)
-    {"itemid":  5, "itemName": "ceftriaxone",        "unitType": "vials",             "catagoryID": 2, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
-    {"itemid":  6, "itemName": "azithromycin",       "unitType": "tablets",           "catagoryID": 2, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
-    {"itemid":  7, "itemName": "levofloxacin",       "unitType": "tablets",           "catagoryID": 2, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
-    {"itemid":  8, "itemName": "vancomycin",         "unitType": "vials",             "catagoryID": 2, "availabilityStatus": "moderate_availability", "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid":  5, "itemName": "ceftriaxone",        "unitType": "vials",             "catagoryID": 2, "availabilityStatus": "shortage_risk",         "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid":  6, "itemName": "azithromycin",       "unitType": "tablets",           "catagoryID": 2, "availabilityStatus": "constrained",           "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid":  7, "itemName": "levofloxacin",       "unitType": "tablets",           "catagoryID": 2, "availabilityStatus": "moderate_availability", "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid":  8, "itemName": "vancomycin",         "unitType": "vials",             "catagoryID": 2, "availabilityStatus": "shortage_risk",         "lastUpdate": "2026-03-21 06:00:00"},
     # Analgesics and Antipyretics (catagoryID 3)
-    {"itemid":  9, "itemName": "acetaminophen",      "unitType": "tablets",           "catagoryID": 3, "availabilityStatus": "moderate_availability", "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid":  9, "itemName": "acetaminophen",      "unitType": "tablets",           "catagoryID": 3, "availabilityStatus": "shortage_risk",         "lastUpdate": "2026-03-21 06:00:00"},
     {"itemid": 10, "itemName": "ibuprofen",          "unitType": "tablets",           "catagoryID": 3, "availabilityStatus": "moderate_availability", "lastUpdate": "2026-03-21 06:00:00"},
     {"itemid": 11, "itemName": "naproxen",           "unitType": "tablets",           "catagoryID": 3, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
     {"itemid": 12, "itemName": "aspirin",            "unitType": "tablets",           "catagoryID": 3, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
     # Allergy and Anaphylaxis (catagoryID 4)
     {"itemid": 13, "itemName": "epinephrine",        "unitType": "vials",             "catagoryID": 4, "availabilityStatus": "moderate_availability", "lastUpdate": "2026-03-21 06:00:00"},
-    {"itemid": 14, "itemName": "diphenhydramine",    "unitType": "vials",             "catagoryID": 4, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid": 14, "itemName": "diphenhydramine",    "unitType": "vials",             "catagoryID": 4, "availabilityStatus": "moderate_availability", "lastUpdate": "2026-03-21 06:00:00"},
     {"itemid": 15, "itemName": "cetirizine",         "unitType": "tablets",           "catagoryID": 4, "availabilityStatus": "high_availability",     "lastUpdate": "2026-03-21 06:00:00"},
-    {"itemid": 16, "itemName": "methylprednisolone", "unitType": "vials",             "catagoryID": 4, "availabilityStatus": "constrained",           "lastUpdate": "2026-03-21 06:00:00"},
+    {"itemid": 16, "itemName": "methylprednisolone", "unitType": "vials",             "catagoryID": 4, "availabilityStatus": "shortage_risk",         "lastUpdate": "2026-03-21 06:00:00"},
 ]
 
 # ─────────────────────────────────────────
@@ -194,32 +203,32 @@ def generate_inventory_events():
     restocks = [
         # Mar 7 — initial stock arrival for all items
         ( 1, 1001,  300, "2026-03-07", "07:30", 6),  # oseltamivir  near-expiry lot
-        ( 2, 1003,  120, "2026-03-07", "07:30", 6),  # zanamivir    safe
-        ( 3, 1005,   50, "2026-03-07", "07:30", 6),  # peramivir    safe
-        ( 4, 1006,  200, "2026-03-07", "08:00", 5),  # baloxavir    safe
+        ( 2, 1003,  320, "2026-03-07", "07:30", 6),  # zanamivir    safe (deep stock → stable tier)
+        ( 3, 1005,  260, "2026-03-07", "07:30", 6),  # peramivir    safe
+        ( 4, 1006,  520, "2026-03-07", "08:00", 5),  # baloxavir    safe
         ( 5, 1008,   20, "2026-03-07", "08:00", 7),  # ceftriaxone  EXPIRED lot (old stock)
-        ( 5, 1009,  250, "2026-03-07", "08:05", 7),  # ceftriaxone  safe
-        ( 6, 1010,  600, "2026-03-07", "08:15", 5),  # azithromycin safe
-        ( 7, 1012,  500, "2026-03-07", "08:15", 5),  # levofloxacin safe
+        ( 5, 1009,   72, "2026-03-07", "08:05", 7),  # ceftriaxone  safe (very tight runway)
+        ( 6, 1010,  220, "2026-03-07", "08:15", 5),  # azithromycin safe (under heavy use)
+        ( 7, 1012,  520, "2026-03-07", "08:15", 5),  # levofloxacin safe
         ( 8, 1013,   15, "2026-03-07", "08:30", 6),  # vancomycin   EXPIRED lot (old stock)
-        ( 8, 1014,  200, "2026-03-07", "08:35", 6),  # vancomycin   safe
-        ( 9, 1015,  300, "2026-03-07", "09:00", 7),  # acetaminophen near-expiry lot
-        ( 9, 1016, 1200, "2026-03-07", "09:05", 7),  # acetaminophen safe
+        ( 8, 1014,   72, "2026-03-07", "08:35", 6),  # vancomycin   safe (tight)
+        ( 9, 1015,  420, "2026-03-07", "09:00", 7),  # acetaminophen near-expiry lot
+        ( 9, 1016,  580, "2026-03-07", "09:05", 7),  # acetaminophen safe (stressed vs demand)
         (10, 1017, 1000, "2026-03-07", "09:00", 5),  # ibuprofen    safe
-        (11, 1019,  600, "2026-03-07", "09:15", 5),  # naproxen     safe
-        (12, 1020,  800, "2026-03-07", "09:15", 6),  # aspirin      safe
+        (11, 1019, 1600, "2026-03-07", "09:15", 5),  # naproxen     safe (plenty)
+        (12, 1020, 1800, "2026-03-07", "09:15", 6),  # aspirin      safe (plenty)
         (13, 1021,   30, "2026-03-07", "09:30", 7),  # epinephrine  near-expiry lot
         (13, 1022,   60, "2026-03-07", "09:35", 7),  # epinephrine  safe
         (14, 1023,  300, "2026-03-07", "09:30", 5),  # diphenhydramine safe
-        (15, 1024,  600, "2026-03-07", "09:45", 5),  # cetirizine   safe
+        (15, 1024, 1100, "2026-03-07", "09:45", 5),  # cetirizine   safe (deep)
         (16, 1025,   40, "2026-03-07", "09:45", 6),  # methylpred.  near-expiry lot
-        (16, 1026,   80, "2026-03-07", "09:50", 6),  # methylpred.  safe
+        (16, 1026,   42, "2026-03-07", "09:50", 6),  # methylpred.  safe (tight)
         # Mar 12–16 — second wave deliveries
-        ( 6, 1011,  400, "2026-03-12", "10:00", 7),  # azithromycin safe (reorder)
+        ( 6, 1011,  200, "2026-03-12", "10:00", 7),  # azithromycin safe (small reorder)
         ( 4, 1007,  150, "2026-03-13", "10:00", 5),  # baloxavir    safe (reorder)
         ( 1, 1002,  250, "2026-03-14", "10:00", 6),  # oseltamivir  safe (reorder)
         (10, 1018,  800, "2026-03-15", "10:00", 7),  # ibuprofen    safe (reorder)
-        ( 2, 1004,   80, "2026-03-16", "10:00", 5),  # zanamivir    safe (reorder)
+        ( 2, 1004,  200, "2026-03-16", "10:00", 5),  # zanamivir    safe (reorder)
     ]
 
     for itemid, batch, qty, evt_date, hm, locid in restocks:
@@ -242,7 +251,7 @@ def generate_inventory_events():
 
     usage_dates = [f"2026-03-{d:02d}" for d in range(7, 21)]  # Mar 7 – Mar 20
 
-    # Daily usage quantities per item [day0..day13]
+    # Baseline daily usage per item [day0..day13] — scaled per-item below for demand tiers
     daily_usage = {
         1:  [11, 10, 12, 11, 10, 12, 11,  9, 10, 11, 10, 12, 11, 10],  # oseltamivir
         2:  [ 4,  3,  4,  5,  3,  4,  3,  4,  5,  3,  4,  3,  4,  5],  # zanamivir
@@ -262,14 +271,42 @@ def generate_inventory_events():
         16: [ 5,  4,  6,  5,  4,  5,  6,  4,  5,  6,  4,  5,  6,  5],  # methylpred.
     }
 
+    # Declining second week — last 7 calendar days (Mar 14–20) are low-use so 7d velocity
+    # stays below target (first week must be heavy enough that 30d avg / category mult
+    # still exceeds last-7d avg, or usage_pressure stays pegged at 1.0).
+    _stable_high = {2: 52, 3: 50, 4: 44, 11: 48, 12: 52, 15: 48}
+    for _sid, _hi in _stable_high.items():
+        daily_usage[_sid] = [_hi] * 7 + [2] * 7
+
+    # Per-item velocity multipliers — widen spread so replay yields At risk / Monitor / Stable bands
+    usage_mult = {
+        1: 1.18,
+        2: 0.14,
+        3: 0.13,
+        4: 0.2,
+        5: 2.35,
+        6: 2.15,
+        7: 1.05,
+        8: 2.05,
+        9: 2.25,
+        10: 1.02,
+        11: 0.18,
+        12: 0.17,
+        13: 0.88,
+        14: 1.08,
+        15: 0.16,
+        16: 2.2,
+    }
+
     # FEFO batch assignment per item — switches when near-expiry lot exhausted
-    # acetaminophen:     batch 1015 (300 units) lasts days 0-4  (sum=252 < 300), day 5+ → 1016
-    # epinephrine:       batch 1021 (30 units)  lasts days 0-6  (sum=28 < 30),  day 7+ → 1022
-    # methylprednisolone: batch 1025 (40 units) lasts days 0-7  (sum=39 < 40),  day 8+ → 1026
+    # (thresholds updated for new restock sizes + usage_mult)
     def get_batch(itemid, day_idx):
-        if itemid ==  9: return 1015 if day_idx < 5 else 1016
-        if itemid == 13: return 1021 if day_idx < 7 else 1022
-        if itemid == 16: return 1025 if day_idx < 8 else 1026
+        if itemid == 9:
+            return 1015 if day_idx < 6 else 1016
+        if itemid == 13:
+            return 1021 if day_idx < 7 else 1022
+        if itemid == 16:
+            return 1025 if day_idx < 5 else 1026
         return {
             1: 1001, 2: 1003, 3: 1005,  4: 1006,  5: 1009,
             6: 1010, 7: 1012, 8: 1014, 10: 1017, 11: 1019,
@@ -306,7 +343,8 @@ def generate_inventory_events():
 
     for day_idx, date_str in enumerate(usage_dates):
         for itemid in range(1, 17):
-            qty    = daily_usage[itemid][day_idx]
+            base = daily_usage[itemid][day_idx]
+            qty = max(1, int(round(base * usage_mult[itemid])))
             batch  = get_batch(itemid, day_idx)
             locid  = item_location[itemid]
             hm     = event_times[day_idx]

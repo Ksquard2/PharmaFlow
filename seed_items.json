@@ -36,7 +36,7 @@
     "itemName": "ceftriaxone",
     "unitType": "vials",
     "catagoryID": 2,
-    "availabilityStatus": "high_availability",
+    "availabilityStatus": "shortage_risk",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -44,7 +44,7 @@
     "itemName": "azithromycin",
     "unitType": "tablets",
     "catagoryID": 2,
-    "availabilityStatus": "high_availability",
+    "availabilityStatus": "constrained",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -52,7 +52,7 @@
     "itemName": "levofloxacin",
     "unitType": "tablets",
     "catagoryID": 2,
-    "availabilityStatus": "high_availability",
+    "availabilityStatus": "moderate_availability",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -60,7 +60,7 @@
     "itemName": "vancomycin",
     "unitType": "vials",
     "catagoryID": 2,
-    "availabilityStatus": "moderate_availability",
+    "availabilityStatus": "shortage_risk",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -68,7 +68,7 @@
     "itemName": "acetaminophen",
     "unitType": "tablets",
     "catagoryID": 3,
-    "availabilityStatus": "moderate_availability",
+    "availabilityStatus": "shortage_risk",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -108,7 +108,7 @@
     "itemName": "diphenhydramine",
     "unitType": "vials",
     "catagoryID": 4,
-    "availabilityStatus": "high_availability",
+    "availabilityStatus": "moderate_availability",
     "lastUpdate": "2026-03-21 06:00:00"
   },
   {
@@ -124,7 +124,7 @@
     "itemName": "methylprednisolone",
     "unitType": "vials",
     "catagoryID": 4,
-    "availabilityStatus": "constrained",
+    "availabilityStatus": "shortage_risk",
     "lastUpdate": "2026-03-21 06:00:00"
   }
 ]

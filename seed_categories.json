@@ -3,6 +3,8 @@
     "catagoryid": 1,
     "catagoryName": "Respiratory Antivirals",
     "trendStrength": -0.52,
+    "description": "Antiviral medications used to treat and prevent respiratory viral infections, primarily influenza and RSV. These agents work by inhibiting viral replication and are most effective when administered early in the course of illness. Stockpile readiness is critical during flu season and outbreak periods.",
+    "imagePath": "https://openmoji.org/data/color/svg/1FAC1.svg",
     "endpoint": "https://api.delphi.cmu.edu/epidata/fluview/",
     "parameters": {
       "regions": "nat",
@@ -13,6 +15,8 @@
     "catagoryid": 2,
     "catagoryName": "Broad Spectrum Antibiotics",
     "trendStrength": -0.18,
+    "description": "Wide-coverage antibacterial agents effective against a broad range of gram-positive and gram-negative organisms. Used empirically in serious infections before culture results are available. High-demand during respiratory illness surges due to secondary bacterial pneumonia risk.",
+    "imagePath": "https://openmoji.org/data/color/svg/1F9A0.svg",
     "endpoint": "https://data.cdc.gov/resource/vjzj-u7u8.json",
     "parameters": {
       "$select": "date, pathogen, geography, percent_visits",
@@ -25,6 +29,8 @@
     "catagoryid": 3,
     "catagoryName": "Analgesics and Antipyretics",
     "trendStrength": -0.46,
+    "description": "Pain-relieving and fever-reducing medications that form the backbone of symptomatic treatment across nearly every care setting. Demand is closely tied to overall patient volume and spikes sharply during flu season, post-operative surges, and pediatric illness waves.",
+    "imagePath": "https://openmoji.org/data/color/svg/1F48A.svg",
     "endpoint": "https://api.delphi.cmu.edu/epidata/fluview/",
     "parameters": {
       "regions": "nat",
@@ -35,6 +41,8 @@
     "catagoryid": 4,
     "catagoryName": "Allergy and Anaphylaxis Treatments",
     "trendStrength": 0.31,
+    "description": "Emergency and maintenance medications for allergic reactions ranging from mild urticaria to life-threatening anaphylaxis. Epinephrine availability is a direct patient safety requirement. Seasonal allergen trends and RSV activity drive demand variability throughout the year.",
+    "imagePath": "https://openmoji.org/data/color/svg/1F489.svg",
     "endpoint": "https://data.cdc.gov/resource/3cxc-4k8q.json",
     "parameters": {
       "$select": "mmwrweek_end, level, pcr_percent_positive, percent_pos_2_week",

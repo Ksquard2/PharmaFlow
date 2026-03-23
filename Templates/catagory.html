@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaFlow - Category Readiness Detail</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(to bottom right, #f0f9ff, #dbeafe);
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+        }
+        
+        .logo-text {
+            font-size: clamp(1.1rem, 1.4vw + 0.75rem, 1.4rem);
+            font-weight: 600;
+            color: #0f172a;
+            letter-spacing: -0.02em;
+            white-space: nowrap;
+        }
+        
+        .logo-thumb {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: clamp(2.65rem, 2.5vw + 1.85rem, 3.35rem);
+            height: clamp(2.65rem, 2.5vw + 1.85rem, 3.35rem);
+            flex-shrink: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        .logo-thumb img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center center;
+        }
+        
+        nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .nav-link {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        
+        .nav-link.active {
+            background: #eff6ff;
+            color: #1d4ed8;
+        }
+        
+        .nav-link:not(.active) {
+            color: #475569;
+        }
+        
+        .nav-link:not(.active):hover {
+            background: #f1f5f9;
+            color: #0f172a;
+        }
+        
+        main {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #64748b;
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            transition: color 0.2s;
+        }
+        
+        .back-link:hover {
+            color: #0f172a;
+        }
+        
+        .hero-section {
+            border-radius: 1rem;
+            padding: 2rem;
+            color: white;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .hero-gradient-high { background: linear-gradient(to bottom right, #10b981, #059669); }
+        .hero-gradient-medium { background: linear-gradient(to bottom right, #f59e0b, #ea580c); }
+        .hero-gradient-low { background: linear-gradient(to bottom right, #ef4444, #f43f5e); }
+        
+        .hero-text h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .hero-subtitle {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+        
+        .hero-summary {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.125rem;
+        }
+        
+        .hero-score {
+            text-align: center;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            min-width: 160px;
+        }
+        
+        .score-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 0.5rem;
+        }
+        
+        .score-value {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+        
+        .score-label {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .grid-2 {
+            grid-template-columns: 1fr;
+        }
+        
+        @media (min-width: 1024px) {
+            .grid-2 {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 1.5rem;
+        }
+        
+        .metric-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+        
+        .metric-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .metric-icon {
+            padding: 0.75rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+        
+        .icon-blue { background: linear-gradient(to bottom right, #3b82f6, #06b6d4); }
+        .icon-purple { background: linear-gradient(to bottom right, #a855f7, #6366f1); }
+        .icon-orange { background: linear-gradient(to bottom right, #f59e0b, #ea580c); }
+        
+        .metric-content {
+            flex: 1;
+        }
+        
+        .metric-label {
+            color: #64748b;
+            font-size: 0.875rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .metric-value {
+            color: #0f172a;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .chart-container {
+            position: relative;
+            height: 300px;
+        }
+        
+        .analysis-card {
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            border: 2px solid;
+        }
+        
+        .analysis-high {
+            background: #f0fdf4;
+            border-color: #86efac;
+        }
+        
+        .analysis-medium {
+            background: #fffbeb;
+            border-color: #fde047;
+        }
+        
+        .analysis-low {
+            background: #fef2f2;
+            border-color: #fca5a5;
+        }
+        
+        .analysis-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        
+        .analysis-high .analysis-title { color: #166534; }
+        .analysis-medium .analysis-title { color: #92400e; }
+        .analysis-low .analysis-title { color: #991b1b; }
+        
+        .analysis-text {
+            color: #334155;
+            line-height: 1.6;
+        }
+        
+        .med-list-item {
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 0.75rem;
+            margin-bottom: 0.75rem;
+            transition: all 0.2s;
+        }
+        
+        .med-list-item:hover {
+            border-color: #cbd5e1;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+        
+        .med-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .med-info {
+            flex: 1;
+        }
+        
+        .med-name {
+            color: #0f172a;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+        
+        .med-stats {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.875rem;
+        }
+        
+        .med-score {
+            color: #64748b;
+        }
+        
+        .med-risk {
+            font-weight: 500;
+        }
+        
+        .risk-at-risk { color: #991b1b; }
+        .risk-stable { color: #166534; }
+        .risk-overstocked { color: #92400e; }
+        
+        .progress-wrapper {
+            width: 128px;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 0.75rem;
+            background: #f1f5f9;
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            border-radius: 9999px;
+        }
+        
+        .progress-high { background: linear-gradient(to right, #ef4444, #f43f5e); }
+        .progress-medium { background: linear-gradient(to right, #f59e0b, #ea580c); }
+        .progress-low { background: linear-gradient(to right, #10b981, #059669); }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <a href="/" class="logo-thumb" title="PharmaFlow home"><img src="/static/logo.jpg" alt=""></a>
+                <span class="logo-text">PharmaFlow</span>
+            </div>
+            <nav>
+                <a href="/" class="nav-link">Inventory Dashboard</a>
+                <a href="/readiness" class="nav-link active">Illness Readiness</a>
+                <a href="/demo/inventory-event-log" class="nav-link">Event log (demo)</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <a href="/readiness" class="back-link">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            Back to Illness Readiness
+        </a>
+        
+        <div id="heroSection"></div>
+        
+        <div class="grid grid-2">
+            <div class="card">
+                <h2>Key Readiness Metrics</h2>
+                <div id="metrics"></div>
+            </div>
+            
+            <div class="card">
+                <h2>Supply vs Projected Demand</h2>
+                <div class="chart-container">
+                    <canvas id="supplyChart"></canvas>
+                </div>
+            </div>
+        </div>
+        
+        <div id="analysisSection"></div>
+        
+        <div class="card">
+            <h2>Associated Medications</h2>
+            <div id="medicationsList"></div>
+        </div>
+    </main>
+    
+    <script>
+        const REPLAY  = {{ replay_data | safe }};
+        const AI_DATA = {{ ai_data | safe }};
+
+        // ── Badge → style mappings ─────────────────────────────────────────────
+        const HERO_GRADIENT = {
+            'Strong':   'hero-gradient-high',
+            'Adequate': 'hero-gradient-medium',
+            'Strained': 'hero-gradient-medium',
+            'Critical': 'hero-gradient-low'
+        };
+        const ANALYSIS_CLASS = {
+            'Strong':   'analysis-high',
+            'Adequate': 'analysis-medium',
+            'Strained': 'analysis-medium',
+            'Critical': 'analysis-low'
+        };
+
+        // ── Look up category from URL param ───────────────────────────────────
+        const catId   = parseInt(new URLSearchParams(window.location.search).get('id'));
+        const category = AI_DATA.find(c => c.catagoryid === catId) || AI_DATA[0];
+
+        // ── Hero section ──────────────────────────────────────────────────────
+        document.getElementById('heroSection').innerHTML = `
+            <div class="hero-section ${HERO_GRADIENT[category.readiness_badge]}">
+                <div class="hero-text">
+                    <div class="hero-subtitle">Readiness Assessment</div>
+                    <h1>${category.catagory_name}</h1>
+                    <p class="hero-summary">${category.description}</p>
+                </div>
+                <div class="hero-score">
+                    <img src="${category.imagePath}" alt="${category.catagory_name}"
+                         class="score-icon"
+                         style="width:48px;height:48px;object-fit:cover;border-radius:8px;"
+                         onerror="this.style.display='none'">
+                    <div class="score-value">${category.readiness_score}</div>
+                    <div class="score-label">${category.readiness_badge}</div>
+                </div>
+            </div>
+        `;
+
+        // ── Key metrics ───────────────────────────────────────────────────────
+        const trendDir = category.trend_strength > 0.1 ? '↑ Rising' :
+                         category.trend_strength < -0.1 ? '↓ Declining' : '→ Stable';
+        document.getElementById('metrics').innerHTML = `
+            <div class="metric-item">
+                <div class="metric-icon icon-blue">
+                    <svg width="24" height="24" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                    </svg>
+                </div>
+                <div class="metric-content">
+                    <div class="metric-label">Avg Demand Score</div>
+                    <div class="metric-value">${category.avg_demand_score} / 100</div>
+                </div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-icon icon-purple">
+                    <svg width="24" height="24" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                </div>
+                <div class="metric-content">
+                    <div class="metric-label">Disease Trend Signal</div>
+                    <div class="metric-value">${trendDir} (${category.trend_strength})</div>
+                </div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-icon icon-orange">
+                    <svg width="24" height="24" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                    </svg>
+                </div>
+                <div class="metric-content">
+                    <div class="metric-label">Readiness Score</div>
+                    <div class="metric-value">${category.readiness_score} — ${category.readiness_badge}</div>
+                </div>
+            </div>
+        `;
+
+        // ── AI analysis ───────────────────────────────────────────────────────
+        document.getElementById('analysisSection').innerHTML = `
+            <div class="analysis-card ${ANALYSIS_CLASS[category.readiness_badge]}">
+                <h2 class="analysis-title">AI Preparedness Analysis</h2>
+                <p class="analysis-text">${category.justification}</p>
+            </div>
+        `;
+
+        // ── Medications list ──────────────────────────────────────────────────
+        document.getElementById('medicationsList').innerHTML = category.medications.map(med => {
+            const pClass   = med.demand_score >= 65 ? 'progress-high' : med.demand_score >= 35 ? 'progress-medium' : 'progress-low';
+            const riskLabel = med.demand_score >= 65 ? 'At Risk' : med.demand_score >= 35 ? 'Monitor' : 'Stable';
+            const riskClass = med.demand_score >= 65 ? 'risk-at-risk' : med.demand_score >= 35 ? 'risk-stable' : 'risk-stable';
+            return `
+                <div class="med-list-item">
+                    <div class="med-header">
+                        <div class="med-info">
+                            <div class="med-name">${med.name}</div>
+                            <div class="med-stats">
+                                <span class="med-score">Demand Score: ${med.demand_score}/100</span>
+                                <span class="med-risk ${riskClass}">${riskLabel}</span>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <div class="progress-bar">
+                                <div class="progress-fill ${pClass}" style="width:${med.demand_score}%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+        }).join('');
+
+        // ── Supply vs Demand line chart ───────────────────────────────────────
+        // Merge date ranges — supply (14d) and demand (30d) on same axis
+        const supplyMap  = Object.fromEntries(category.supply_trend.map(d => [d.date, d.units_used]));
+        const demandMap  = Object.fromEntries(category.demand_trend.map(d => [d.date, d.visit_count]));
+        const allDates   = [...new Set([
+            ...category.demand_trend.map(d => d.date),
+            ...category.supply_trend.map(d => d.date)
+        ])].sort().slice(-20);   // last 20 dates for readability
+
+        new Chart(document.getElementById('supplyChart').getContext('2d'), {
+            type: 'line',
+            data: {
+                labels: allDates.map(d => d.slice(5)),   // show MM-DD only
+                datasets: [
+                    {
+                        label: 'Units Dispensed (Supply)',
+                        data: allDates.map(d => supplyMap[d] ?? null),
+                        borderColor: '#3b82f6',
+                        backgroundColor: 'rgba(59,130,246,0.1)',
+                        borderWidth: 3, tension: 0.4,
+                        pointRadius: 4, pointBackgroundColor: '#3b82f6',
+                        spanGaps: false
+                    },
+                    {
+                        label: 'Patient Visits (Demand)',
+                        data: allDates.map(d => demandMap[d] ?? null),
+                        borderColor: '#ef4444',
+                        backgroundColor: 'rgba(239,68,68,0.1)',
+                        borderWidth: 3, tension: 0.4,
+                        pointRadius: 4, pointBackgroundColor: '#ef4444',
+                        spanGaps: false
+                    }
+                ]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                plugins: { legend: { position: 'bottom' } },
+                scales: {
+                    y: { beginAtZero: true, grid: { color: '#e2e8f0' } },
+                    x: { grid: { color: '#e2e8f0' } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
