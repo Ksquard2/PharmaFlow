@@ -1,11 +1,48 @@
 import datetime
-from typing import Optional
+from typing import Any, Mapping, Optional
 import json
 from sqlalchemy import create_engine, text
 
 DATABASE_URL = "mysql+mysqlconnector://root:newlatiospower@127.0.0.1:3306/PharmaFlow"
 engine = create_engine(DATABASE_URL)
 
+
+def arduino_to_db(event: Mapping[str, Any]) -> None:
+    """
+    Insert one row into InventoryEvents. eventTime is always server time (NOW()).
+
+    Required keys (match InventoryEvents columns):
+      itemid, eventType ('restock' | 'usage'), batchNumber, quantityDelta,
+      expirationDate ('YYYY-MM-DD'), locationid
+    """
+    required = (
+        "itemid",
+        "eventType",
+        "batchNumber",
+        "quantityDelta",
+        "expirationDate",
+        "locationid",
+    )
+    missing = [k for k in required if k not in event]
+    if missing:
+        raise ValueError(f"event missing keys: {missing}")
+
+    with engine.begin() as conn:
+        conn.execute(
+            text(
+                "INSERT INTO InventoryEvents "
+                "(itemid, eventType, batchNumber, quantityDelta, expirationDate, eventTime, locationid) "
+                "VALUES (:itemid, :eventType, :batchNumber, :quantityDelta, :expirationDate, NOW(), :locationid)"
+            ),
+            {
+                "itemid": int(event["itemid"]),
+                "eventType": str(event["eventType"]),
+                "batchNumber": int(event["batchNumber"]),
+                "quantityDelta": int(event["quantityDelta"]),
+                "expirationDate": str(event["expirationDate"]),
+                "locationid": int(event["locationid"]),
+            },
+        )
 def serialize_row(row):
     import decimal
     def _cast(v):

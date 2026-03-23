@@ -1,42 +1,58 @@
-import time
+"""
+Bridge: watches a JSON file (e.g. written by Arduino tooling) and POSTs each event to Flask.
+
+Default target: http://127.0.0.1:5000/smartBinScan
+Override: PHARMAFLOW_SCAN_URL=https://xxxx.ngrok.io/smartBinScan
+
+The file should contain ONE JSON object — the inner "event" payload, e.g.:
+{
+  "itemid": 1,
+  "eventType": "usage",
+  "batchNumber": 1001,
+  "quantityDelta": -1,
+  "expirationDate": "2026-03-28",
+  "locationid": 1
+}
+
+Flask wraps it as {"event": <that object>}. eventTime is set on the server (NOW()).
+"""
 import json
+import os
+import time
 import urllib.request
 
-FILE_PATH = "events.json"   # file Arduino writes to
-API_URL = "https://your-ngrok-url.ngrok.io/api/event"
+FILE_PATH = os.environ.get("PHARMAFLOW_EVENTS_FILE", "events.json")
+API_URL = os.environ.get("PHARMAFLOW_SCAN_URL", "http://127.0.0.1:5000/smartBinScan")
 
-def send_event(event):
+
+def send_event(event: dict) -> None:
+    payload = {"event": event}
+    data = json.dumps(payload).encode("utf-8")
+
+    req = urllib.request.Request(
+        API_URL,
+        data=data,
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+
+    with urllib.request.urlopen(req, timeout=30) as response:
+        body = response.read().decode("utf-8", errors="replace")
+        print("Sent:", event, "->", response.status, body)
+
+
+def process_file() -> None:
     try:
-        data = json.dumps(event).encode("utf-8")
-
-        req = urllib.request.Request(
-            API_URL,
-            data=data,
-            headers={"Content-Type": "application/json"},
-            method="POST"
-        )
-
-        with urllib.request.urlopen(req) as response:
-            print("Sent:", event)
-    except Exception as e:
-        print("Error sending event:", e)
-
-
-def process_file():
-    try:
-        with open(FILE_PATH, "r") as f:
+        with open(FILE_PATH, encoding="utf-8") as f:
             content = f.read().strip()
 
         if not content:
             return
 
-        # assume file contains one JSON object
         event = json.loads(content)
-
         send_event(event)
 
-        # clear file after successful send
-        with open(FILE_PATH, "w") as f:
+        with open(FILE_PATH, "w", encoding="utf-8") as f:
             f.write("")
 
     except Exception as e:
@@ -44,8 +60,8 @@ def process_file():
 
 
 if __name__ == "__main__":
-    print("Listening for hardware events...")
+    print(f"Watching {FILE_PATH!r} -> POST {API_URL}")
 
     while True:
         process_file()
-        time.sleep(5)   # check every 5 seconds
+        time.sleep(5)

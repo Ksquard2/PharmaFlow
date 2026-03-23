@@ -9,7 +9,7 @@ from flask import Flask, jsonify, render_template, request
 
 from allAPI import sync_recall_availability_from_fda
 from ollama import justify_inventory_health, justify_readiness, readinessCalculator
-from replay import run_replay
+from replay import run_replay, arduino_to_db
 
 app = Flask(__name__, template_folder="Templates")
 
@@ -126,6 +126,34 @@ def _render(template):
 
 
 # ── Routes ─────────────────────────────────────────────────────────────────────
+@app.route("/smartBinScan", methods=["POST"])
+def smartBinScan():
+    """
+    Hardware / bridge POST. Body: {"event": { ... }} — see replay.arduino_to_db docstring.
+    """
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict) or "event" not in data:
+        return (
+            jsonify(
+                {
+                    "ok": False,
+                    "error": 'Body must be JSON with an "event" object (see replay.arduino_to_db).',
+                }
+            ),
+            400,
+        )
+    try:
+        arduino_to_db(data["event"])
+    except (ValueError, KeyError, TypeError) as ex:
+        return jsonify({"ok": False, "error": str(ex)}), 400
+    except Exception as ex:  # noqa: BLE001 — DB / driver errors
+        return jsonify({"ok": False, "error": str(ex)}), 500
+
+    threading.Thread(
+        target=rebuild_projection_data, daemon=True, name="pharmaflow-scan-rebuild"
+    ).start()
+    return jsonify({"ok": True, "message": "success"}), 200
+
 @app.route("/")
 def inventory():
     return _render("inventory.html")
@@ -171,4 +199,4 @@ def api_refresh_recalls():
 
 
 if __name__ == "__main__":
-    app.run(debug=False, port=5000)
+    app.run(host="0.0.0.0", port=5000)
